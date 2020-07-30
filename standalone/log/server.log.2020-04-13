@@ -1,0 +1,43 @@
+2020-04-13 17:48:41,947 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-1) WFLYDS0013: Started FileSystemDeploymentService for directory /home/jmurillo/bin/wildfly-18.0.1.Final/standalone/deployments
+2020-04-13 17:48:41,969 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "testejb.war" (runtime-name: "testejb.war")
+2020-04-13 17:48:42,055 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2020-04-13 17:48:42,261 INFO  [org.jboss.ws.common.management] (MSC service thread 1-4) JBWS022052: Starting JBossWS 5.3.0.Final (Apache CXF 3.3.3) 
+2020-04-13 17:48:42,928 INFO  [org.jboss.as.jpa] (MSC service thread 1-6) WFLYJPA0002: Read persistence.xml for testejbPersistenceUnit
+2020-04-13 17:48:43,805 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-7) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.16.Final
+2020-04-13 17:48:44,109 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 76) WFLYJPA0003: Starting Persistence Unit Service 'testejb.war#testejbPersistenceUnit'
+2020-04-13 17:48:44,186 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 76) HHH000204: Processing PersistenceUnitInfo [
+	name: testejbPersistenceUnit
+	...]
+2020-04-13 17:48:44,426 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 76) HHH000412: Hibernate Core {5.3.13.Final}
+2020-04-13 17:48:44,430 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 76) HHH000206: hibernate.properties not found
+2020-04-13 17:48:44,518 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 77) WFLYCLINF0002: Started client-mappings cache from ejb container
+2020-04-13 17:48:44,824 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 76) HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+2020-04-13 17:48:45,398 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 76) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-13 17:48:45,405 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 76) HHH000431: Unable to determine H2 database version, certain features may not work
+2020-04-13 17:48:45,556 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 76) Envers integration enabled? : true
+2020-04-13 17:48:45,728 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 76) HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2020-04-13 17:48:45,898 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 76) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@2a0f5b48'
+2020-04-13 17:48:46,050 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 79) Inicializando Mojarra 2.3.9.SP04 para el contexto '/testejb'
+2020-04-13 17:48:46,535 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 79) WFLYUT0021: Registered web context: '/testejb' for server 'default-server'
+2020-04-13 17:48:46,686 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 44) WFLYSRV0010: Deployed "testejb.war" (runtime-name : "testejb.war")
+2020-04-13 17:48:46,768 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2020-04-13 17:48:46,780 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2020-04-13 17:48:46,780 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2020-04-13 17:48:46,780 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 18.0.1.Final (WildFly Core 10.0.3.Final) started in 13209ms - Started 436 of 651 services (374 services are lazy, passive or on-demand)
+2020-04-13 18:00:33,005 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0272: Suspending server
+2020-04-13 18:00:33,008 INFO  [org.jboss.as.ejb3] (Thread-1) WFLYEJB0493: EJB subsystem suspension complete
+2020-04-13 18:00:33,009 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2020-04-13 18:00:33,049 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 27) WFLYUT0022: Unregistered web context: '/testejb' from server 'default-server'
+2020-04-13 18:00:33,100 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-6) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2020-04-13 18:00:33,103 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 82) WFLYJPA0004: Stopping Persistence Unit Service 'testejb.war#testejbPersistenceUnit'
+2020-04-13 18:00:33,109 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0019: Host default-host stopping
+2020-04-13 18:00:33,124 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2020-04-13 18:00:33,158 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2020-04-13 18:00:33,156 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 83) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2020-04-13 18:00:33,218 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment testejb.war (runtime-name: testejb.war) in 149ms
+2020-04-13 18:00:33,221 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0008: Undertow HTTP listener default suspending
+2020-04-13 18:00:33,221 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0008: Undertow HTTPS listener https suspending
+2020-04-13 18:00:33,223 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2020-04-13 18:00:33,224 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2020-04-13 18:00:33,227 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0004: Undertow 2.0.27.Final stopping
+2020-04-13 18:00:33,255 INFO  [org.jboss.as] (MSC service thread 1-3) WFLYSRV0050: WildFly Full 18.0.1.Final (WildFly Core 10.0.3.Final) stopped in 187ms

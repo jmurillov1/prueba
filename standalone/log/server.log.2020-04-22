@@ -1,0 +1,1390 @@
+2020-04-22 18:06:15,427 INFO  [org.jboss.modules] (main) JBoss Modules version 1.9.1.Final
+2020-04-22 18:06:16,468 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.11.Final
+2020-04-22 18:06:16,497 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.3.Final
+2020-04-22 18:06:16,776 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 18.0.1.Final (WildFly Core 10.0.3.Final) starting
+2020-04-22 18:06:16,781 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/jmurillo/bin/wildfly-18.0.1.Final/jboss-modules.jar
+	java.class.version = 55.0
+	java.home = /usr/lib/jvm/java-11-openjdk-amd64
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 11.0.7+10-post-Ubuntu-2ubuntu218.04
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 11
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Ubuntu
+	java.vendor.url = https://ubuntu.com/
+	java.vendor.url.bug = https://bugs.launchpad.net/ubuntu/+source/openjdk-lts
+	java.version = 11.0.7
+	java.version.date = 2020-04-14
+	java.vm.compressedOopsMode = 32-bit
+	java.vm.info = mixed mode, sharing
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 11
+	java.vm.vendor = Ubuntu
+	java.vm.version = 11.0.7+10-post-Ubuntu-2ubuntu218.04
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = /home/jmurillo/bin/wildfly-18.0.1.Final
+	jboss.host.name = jmurillo-h81m-h
+	jboss.modules.dir = /home/jmurillo/bin/wildfly-18.0.1.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = jmurillo-h81m-h
+	jboss.qualified.host.name = jmurillo-h81m-h
+	jboss.server.base.dir = /home/jmurillo/bin/wildfly-18.0.1.Final/standalone
+	jboss.server.config.dir = /home/jmurillo/bin/wildfly-18.0.1.Final/standalone/configuration
+	jboss.server.data.dir = /home/jmurillo/bin/wildfly-18.0.1.Final/standalone/data
+	jboss.server.deploy.dir = /home/jmurillo/bin/wildfly-18.0.1.Final/standalone/data/content
+	jboss.server.log.dir = /home/jmurillo/bin/wildfly-18.0.1.Final/standalone/log
+	jboss.server.name = jmurillo-h81m-h
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/jmurillo/bin/wildfly-18.0.1.Final/standalone/tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/home/jmurillo/bin/wildfly-18.0.1.Final/standalone/configuration/logging.properties
+	module.path = /home/jmurillo/bin/wildfly-18.0.1.Final/modules
+	org.jboss.boot.log.file = /home/jmurillo/bin/wildfly-18.0.1.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Linux
+	os.version = 5.3.0-46-generic
+	path.separator = :
+	program.name = JBossTools: WildFly 18 at localhost
+	sun.arch.data.model = 64
+	sun.boot.library.path = /usr/lib/jvm/java-11-openjdk-amd64/lib
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.desktop = gnome
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp /home/jmurillo/bin/wildfly-18.0.1.Final/modules org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=/home/jmurillo/bin/wildfly-18.0.1.Final/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = EC
+	user.dir = /home/jmurillo/bin/wildfly-18.0.1.Final/bin
+	user.home = /home/jmurillo
+	user.language = es
+	user.name = jmurillo
+	user.timezone = America/Guayaquil
+2020-04-22 18:06:16,787 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -Dprogram.name=JBossTools: WildFly 18 at localhost -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/home/jmurillo/bin/wildfly-18.0.1.Final/standalone/log/boot.log -Dlogging.configuration=file:/home/jmurillo/bin/wildfly-18.0.1.Final/standalone/configuration/logging.properties -Djboss.home.dir=/home/jmurillo/bin/wildfly-18.0.1.Final -Dorg.jboss.logmanager.nocolor=true --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED --add-modules=java.se -Djboss.bind.address.management=localhost -Dfile.encoding=UTF-8 
+2020-04-22 18:06:19,092 INFO  [org.wildfly.security] (ServerService Thread Pool -- 28) ELY00001: WildFly Elytron version 1.10.4.Final
+2020-04-22 18:06:20,365 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2020-04-22 18:06:20,441 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 9) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2020-04-22 18:06:20,475 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found testejb.war in deployment directory. To trigger deployment create a file called testejb.war.dodeploy
+2020-04-22 18:06:20,482 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found contactosejb.war in deployment directory. To trigger deployment create a file called contactosejb.war.dodeploy
+2020-04-22 18:06:20,627 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2020-04-22 18:06:20,668 INFO  [org.xnio] (MSC service thread 1-5) XNIO version 3.7.3.Final
+2020-04-22 18:06:20,720 INFO  [org.xnio.nio] (MSC service thread 1-5) XNIO NIO Implementation Version 3.7.3.Final
+2020-04-22 18:06:20,884 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 51) WFLYCLINF0001: Activating Infinispan subsystem.
+2020-04-22 18:06:20,927 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 60) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+2020-04-22 18:06:20,960 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 64) WFLYNAM0001: Activating Naming Subsystem
+2020-04-22 18:06:21,031 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 70) WFLYSEC0002: Activating Security Subsystem
+2020-04-22 18:06:21,075 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 74) WFLYWS0002: Activating WebServices Extension
+2020-04-22 18:06:20,901 INFO  [org.jboss.as.connector] (MSC service thread 1-7) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.17.Final)
+2020-04-22 18:06:20,914 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 43) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2020-04-22 18:06:21,128 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 61) WFLYHEALTH0001: Activating Eclipse MicroProfile Health Subsystem
+2020-04-22 18:06:20,896 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 52) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2020-04-22 18:06:21,129 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 63) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2020-04-22 18:06:21,130 INFO  [org.wildfly.extension.microprofile.metrics.smallrye] (ServerService Thread Pool -- 62) WFLYMETRICS0001: Activating Eclipse MicroProfile Metrics Subsystem
+2020-04-22 18:06:21,005 INFO  [org.jboss.as.naming] (MSC service thread 1-3) WFLYNAM0003: Starting Naming Service
+2020-04-22 18:06:21,005 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2020-04-22 18:06:21,031 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 72) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2020-04-22 18:06:21,083 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 58) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2020-04-22 18:06:21,148 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = h2
+2020-04-22 18:06:21,232 INFO  [org.jboss.remoting] (MSC service thread 1-3) JBoss Remoting version 5.0.15.Final
+2020-04-22 18:06:21,179 INFO  [org.jboss.as.security] (MSC service thread 1-4) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2020-04-22 18:06:21,310 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0003: Undertow 2.0.27.Final starting
+2020-04-22 18:06:21,432 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 53) WFLYRS0016: RESTEasy version 3.9.1.Final
+2020-04-22 18:06:21,720 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2020-04-22 18:06:21,719 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2020-04-22 18:06:21,864 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 73) WFLYUT0014: Creating file handler for path '/home/jmurillo/bin/wildfly-18.0.1.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2020-04-22 18:06:21,921 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0012: Started server default-server.
+2020-04-22 18:06:21,925 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0018: Host default-host starting
+2020-04-22 18:06:22,072 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2020-04-22 18:06:22,206 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0493: EJB subsystem suspension complete
+2020-04-22 18:06:22,399 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2020-04-22 18:06:22,837 INFO  [org.jboss.as.patching] (MSC service thread 1-2) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2020-04-22 18:06:22,854 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-4) WFLYDM0111: Keystore /home/jmurillo/bin/wildfly-18.0.1.Final/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2020-04-22 18:06:22,887 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-4) WFLYDS0013: Started FileSystemDeploymentService for directory /home/jmurillo/bin/wildfly-18.0.1.Final/standalone/deployments
+2020-04-22 18:06:22,898 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "contactosejb.war" (runtime-name: "contactosejb.war")
+2020-04-22 18:06:22,901 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "testejb.war" (runtime-name: "testejb.war")
+2020-04-22 18:06:23,029 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2020-04-22 18:06:23,245 INFO  [org.jboss.ws.common.management] (MSC service thread 1-7) JBWS022052: Starting JBossWS 5.3.0.Final (Apache CXF 3.3.3) 
+2020-04-22 18:06:24,034 INFO  [org.jboss.as.jpa] (MSC service thread 1-4) WFLYJPA0002: Read persistence.xml for contactosejbPersistenceUnit
+2020-04-22 18:06:24,035 INFO  [org.jboss.as.jpa] (MSC service thread 1-5) WFLYJPA0002: Read persistence.xml for testejbPersistenceUnit
+2020-04-22 18:06:24,577 INFO  [org.jboss.weld.deployer] (MSC service thread 1-5) WFLYWELD0003: Processing weld deployment testejb.war
+2020-04-22 18:06:25,062 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
+2020-04-22 18:06:25,142 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-5) HV000001: Hibernate Validator 6.0.18.Final
+2020-04-22 18:06:25,227 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-7) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.16.Final
+2020-04-22 18:06:25,275 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Started Driver service with driver-name = contactosejb.war_com.mysql.jdbc.Driver_5_1
+2020-04-22 18:06:25,538 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 76) WFLYJPA0003: Starting Persistence Unit Service 'contactosejb.war#contactosejbPersistenceUnit'
+2020-04-22 18:06:25,593 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 76) HHH000204: Processing PersistenceUnitInfo [
+	name: contactosejbPersistenceUnit
+	...]
+2020-04-22 18:06:25,674 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-5) WFLYEJB0473: JNDI bindings for session bean named 'DemoEJBBean' in deployment unit 'deployment "testejb.war"' are as follows:
+
+	java:global/testejb/DemoEJBBean!ec.edu.ups.appdis.testjb.business.DemoEJBBeanRemote
+	java:app/testejb/DemoEJBBean!ec.edu.ups.appdis.testjb.business.DemoEJBBeanRemote
+	java:module/DemoEJBBean!ec.edu.ups.appdis.testjb.business.DemoEJBBeanRemote
+	java:jboss/exported/testejb/DemoEJBBean!ec.edu.ups.appdis.testjb.business.DemoEJBBeanRemote
+	ejb:/testejb/DemoEJBBean!ec.edu.ups.appdis.testjb.business.DemoEJBBeanRemote
+	java:global/testejb/DemoEJBBean!ec.edu.ups.appdis.testjb.business.DemoEJBBeanLocal
+	java:app/testejb/DemoEJBBean!ec.edu.ups.appdis.testjb.business.DemoEJBBeanLocal
+	java:module/DemoEJBBean!ec.edu.ups.appdis.testjb.business.DemoEJBBeanLocal
+	ejb:/testejb/DemoEJBBean!ec.edu.ups.appdis.testjb.business.DemoEJBBeanLocal
+
+2020-04-22 18:06:25,868 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 76) HHH000412: Hibernate Core {5.3.13.Final}
+2020-04-22 18:06:25,870 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 76) HHH000206: hibernate.properties not found
+2020-04-22 18:06:25,916 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 77) WFLYCLINF0002: Started client-mappings cache from ejb container
+2020-04-22 18:06:26,152 INFO  [org.jboss.weld.Version] (MSC service thread 1-7) WELD-000900: 3.1.2 (Final)
+2020-04-22 18:06:26,406 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 76) HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+2020-04-22 18:06:26,523 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 77) WFLYJPA0003: Starting Persistence Unit Service 'testejb.war#testejbPersistenceUnit'
+2020-04-22 18:06:26,530 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 77) HHH000204: Processing PersistenceUnitInfo [
+	name: testejbPersistenceUnit
+	...]
+2020-04-22 18:06:26,946 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 76) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-22 18:06:26,946 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 77) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-22 18:06:26,959 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 76) HHH000431: Unable to determine H2 database version, certain features may not work
+2020-04-22 18:06:26,959 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 77) HHH000431: Unable to determine H2 database version, certain features may not work
+2020-04-22 18:06:27,046 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 76) Envers integration enabled? : true
+2020-04-22 18:06:27,046 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 77) Envers integration enabled? : true
+2020-04-22 18:06:27,305 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 76) HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2020-04-22 18:06:27,478 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 77) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@4576ef56'
+2020-04-22 18:06:27,480 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 76) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@4576ef56'
+2020-04-22 18:06:27,907 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-1) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+2020-04-22 18:06:27,932 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 79) Inicializando Mojarra 2.3.9.SP04 para el contexto '/contactosejb'
+2020-04-22 18:06:27,968 INFO  [io.smallrye.metrics] (MSC service thread 1-1) MicroProfile: Metrics activated
+2020-04-22 18:06:29,051 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 79) WFLYUT0021: Registered web context: '/contactosejb' for server 'default-server'
+2020-04-22 18:06:29,237 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 77) Inicializando Mojarra 2.3.9.SP04 para el contexto '/testejb'
+2020-04-22 18:06:29,555 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 77) WFLYUT0021: Registered web context: '/testejb' for server 'default-server'
+2020-04-22 18:06:29,657 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 44) WFLYSRV0010: Deployed "contactosejb.war" (runtime-name : "contactosejb.war")
+2020-04-22 18:06:29,658 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 44) WFLYSRV0010: Deployed "testejb.war" (runtime-name : "testejb.war")
+2020-04-22 18:06:29,741 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2020-04-22 18:06:29,744 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2020-04-22 18:06:29,744 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2020-04-22 18:06:29,745 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 18.0.1.Final (WildFly Core 10.0.3.Final) started in 15224ms - Started 561 of 774 services (379 services are lazy, passive or on-demand)
+2020-04-22 18:06:39,805 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 31) WFLYUT0022: Unregistered web context: '/testejb' from server 'default-server'
+2020-04-22 18:06:39,845 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 31) WFLYJPA0004: Stopping Persistence Unit Service 'testejb.war#testejbPersistenceUnit'
+2020-04-22 18:06:39,846 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 31) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@1470c613
+2020-04-22 18:06:40,033 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment testejb.war (runtime-name: testejb.war) in 244ms
+2020-04-22 18:06:40,147 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0009: Undeployed "testejb.war" (runtime-name: "testejb.war")
+2020-04-22 18:06:45,161 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found testejb.war in deployment directory. To trigger deployment create a file called testejb.war.dodeploy
+2020-04-22 18:06:50,179 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0019: Stopped Driver service with driver-name = contactosejb.war_com.mysql.jdbc.Driver_5_1
+2020-04-22 18:06:50,181 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 31) WFLYUT0022: Unregistered web context: '/contactosejb' from server 'default-server'
+2020-04-22 18:06:50,184 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 31) WFLYJPA0004: Stopping Persistence Unit Service 'contactosejb.war#contactosejbPersistenceUnit'
+2020-04-22 18:06:50,193 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment contactosejb.war (runtime-name: contactosejb.war) in 14ms
+2020-04-22 18:06:50,195 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "contactosejb.war" (runtime-name: "contactosejb.war")
+2020-04-22 18:06:50,360 INFO  [org.jboss.as.jpa] (MSC service thread 1-8) WFLYJPA0002: Read persistence.xml for contactosejbPersistenceUnit
+2020-04-22 18:06:50,436 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
+2020-04-22 18:06:50,469 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = contactosejb.war_com.mysql.jdbc.Driver_5_1
+2020-04-22 18:06:50,508 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 31) WFLYJPA0003: Starting Persistence Unit Service 'contactosejb.war#contactosejbPersistenceUnit'
+2020-04-22 18:06:50,508 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 31) HHH000204: Processing PersistenceUnitInfo [
+	name: contactosejbPersistenceUnit
+	...]
+2020-04-22 18:06:50,521 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 31) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-22 18:06:50,521 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 31) HHH000431: Unable to determine H2 database version, certain features may not work
+2020-04-22 18:06:50,526 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 31) Envers integration enabled? : true
+2020-04-22 18:06:50,534 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 31) HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2020-04-22 18:06:50,545 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 31) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@4576ef56'
+2020-04-22 18:06:50,551 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 31) Inicializando Mojarra 2.3.9.SP04 para el contexto '/contactosejb'
+2020-04-22 18:06:50,612 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 31) WFLYUT0021: Registered web context: '/contactosejb' for server 'default-server'
+2020-04-22 18:06:50,649 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0016: Replaced deployment "contactosejb.war" with deployment "contactosejb.war"
+2020-04-22 18:08:00,776 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0019: Stopped Driver service with driver-name = contactosejb.war_com.mysql.jdbc.Driver_5_1
+2020-04-22 18:08:00,778 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 31) WFLYUT0022: Unregistered web context: '/contactosejb' from server 'default-server'
+2020-04-22 18:08:00,787 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 82) WFLYJPA0004: Stopping Persistence Unit Service 'contactosejb.war#contactosejbPersistenceUnit'
+2020-04-22 18:08:00,792 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment contactosejb.war (runtime-name: contactosejb.war) in 17ms
+2020-04-22 18:08:00,794 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "contactosejb.war" (runtime-name: "contactosejb.war")
+2020-04-22 18:08:01,027 INFO  [org.jboss.as.jpa] (MSC service thread 1-6) WFLYJPA0002: Read persistence.xml for contactosejbPersistenceUnit
+2020-04-22 18:08:01,126 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
+2020-04-22 18:08:01,150 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = contactosejb.war_com.mysql.jdbc.Driver_5_1
+2020-04-22 18:08:01,150 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 82) WFLYJPA0003: Starting Persistence Unit Service 'contactosejb.war#contactosejbPersistenceUnit'
+2020-04-22 18:08:01,150 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 82) HHH000204: Processing PersistenceUnitInfo [
+	name: contactosejbPersistenceUnit
+	...]
+2020-04-22 18:08:01,159 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 82) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-22 18:08:01,160 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 82) HHH000431: Unable to determine H2 database version, certain features may not work
+2020-04-22 18:08:01,164 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 82) Envers integration enabled? : true
+2020-04-22 18:08:01,167 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 82) HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2020-04-22 18:08:01,176 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 82) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@4576ef56'
+2020-04-22 18:08:01,187 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 31) Inicializando Mojarra 2.3.9.SP04 para el contexto '/contactosejb'
+2020-04-22 18:08:01,262 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 31) WFLYUT0021: Registered web context: '/contactosejb' for server 'default-server'
+2020-04-22 18:08:01,284 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0016: Replaced deployment "contactosejb.war" with deployment "contactosejb.war"
+2020-04-22 18:09:01,355 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0019: Stopped Driver service with driver-name = contactosejb.war_com.mysql.jdbc.Driver_5_1
+2020-04-22 18:09:01,357 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 31) WFLYUT0022: Unregistered web context: '/contactosejb' from server 'default-server'
+2020-04-22 18:09:01,371 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 85) WFLYJPA0004: Stopping Persistence Unit Service 'contactosejb.war#contactosejbPersistenceUnit'
+2020-04-22 18:09:01,376 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment contactosejb.war (runtime-name: contactosejb.war) in 21ms
+2020-04-22 18:09:01,379 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "contactosejb.war" (runtime-name: "contactosejb.war")
+2020-04-22 18:09:01,485 INFO  [org.jboss.as.jpa] (MSC service thread 1-7) WFLYJPA0002: Read persistence.xml for contactosejbPersistenceUnit
+2020-04-22 18:09:01,653 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
+2020-04-22 18:09:01,703 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 85) WFLYJPA0003: Starting Persistence Unit Service 'contactosejb.war#contactosejbPersistenceUnit'
+2020-04-22 18:09:01,704 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 85) HHH000204: Processing PersistenceUnitInfo [
+	name: contactosejbPersistenceUnit
+	...]
+2020-04-22 18:09:01,704 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0018: Started Driver service with driver-name = contactosejb.war_com.mysql.jdbc.Driver_5_1
+2020-04-22 18:09:01,715 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 85) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-22 18:09:01,723 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 85) HHH000431: Unable to determine H2 database version, certain features may not work
+2020-04-22 18:09:01,727 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 85) Envers integration enabled? : true
+2020-04-22 18:09:01,736 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 85) HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2020-04-22 18:09:01,747 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 85) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@4576ef56'
+2020-04-22 18:09:01,764 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 87) Inicializando Mojarra 2.3.9.SP04 para el contexto '/contactosejb'
+2020-04-22 18:09:01,892 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 87) WFLYUT0021: Registered web context: '/contactosejb' for server 'default-server'
+2020-04-22 18:09:01,946 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) WFLYSRV0016: Replaced deployment "contactosejb.war" with deployment "contactosejb.war"
+2020-04-22 18:09:25,594 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0272: Suspending server
+2020-04-22 18:09:25,596 INFO  [org.jboss.as.ejb3] (management-handler-thread - 2) WFLYEJB0493: EJB subsystem suspension complete
+2020-04-22 18:09:25,603 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+2020-04-22 18:09:25,620 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0019: Stopped Driver service with driver-name = contactosejb.war_com.mysql.jdbc.Driver_5_1
+2020-04-22 18:09:25,630 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 87) WFLYUT0022: Unregistered web context: '/contactosejb' from server 'default-server'
+2020-04-22 18:09:25,713 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-6) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2020-04-22 18:09:25,713 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 89) WFLYJPA0004: Stopping Persistence Unit Service 'contactosejb.war#contactosejbPersistenceUnit'
+2020-04-22 18:09:25,728 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2020-04-22 18:09:25,729 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0019: Host default-host stopping
+2020-04-22 18:09:25,747 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 89) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2020-04-22 18:09:25,757 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0008: Undertow HTTP listener default suspending
+2020-04-22 18:09:25,757 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2020-04-22 18:09:25,759 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0008: Undertow HTTPS listener https suspending
+2020-04-22 18:09:25,766 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2020-04-22 18:09:25,767 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment contactosejb.war (runtime-name: contactosejb.war) in 92ms
+2020-04-22 18:09:25,769 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2020-04-22 18:09:25,772 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0004: Undertow 2.0.27.Final stopping
+2020-04-22 18:09:25,806 INFO  [org.jboss.as] (MSC service thread 1-5) WFLYSRV0050: WildFly Full 18.0.1.Final (WildFly Core 10.0.3.Final) stopped in 105ms
+2020-04-22 18:09:26,858 INFO  [org.jboss.modules] (main) JBoss Modules version 1.9.1.Final
+2020-04-22 18:09:27,596 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.11.Final
+2020-04-22 18:09:27,606 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.3.Final
+2020-04-22 18:09:27,734 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 18.0.1.Final (WildFly Core 10.0.3.Final) starting
+2020-04-22 18:09:27,736 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/jmurillo/bin/wildfly-18.0.1.Final/jboss-modules.jar
+	java.class.version = 55.0
+	java.home = /usr/lib/jvm/java-11-openjdk-amd64
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 11.0.7+10-post-Ubuntu-2ubuntu218.04
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 11
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Ubuntu
+	java.vendor.url = https://ubuntu.com/
+	java.vendor.url.bug = https://bugs.launchpad.net/ubuntu/+source/openjdk-lts
+	java.version = 11.0.7
+	java.version.date = 2020-04-14
+	java.vm.compressedOopsMode = 32-bit
+	java.vm.info = mixed mode, sharing
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 11
+	java.vm.vendor = Ubuntu
+	java.vm.version = 11.0.7+10-post-Ubuntu-2ubuntu218.04
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = /home/jmurillo/bin/wildfly-18.0.1.Final
+	jboss.host.name = jmurillo-h81m-h
+	jboss.modules.dir = /home/jmurillo/bin/wildfly-18.0.1.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = jmurillo-h81m-h
+	jboss.qualified.host.name = jmurillo-h81m-h
+	jboss.server.base.dir = /home/jmurillo/bin/wildfly-18.0.1.Final/standalone
+	jboss.server.config.dir = /home/jmurillo/bin/wildfly-18.0.1.Final/standalone/configuration
+	jboss.server.data.dir = /home/jmurillo/bin/wildfly-18.0.1.Final/standalone/data
+	jboss.server.deploy.dir = /home/jmurillo/bin/wildfly-18.0.1.Final/standalone/data/content
+	jboss.server.log.dir = /home/jmurillo/bin/wildfly-18.0.1.Final/standalone/log
+	jboss.server.name = jmurillo-h81m-h
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/jmurillo/bin/wildfly-18.0.1.Final/standalone/tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/home/jmurillo/bin/wildfly-18.0.1.Final/standalone/configuration/logging.properties
+	module.path = /home/jmurillo/bin/wildfly-18.0.1.Final/modules
+	org.jboss.boot.log.file = /home/jmurillo/bin/wildfly-18.0.1.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Linux
+	os.version = 5.3.0-46-generic
+	path.separator = :
+	program.name = JBossTools: WildFly 18 at localhost
+	sun.arch.data.model = 64
+	sun.boot.library.path = /usr/lib/jvm/java-11-openjdk-amd64/lib
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.desktop = gnome
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp /home/jmurillo/bin/wildfly-18.0.1.Final/modules org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=/home/jmurillo/bin/wildfly-18.0.1.Final/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = EC
+	user.dir = /home/jmurillo/bin/wildfly-18.0.1.Final/bin
+	user.home = /home/jmurillo
+	user.language = es
+	user.name = jmurillo
+	user.timezone = America/Guayaquil
+2020-04-22 18:09:27,758 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -Dprogram.name=JBossTools: WildFly 18 at localhost -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/home/jmurillo/bin/wildfly-18.0.1.Final/standalone/log/boot.log -Dlogging.configuration=file:/home/jmurillo/bin/wildfly-18.0.1.Final/standalone/configuration/logging.properties -Djboss.home.dir=/home/jmurillo/bin/wildfly-18.0.1.Final -Dorg.jboss.logmanager.nocolor=true --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED --add-modules=java.se -Djboss.bind.address.management=localhost -Dfile.encoding=UTF-8 
+2020-04-22 18:09:28,883 INFO  [org.wildfly.security] (ServerService Thread Pool -- 25) ELY00001: WildFly Elytron version 1.10.4.Final
+2020-04-22 18:09:29,719 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2020-04-22 18:09:29,813 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 36) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2020-04-22 18:09:29,814 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found testejb.war in deployment directory. To trigger deployment create a file called testejb.war.dodeploy
+2020-04-22 18:09:29,831 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found contactosejb.war in deployment directory. To trigger deployment create a file called contactosejb.war.dodeploy
+2020-04-22 18:09:29,920 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2020-04-22 18:09:29,941 INFO  [org.xnio] (MSC service thread 1-4) XNIO version 3.7.3.Final
+2020-04-22 18:09:29,955 INFO  [org.xnio.nio] (MSC service thread 1-4) XNIO NIO Implementation Version 3.7.3.Final
+2020-04-22 18:09:30,013 INFO  [org.jboss.remoting] (MSC service thread 1-3) JBoss Remoting version 5.0.15.Final
+2020-04-22 18:09:30,060 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 51) WFLYCLINF0001: Activating Infinispan subsystem.
+2020-04-22 18:09:30,116 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 60) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+2020-04-22 18:09:30,153 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 64) WFLYNAM0001: Activating Naming Subsystem
+2020-04-22 18:09:30,204 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 70) WFLYSEC0002: Activating Security Subsystem
+2020-04-22 18:09:30,206 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 72) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2020-04-22 18:09:30,193 INFO  [org.jboss.as.naming] (MSC service thread 1-7) WFLYNAM0003: Starting Naming Service
+2020-04-22 18:09:30,246 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 61) WFLYHEALTH0001: Activating Eclipse MicroProfile Health Subsystem
+2020-04-22 18:09:30,125 INFO  [org.jboss.as.connector] (MSC service thread 1-2) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.17.Final)
+2020-04-22 18:09:30,123 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 58) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2020-04-22 18:09:30,247 INFO  [org.wildfly.extension.microprofile.metrics.smallrye] (ServerService Thread Pool -- 62) WFLYMETRICS0001: Activating Eclipse MicroProfile Metrics Subsystem
+2020-04-22 18:09:30,248 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 63) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2020-04-22 18:09:30,255 INFO  [org.jboss.as.security] (MSC service thread 1-5) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2020-04-22 18:09:30,276 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 52) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2020-04-22 18:09:30,281 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-4) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2020-04-22 18:09:30,311 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 74) WFLYWS0002: Activating WebServices Extension
+2020-04-22 18:09:30,367 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 53) WFLYRS0016: RESTEasy version 3.9.1.Final
+2020-04-22 18:09:30,430 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 43) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2020-04-22 18:09:30,465 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = h2
+2020-04-22 18:09:30,472 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0003: Undertow 2.0.27.Final starting
+2020-04-22 18:09:30,726 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 73) WFLYUT0014: Creating file handler for path '/home/jmurillo/bin/wildfly-18.0.1.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2020-04-22 18:09:30,750 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0012: Started server default-server.
+2020-04-22 18:09:30,752 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0018: Host default-host starting
+2020-04-22 18:09:30,759 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2020-04-22 18:09:30,776 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2020-04-22 18:09:30,902 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2020-04-22 18:09:31,044 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0493: EJB subsystem suspension complete
+2020-04-22 18:09:31,121 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2020-04-22 18:09:31,287 INFO  [org.jboss.as.patching] (MSC service thread 1-8) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2020-04-22 18:09:31,308 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-1) WFLYDM0111: Keystore /home/jmurillo/bin/wildfly-18.0.1.Final/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2020-04-22 18:09:31,330 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-7) WFLYDS0013: Started FileSystemDeploymentService for directory /home/jmurillo/bin/wildfly-18.0.1.Final/standalone/deployments
+2020-04-22 18:09:31,343 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "contactosejb.war" (runtime-name: "contactosejb.war")
+2020-04-22 18:09:31,476 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2020-04-22 18:09:31,559 INFO  [org.jboss.ws.common.management] (MSC service thread 1-6) JBWS022052: Starting JBossWS 5.3.0.Final (Apache CXF 3.3.3) 
+2020-04-22 18:09:32,124 INFO  [org.jboss.as.jpa] (MSC service thread 1-6) WFLYJPA0002: Read persistence.xml for contactosejbPersistenceUnit
+2020-04-22 18:09:32,619 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-3) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.16.Final
+2020-04-22 18:09:32,676 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
+2020-04-22 18:09:32,746 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = contactosejb.war_com.mysql.jdbc.Driver_5_1
+2020-04-22 18:09:32,875 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 76) WFLYJPA0003: Starting Persistence Unit Service 'contactosejb.war#contactosejbPersistenceUnit'
+2020-04-22 18:09:32,906 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 76) HHH000204: Processing PersistenceUnitInfo [
+	name: contactosejbPersistenceUnit
+	...]
+2020-04-22 18:09:32,999 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 76) HHH000412: Hibernate Core {5.3.13.Final}
+2020-04-22 18:09:33,001 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 76) HHH000206: hibernate.properties not found
+2020-04-22 18:09:33,200 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 77) WFLYCLINF0002: Started client-mappings cache from ejb container
+2020-04-22 18:09:33,271 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 76) HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+2020-04-22 18:09:33,510 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 76) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-22 18:09:33,516 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 76) HHH000431: Unable to determine H2 database version, certain features may not work
+2020-04-22 18:09:33,580 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 76) Envers integration enabled? : true
+2020-04-22 18:09:33,738 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 76) HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2020-04-22 18:09:33,839 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 76) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@44ffcdbd'
+2020-04-22 18:09:34,049 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 79) Inicializando Mojarra 2.3.9.SP04 para el contexto '/contactosejb'
+2020-04-22 18:09:34,600 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 79) WFLYUT0021: Registered web context: '/contactosejb' for server 'default-server'
+2020-04-22 18:09:34,697 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 44) WFLYSRV0010: Deployed "contactosejb.war" (runtime-name : "contactosejb.war")
+2020-04-22 18:09:34,843 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2020-04-22 18:09:34,847 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2020-04-22 18:09:34,847 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2020-04-22 18:09:34,847 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 18.0.1.Final (WildFly Core 10.0.3.Final) started in 8615ms - Started 437 of 652 services (374 services are lazy, passive or on-demand)
+2020-04-22 18:10:09,817 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0019: Stopped Driver service with driver-name = contactosejb.war_com.mysql.jdbc.Driver_5_1
+2020-04-22 18:10:09,823 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 79) WFLYUT0022: Unregistered web context: '/contactosejb' from server 'default-server'
+2020-04-22 18:10:09,840 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 83) WFLYJPA0004: Stopping Persistence Unit Service 'contactosejb.war#contactosejbPersistenceUnit'
+2020-04-22 18:10:09,875 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment contactosejb.war (runtime-name: contactosejb.war) in 60ms
+2020-04-22 18:10:09,878 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "contactosejb.war" (runtime-name: "contactosejb.war")
+2020-04-22 18:10:10,097 INFO  [org.jboss.as.jpa] (MSC service thread 1-1) WFLYJPA0002: Read persistence.xml for contactosejbPersistenceUnit
+2020-04-22 18:10:10,167 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) WFLYWELD0003: Processing weld deployment contactosejb.war
+2020-04-22 18:10:10,320 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-4) HV000001: Hibernate Validator 6.0.18.Final
+2020-04-22 18:10:10,539 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'ContactosONEJB' in deployment unit 'deployment "contactosejb.war"' are as follows:
+
+	java:global/contactosejb/ContactosONEJB!ec.edu.ups.appdis.contactosejb.business.ContactosONEJBRemote
+	java:app/contactosejb/ContactosONEJB!ec.edu.ups.appdis.contactosejb.business.ContactosONEJBRemote
+	java:module/ContactosONEJB!ec.edu.ups.appdis.contactosejb.business.ContactosONEJBRemote
+	java:jboss/exported/contactosejb/ContactosONEJB!ec.edu.ups.appdis.contactosejb.business.ContactosONEJBRemote
+	ejb:/contactosejb/ContactosONEJB!ec.edu.ups.appdis.contactosejb.business.ContactosONEJBRemote
+	java:global/contactosejb/ContactosONEJB!ec.edu.ups.appdis.contactosejb.business.ContactosONEJBLocal
+	java:app/contactosejb/ContactosONEJB!ec.edu.ups.appdis.contactosejb.business.ContactosONEJBLocal
+	java:module/ContactosONEJB!ec.edu.ups.appdis.contactosejb.business.ContactosONEJBLocal
+	ejb:/contactosejb/ContactosONEJB!ec.edu.ups.appdis.contactosejb.business.ContactosONEJBLocal
+
+2020-04-22 18:10:10,540 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'PersonaDAO' in deployment unit 'deployment "contactosejb.war"' are as follows:
+
+	java:global/contactosejb/PersonaDAO!ec.edu.ups.appdis.contactosejb.data.PersonaDAO
+	java:app/contactosejb/PersonaDAO!ec.edu.ups.appdis.contactosejb.data.PersonaDAO
+	java:module/PersonaDAO!ec.edu.ups.appdis.contactosejb.data.PersonaDAO
+	ejb:/contactosejb/PersonaDAO!ec.edu.ups.appdis.contactosejb.data.PersonaDAO
+	java:global/contactosejb/PersonaDAO
+	java:app/contactosejb/PersonaDAO
+	java:module/PersonaDAO
+
+2020-04-22 18:10:10,541 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'TelefonoDAO' in deployment unit 'deployment "contactosejb.war"' are as follows:
+
+	java:global/contactosejb/TelefonoDAO!ec.edu.ups.appdis.contactosejb.data.TelefonoDAO
+	java:app/contactosejb/TelefonoDAO!ec.edu.ups.appdis.contactosejb.data.TelefonoDAO
+	java:module/TelefonoDAO!ec.edu.ups.appdis.contactosejb.data.TelefonoDAO
+	ejb:/contactosejb/TelefonoDAO!ec.edu.ups.appdis.contactosejb.data.TelefonoDAO
+	java:global/contactosejb/TelefonoDAO
+	java:app/contactosejb/TelefonoDAO
+	java:module/TelefonoDAO
+
+2020-04-22 18:10:10,619 WARN  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0131: EJB ec.edu.ups.appdis.contactosejb.business.ContactosONEJB should not have a final or static method (validarCedula)
+2020-04-22 18:10:10,620 WARN  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0131: EJB ec.edu.ups.appdis.contactosejb.business.ContactosONEJBLocal should not have a final or static method (validarCedula)
+2020-04-22 18:10:10,620 WARN  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0131: EJB ec.edu.ups.appdis.contactosejb.business.ContactosONEJBRemote should not have a final or static method (validarCedula)
+2020-04-22 18:10:10,763 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
+2020-04-22 18:10:10,819 INFO  [org.jboss.weld.Version] (MSC service thread 1-8) WELD-000900: 3.1.2 (Final)
+2020-04-22 18:10:10,878 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = contactosejb.war_com.mysql.jdbc.Driver_5_1
+2020-04-22 18:10:11,145 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 83) WFLYJPA0003: Starting Persistence Unit Service 'contactosejb.war#contactosejbPersistenceUnit'
+2020-04-22 18:10:11,147 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 83) HHH000204: Processing PersistenceUnitInfo [
+	name: contactosejbPersistenceUnit
+	...]
+2020-04-22 18:10:11,195 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 83) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-22 18:10:11,196 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 83) HHH000431: Unable to determine H2 database version, certain features may not work
+2020-04-22 18:10:11,206 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 83) Envers integration enabled? : true
+2020-04-22 18:10:11,226 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 83) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@44ffcdbd'
+2020-04-22 18:10:11,441 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-3) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+2020-04-22 18:10:11,486 INFO  [io.smallrye.metrics] (MSC service thread 1-3) MicroProfile: Metrics activated
+2020-04-22 18:10:12,229 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 82) Inicializando Mojarra 2.3.9.SP04 para el contexto '/contactosejb'
+2020-04-22 18:10:12,502 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 82) WFLYUT0021: Registered web context: '/contactosejb' for server 'default-server'
+2020-04-22 18:10:12,567 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) WFLYSRV0016: Replaced deployment "contactosejb.war" with deployment "contactosejb.war"
+2020-04-22 18:11:34,832 INFO  [stdout] (default task-1) Conectado BD
+2020-04-22 18:11:40,390 INFO  [stdout] (default task-1) Conectado BD
+2020-04-22 18:11:40,421 INFO  [stdout] (default task-1) Conectado BD
+2020-04-22 19:28:15,413 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found testjpa.war in deployment directory. To trigger deployment create a file called testjpa.war.dodeploy
+2020-04-22 19:28:15,421 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "testjpa.war" (runtime-name: "testjpa.war")
+2020-04-22 19:28:15,489 INFO  [org.jboss.as.jpa] (MSC service thread 1-2) WFLYJPA0002: Read persistence.xml for testjpaPersistenceUnit
+2020-04-22 19:28:15,504 WARN  [org.jboss.as.connector] (MSC service thread 1-2) WFLYJCA0091: -ds.xml file deployments are deprecated. Support may be removed in a future version.
+2020-04-22 19:28:15,533 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:jboss/datasources/mywebappDS]
+2020-04-22 19:28:15,535 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 82) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 19:28:15,536 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 82) HHH000204: Processing PersistenceUnitInfo [
+	name: testjpaPersistenceUnit
+	...]
+2020-04-22 19:28:15,597 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 82) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 19:28:15,609 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 82) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-22 19:28:15,610 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 82) HHH000431: Unable to determine H2 database version, certain features may not work
+2020-04-22 19:28:15,626 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 82) Envers integration enabled? : true
+2020-04-22 19:28:15,744 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 82) HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2020-04-22 19:28:16,068 INFO  [stdout] (ServerService Thread Pool -- 82) Hibernate: drop table Persona if exists
+2020-04-22 19:28:16,074 INFO  [stdout] (ServerService Thread Pool -- 82) Hibernate: create table Persona (cedula varchar(255) not null, edad integer not null, nombre varchar(255), primary key (cedula))
+2020-04-22 19:28:16,081 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 82) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@44ffcdbd'
+2020-04-22 19:28:16,094 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 86) Inicializando Mojarra 2.3.9.SP04 para el contexto '/testjpa'
+2020-04-22 19:28:16,164 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 86) WFLYUT0021: Registered web context: '/testjpa' for server 'default-server'
+2020-04-22 19:28:16,226 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0010: Deployed "testjpa.war" (runtime-name : "testjpa.war")
+2020-04-22 19:28:41,259 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0019: Stopped Driver service with driver-name = contactosejb.war_com.mysql.jdbc.Driver_5_1
+2020-04-22 19:28:41,262 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 87) WFLYUT0022: Unregistered web context: '/contactosejb' from server 'default-server'
+2020-04-22 19:28:41,299 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 87) WFLYJPA0004: Stopping Persistence Unit Service 'contactosejb.war#contactosejbPersistenceUnit'
+2020-04-22 19:28:41,300 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 87) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@42f4e806
+2020-04-22 19:28:41,318 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment contactosejb.war (runtime-name: contactosejb.war) in 58ms
+2020-04-22 19:28:41,333 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0009: Undeployed "contactosejb.war" (runtime-name: "contactosejb.war")
+2020-04-22 19:28:46,338 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found contactosejb.war in deployment directory. To trigger deployment create a file called contactosejb.war.dodeploy
+2020-04-22 19:28:46,347 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 89) WFLYUT0022: Unregistered web context: '/testjpa' from server 'default-server'
+2020-04-22 19:28:46,350 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 89) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 19:28:46,352 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 89) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 19:28:46,352 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0010: Unbound data source [java:jboss/datasources/mywebappDS]
+2020-04-22 19:28:46,358 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment testjpa.war (runtime-name: testjpa.war) in 14ms
+2020-04-22 19:28:46,359 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "testjpa.war" (runtime-name: "testjpa.war")
+2020-04-22 19:28:46,436 INFO  [org.jboss.as.jpa] (MSC service thread 1-7) WFLYJPA0002: Read persistence.xml for testjpaPersistenceUnit
+2020-04-22 19:28:46,438 WARN  [org.jboss.as.connector] (MSC service thread 1-7) WFLYJCA0091: -ds.xml file deployments are deprecated. Support may be removed in a future version.
+2020-04-22 19:28:46,475 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:jboss/datasources/mywebappDS]
+2020-04-22 19:28:46,500 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 89) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 19:28:46,500 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 89) HHH000204: Processing PersistenceUnitInfo [
+	name: testjpaPersistenceUnit
+	...]
+2020-04-22 19:28:46,581 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 89) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 19:28:46,586 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 89) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-22 19:28:46,587 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 89) HHH000431: Unable to determine H2 database version, certain features may not work
+2020-04-22 19:28:46,594 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 89) Envers integration enabled? : true
+2020-04-22 19:28:46,604 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 89) HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2020-04-22 19:28:46,684 INFO  [stdout] (ServerService Thread Pool -- 89) Hibernate: drop table Persona if exists
+2020-04-22 19:28:46,699 INFO  [stdout] (ServerService Thread Pool -- 89) Hibernate: create table Persona (cedula varchar(255) not null, edad integer not null, nombre varchar(255), primary key (cedula))
+2020-04-22 19:28:46,706 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 89) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@44ffcdbd'
+2020-04-22 19:28:46,754 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 89) Inicializando Mojarra 2.3.9.SP04 para el contexto '/testjpa'
+2020-04-22 19:28:46,826 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 89) WFLYUT0021: Registered web context: '/testjpa' for server 'default-server'
+2020-04-22 19:28:46,879 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0016: Replaced deployment "testjpa.war" with deployment "testjpa.war"
+2020-04-22 19:30:51,953 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 89) WFLYUT0022: Unregistered web context: '/testjpa' from server 'default-server'
+2020-04-22 19:30:51,956 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 94) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 19:30:51,965 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 94) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 19:30:51,966 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/mywebappDS]
+2020-04-22 19:30:51,972 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment testjpa.war (runtime-name: testjpa.war) in 23ms
+2020-04-22 19:30:51,973 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "testjpa.war" (runtime-name: "testjpa.war")
+2020-04-22 19:30:52,033 INFO  [org.jboss.as.jpa] (MSC service thread 1-3) WFLYJPA0002: Read persistence.xml for testjpaPersistenceUnit
+2020-04-22 19:30:52,034 WARN  [org.jboss.as.connector] (MSC service thread 1-3) WFLYJCA0091: -ds.xml file deployments are deprecated. Support may be removed in a future version.
+2020-04-22 19:30:52,069 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:jboss/datasources/mywebappDS]
+2020-04-22 19:30:52,089 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 94) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 19:30:52,090 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 94) HHH000204: Processing PersistenceUnitInfo [
+	name: testjpaPersistenceUnit
+	...]
+2020-04-22 19:30:52,143 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 94) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 19:30:52,145 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 94) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-22 19:30:52,145 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 94) HHH000431: Unable to determine H2 database version, certain features may not work
+2020-04-22 19:30:52,152 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 94) Envers integration enabled? : true
+2020-04-22 19:30:52,168 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 94) HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2020-04-22 19:30:52,206 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 94) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@44ffcdbd'
+2020-04-22 19:30:52,211 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 89) Inicializando Mojarra 2.3.9.SP04 para el contexto '/testjpa'
+2020-04-22 19:30:52,252 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 89) WFLYUT0021: Registered web context: '/testjpa' for server 'default-server'
+2020-04-22 19:30:52,282 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0016: Replaced deployment "testjpa.war" with deployment "testjpa.war"
+2020-04-22 19:31:12,298 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 95) WFLYUT0022: Unregistered web context: '/testjpa' from server 'default-server'
+2020-04-22 19:31:12,301 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 96) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 19:31:12,303 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 96) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 19:31:12,304 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0010: Unbound data source [java:jboss/datasources/mywebappDS]
+2020-04-22 19:31:12,307 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment testjpa.war (runtime-name: testjpa.war) in 12ms
+2020-04-22 19:31:12,310 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "testjpa.war" (runtime-name: "testjpa.war")
+2020-04-22 19:31:12,355 INFO  [org.jboss.as.jpa] (MSC service thread 1-1) WFLYJPA0002: Read persistence.xml for testjpaPersistenceUnit
+2020-04-22 19:31:12,356 WARN  [org.jboss.as.connector] (MSC service thread 1-1) WFLYJCA0091: -ds.xml file deployments are deprecated. Support may be removed in a future version.
+2020-04-22 19:31:12,373 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:jboss/datasources/mywebappDS]
+2020-04-22 19:31:12,413 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 96) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 19:31:12,413 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 96) HHH000204: Processing PersistenceUnitInfo [
+	name: testjpaPersistenceUnit
+	...]
+2020-04-22 19:31:12,471 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 96) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 19:31:12,473 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 96) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-22 19:31:12,473 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 96) HHH000431: Unable to determine H2 database version, certain features may not work
+2020-04-22 19:31:12,477 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 96) Envers integration enabled? : true
+2020-04-22 19:31:12,483 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 96) HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2020-04-22 19:31:12,549 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 96) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@44ffcdbd'
+2020-04-22 19:31:12,588 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 97) Inicializando Mojarra 2.3.9.SP04 para el contexto '/testjpa'
+2020-04-22 19:31:12,647 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 97) WFLYUT0021: Registered web context: '/testjpa' for server 'default-server'
+2020-04-22 19:31:12,671 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0016: Replaced deployment "testjpa.war" with deployment "testjpa.war"
+2020-04-22 19:31:47,700 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 97) WFLYUT0022: Unregistered web context: '/testjpa' from server 'default-server'
+2020-04-22 19:31:47,706 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 100) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 19:31:47,708 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 100) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 19:31:47,708 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/mywebappDS]
+2020-04-22 19:31:47,712 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment testjpa.war (runtime-name: testjpa.war) in 14ms
+2020-04-22 19:31:47,713 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "testjpa.war" (runtime-name: "testjpa.war")
+2020-04-22 19:31:47,764 INFO  [org.jboss.as.jpa] (MSC service thread 1-7) WFLYJPA0002: Read persistence.xml for testjpaPersistenceUnit
+2020-04-22 19:31:47,766 WARN  [org.jboss.as.connector] (MSC service thread 1-7) WFLYJCA0091: -ds.xml file deployments are deprecated. Support may be removed in a future version.
+2020-04-22 19:31:47,786 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:jboss/datasources/mywebappDS]
+2020-04-22 19:31:47,808 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 100) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 19:31:47,808 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 100) HHH000204: Processing PersistenceUnitInfo [
+	name: testjpaPersistenceUnit
+	...]
+2020-04-22 19:31:47,842 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 100) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 19:31:47,844 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 100) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-22 19:31:47,844 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 100) HHH000431: Unable to determine H2 database version, certain features may not work
+2020-04-22 19:31:47,852 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 100) Envers integration enabled? : true
+2020-04-22 19:31:47,863 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 100) HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2020-04-22 19:31:47,908 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 100) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@44ffcdbd'
+2020-04-22 19:31:47,913 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 98) Inicializando Mojarra 2.3.9.SP04 para el contexto '/testjpa'
+2020-04-22 19:31:47,960 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 98) WFLYUT0021: Registered web context: '/testjpa' for server 'default-server'
+2020-04-22 19:31:47,986 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0016: Replaced deployment "testjpa.war" with deployment "testjpa.war"
+2020-04-22 19:50:08,492 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 98) WFLYUT0022: Unregistered web context: '/testjpa' from server 'default-server'
+2020-04-22 19:50:08,498 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 101) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 19:50:08,499 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 101) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 19:50:08,500 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0010: Unbound data source [java:jboss/datasources/mywebappDS]
+2020-04-22 19:50:08,503 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment testjpa.war (runtime-name: testjpa.war) in 15ms
+2020-04-22 19:50:08,505 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "testjpa.war" (runtime-name: "testjpa.war")
+2020-04-22 19:50:08,547 INFO  [org.jboss.as.jpa] (MSC service thread 1-7) WFLYJPA0002: Read persistence.xml for testjpaPersistenceUnit
+2020-04-22 19:50:08,549 WARN  [org.jboss.as.connector] (MSC service thread 1-7) WFLYJCA0091: -ds.xml file deployments are deprecated. Support may be removed in a future version.
+2020-04-22 19:50:08,563 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0001: Bound data source [java:jboss/datasources/mywebappDS]
+2020-04-22 19:50:08,567 INFO  [org.jboss.weld.deployer] (MSC service thread 1-6) WFLYWELD0003: Processing weld deployment testjpa.war
+2020-04-22 19:50:08,589 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 101) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 19:50:08,590 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 101) HHH000204: Processing PersistenceUnitInfo [
+	name: testjpaPersistenceUnit
+	...]
+2020-04-22 19:50:08,598 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'PersonaDAO' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	java:app/testjpa/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	java:module/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	ejb:/testjpa/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	java:global/testjpa/PersonaDAO
+	java:app/testjpa/PersonaDAO
+	java:module/PersonaDAO
+
+2020-04-22 19:50:08,707 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 101) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 19:50:08,711 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 101) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-22 19:50:08,711 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 101) HHH000431: Unable to determine H2 database version, certain features may not work
+2020-04-22 19:50:08,717 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 101) Envers integration enabled? : true
+2020-04-22 19:50:08,789 INFO  [stdout] (ServerService Thread Pool -- 101) Hibernate: drop table Persona if exists
+2020-04-22 19:50:08,791 INFO  [stdout] (ServerService Thread Pool -- 101) Hibernate: create table Persona (cedula varchar(255) not null, edad integer not null, nombre varchar(255), primary key (cedula))
+2020-04-22 19:50:08,793 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 101) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@44ffcdbd'
+2020-04-22 19:50:08,874 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-2) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+2020-04-22 19:50:08,875 INFO  [io.smallrye.metrics] (MSC service thread 1-2) MicroProfile: Metrics activated
+2020-04-22 19:50:09,161 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 101) Inicializando Mojarra 2.3.9.SP04 para el contexto '/testjpa'
+2020-04-22 19:50:09,218 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 101) WFLYUT0021: Registered web context: '/testjpa' for server 'default-server'
+2020-04-22 19:50:09,252 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) WFLYSRV0016: Replaced deployment "testjpa.war" with deployment "testjpa.war"
+2020-04-22 19:56:24,437 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "testejb.war" (runtime-name: "testejb.war")
+2020-04-22 19:56:24,551 INFO  [org.jboss.as.jpa] (MSC service thread 1-7) WFLYJPA0002: Read persistence.xml for testejbPersistenceUnit
+2020-04-22 19:56:24,577 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) WFLYWELD0003: Processing weld deployment testejb.war
+2020-04-22 19:56:24,626 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'DemoEJBBean' in deployment unit 'deployment "testejb.war"' are as follows:
+
+	java:global/testejb/DemoEJBBean!ec.edu.ups.appdis.testjb.business.DemoEJBBeanRemote
+	java:app/testejb/DemoEJBBean!ec.edu.ups.appdis.testjb.business.DemoEJBBeanRemote
+	java:module/DemoEJBBean!ec.edu.ups.appdis.testjb.business.DemoEJBBeanRemote
+	java:jboss/exported/testejb/DemoEJBBean!ec.edu.ups.appdis.testjb.business.DemoEJBBeanRemote
+	ejb:/testejb/DemoEJBBean!ec.edu.ups.appdis.testjb.business.DemoEJBBeanRemote
+	java:global/testejb/DemoEJBBean!ec.edu.ups.appdis.testjb.business.DemoEJBBeanLocal
+	java:app/testejb/DemoEJBBean!ec.edu.ups.appdis.testjb.business.DemoEJBBeanLocal
+	java:module/DemoEJBBean!ec.edu.ups.appdis.testjb.business.DemoEJBBeanLocal
+	ejb:/testejb/DemoEJBBean!ec.edu.ups.appdis.testjb.business.DemoEJBBeanLocal
+
+2020-04-22 19:56:24,776 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 101) WFLYJPA0003: Starting Persistence Unit Service 'testejb.war#testejbPersistenceUnit'
+2020-04-22 19:56:24,776 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 101) HHH000204: Processing PersistenceUnitInfo [
+	name: testejbPersistenceUnit
+	...]
+2020-04-22 19:56:24,828 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 101) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-22 19:56:24,828 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 101) HHH000431: Unable to determine H2 database version, certain features may not work
+2020-04-22 19:56:24,841 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 101) Envers integration enabled? : true
+2020-04-22 19:56:24,860 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 101) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@44ffcdbd'
+2020-04-22 19:56:24,943 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-7) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+2020-04-22 19:56:24,945 INFO  [io.smallrye.metrics] (MSC service thread 1-7) MicroProfile: Metrics activated
+2020-04-22 19:56:25,269 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 101) Inicializando Mojarra 2.3.9.SP04 para el contexto '/testejb'
+2020-04-22 19:56:25,382 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 101) WFLYUT0021: Registered web context: '/testejb' for server 'default-server'
+2020-04-22 19:56:25,397 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0010: Deployed "testejb.war" (runtime-name : "testejb.war")
+2020-04-22 19:58:25,470 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 111) WFLYUT0022: Unregistered web context: '/testejb' from server 'default-server'
+2020-04-22 19:58:25,515 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 113) WFLYJPA0004: Stopping Persistence Unit Service 'testejb.war#testejbPersistenceUnit'
+2020-04-22 19:58:25,516 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 113) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@494daf26
+2020-04-22 19:58:25,522 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment testejb.war (runtime-name: testejb.war) in 55ms
+2020-04-22 19:58:25,533 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) WFLYSRV0009: Undeployed "testejb.war" (runtime-name: "testejb.war")
+2020-04-22 19:58:30,537 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) WFLYDS0004: Found testejb.war in deployment directory. To trigger deployment create a file called testejb.war.dodeploy
+2020-04-22 19:58:30,547 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 114) WFLYUT0022: Unregistered web context: '/testjpa' from server 'default-server'
+2020-04-22 19:58:30,554 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 113) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 19:58:30,554 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 113) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@870a51d
+2020-04-22 19:58:30,555 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 113) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 19:58:30,556 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0010: Unbound data source [java:jboss/datasources/mywebappDS]
+2020-04-22 19:58:30,561 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment testjpa.war (runtime-name: testjpa.war) in 19ms
+2020-04-22 19:58:30,561 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "testjpa.war" (runtime-name: "testjpa.war")
+2020-04-22 19:58:30,604 INFO  [org.jboss.as.jpa] (MSC service thread 1-7) WFLYJPA0002: Read persistence.xml for testjpaPersistenceUnit
+2020-04-22 19:58:30,606 WARN  [org.jboss.as.connector] (MSC service thread 1-7) WFLYJCA0091: -ds.xml file deployments are deprecated. Support may be removed in a future version.
+2020-04-22 19:58:30,639 INFO  [org.jboss.weld.deployer] (MSC service thread 1-5) WFLYWELD0003: Processing weld deployment testjpa.war
+2020-04-22 19:58:30,642 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:jboss/datasources/mywebappDS]
+2020-04-22 19:58:30,651 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 113) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 19:58:30,651 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 113) HHH000204: Processing PersistenceUnitInfo [
+	name: testjpaPersistenceUnit
+	...]
+2020-04-22 19:58:30,679 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-5) WFLYEJB0473: JNDI bindings for session bean named 'GestionContactos' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/GestionContactos!ec.edu.ups.appdis.testjpa.business.GestionContactos
+	java:app/testjpa/GestionContactos!ec.edu.ups.appdis.testjpa.business.GestionContactos
+	java:module/GestionContactos!ec.edu.ups.appdis.testjpa.business.GestionContactos
+	ejb:/testjpa/GestionContactos!ec.edu.ups.appdis.testjpa.business.GestionContactos
+	java:global/testjpa/GestionContactos
+	java:app/testjpa/GestionContactos
+	java:module/GestionContactos
+
+2020-04-22 19:58:30,679 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-5) WFLYEJB0473: JNDI bindings for session bean named 'PersonaDAO' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	java:app/testjpa/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	java:module/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	ejb:/testjpa/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	java:global/testjpa/PersonaDAO
+	java:app/testjpa/PersonaDAO
+	java:module/PersonaDAO
+
+2020-04-22 19:58:30,826 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 113) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 19:58:30,828 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 113) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-22 19:58:30,829 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 113) HHH000431: Unable to determine H2 database version, certain features may not work
+2020-04-22 19:58:30,833 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 113) Envers integration enabled? : true
+2020-04-22 19:58:30,865 INFO  [stdout] (ServerService Thread Pool -- 113) Hibernate: drop table Persona if exists
+2020-04-22 19:58:30,866 INFO  [stdout] (ServerService Thread Pool -- 113) Hibernate: create table Persona (cedula varchar(255) not null, edad integer not null, nombre varchar(255), primary key (cedula))
+2020-04-22 19:58:30,868 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 113) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@44ffcdbd'
+2020-04-22 19:58:30,948 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-2) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+2020-04-22 19:58:30,960 INFO  [io.smallrye.metrics] (MSC service thread 1-2) MicroProfile: Metrics activated
+2020-04-22 19:58:31,300 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-4) MSC000001: Failed to start service jboss.deployment.unit."testjpa.war".undertow-deployment.UndertowDeploymentInfoService: org.jboss.msc.service.StartException in service jboss.deployment.unit."testjpa.war".undertow-deployment.UndertowDeploymentInfoService: Failed to start service
+	at org.jboss.msc@1.4.11.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.execute(ServiceControllerImpl.java:1731)
+	at org.jboss.msc@1.4.11.Final//org.jboss.msc.service.ServiceControllerImpl$ControllerTask.run(ServiceControllerImpl.java:1559)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1363)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.IllegalArgumentException: UT010009: Servlet ec.edu.ups.appdis.testjpa.view.RegistroPersonas of type class ec.edu.ups.appdis.testjpa.view.RegistroPersonas does not implement javax.servlet.Servlet
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.api.ServletInfo.<init>(ServletInfo.java:98)
+	at org.wildfly.extension.undertow@18.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService.createServletConfig(UndertowDeploymentInfoService.java:722)
+	at org.wildfly.extension.undertow@18.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService.start(UndertowDeploymentInfoService.java:275)
+	at org.jboss.msc@1.4.11.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1739)
+	at org.jboss.msc@1.4.11.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.execute(ServiceControllerImpl.java:1701)
+	... 6 more
+
+2020-04-22 19:58:31,313 ERROR [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 1) WFLYCTL0013: Operation ("full-replace-deployment") failed - address: ([]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"testjpa.war\".undertow-deployment.UndertowDeploymentInfoService" => "Failed to start service
+    Caused by: java.lang.IllegalArgumentException: UT010009: Servlet ec.edu.ups.appdis.testjpa.view.RegistroPersonas of type class ec.edu.ups.appdis.testjpa.view.RegistroPersonas does not implement javax.servlet.Servlet"}}
+2020-04-22 19:58:31,333 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) WFLYSRV0016: Replaced deployment "testjpa.war" with deployment "testjpa.war"
+2020-04-22 19:58:31,333 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 1) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."testjpa.war".undertow-deployment.UndertowDeploymentInfoService: Failed to start service
+WFLYCTL0448: 2 additional services are down due to their dependencies being missing or failed
+2020-04-22 19:58:41,355 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 117) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 19:58:41,355 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 117) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@69b25e89
+2020-04-22 19:58:41,357 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 117) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 19:58:41,358 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:jboss/datasources/mywebappDS]
+2020-04-22 19:58:41,366 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment testjpa.war (runtime-name: testjpa.war) in 24ms
+2020-04-22 19:58:41,367 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "testjpa.war" (runtime-name: "testjpa.war")
+2020-04-22 19:58:41,406 INFO  [org.jboss.as.jpa] (MSC service thread 1-6) WFLYJPA0002: Read persistence.xml for testjpaPersistenceUnit
+2020-04-22 19:58:41,406 WARN  [org.jboss.as.connector] (MSC service thread 1-6) WFLYJCA0091: -ds.xml file deployments are deprecated. Support may be removed in a future version.
+2020-04-22 19:58:41,421 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:jboss/datasources/mywebappDS]
+2020-04-22 19:58:41,426 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) WFLYWELD0003: Processing weld deployment testjpa.war
+2020-04-22 19:58:41,437 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 117) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 19:58:41,438 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 117) HHH000204: Processing PersistenceUnitInfo [
+	name: testjpaPersistenceUnit
+	...]
+2020-04-22 19:58:41,464 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'GestionContactos' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/GestionContactos!ec.edu.ups.appdis.testjpa.business.GestionContactos
+	java:app/testjpa/GestionContactos!ec.edu.ups.appdis.testjpa.business.GestionContactos
+	java:module/GestionContactos!ec.edu.ups.appdis.testjpa.business.GestionContactos
+	ejb:/testjpa/GestionContactos!ec.edu.ups.appdis.testjpa.business.GestionContactos
+	java:global/testjpa/GestionContactos
+	java:app/testjpa/GestionContactos
+	java:module/GestionContactos
+
+2020-04-22 19:58:41,465 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'PersonaDAO' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	java:app/testjpa/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	java:module/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	ejb:/testjpa/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	java:global/testjpa/PersonaDAO
+	java:app/testjpa/PersonaDAO
+	java:module/PersonaDAO
+
+2020-04-22 19:58:41,574 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 117) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 19:58:41,575 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 117) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-22 19:58:41,576 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 117) HHH000431: Unable to determine H2 database version, certain features may not work
+2020-04-22 19:58:41,581 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 117) Envers integration enabled? : true
+2020-04-22 19:58:41,636 INFO  [stdout] (ServerService Thread Pool -- 117) Hibernate: drop table Persona if exists
+2020-04-22 19:58:41,637 INFO  [stdout] (ServerService Thread Pool -- 117) Hibernate: create table Persona (cedula varchar(255) not null, edad integer not null, nombre varchar(255), primary key (cedula))
+2020-04-22 19:58:41,639 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 117) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@44ffcdbd'
+2020-04-22 19:58:41,680 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-5) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+2020-04-22 19:58:41,681 INFO  [io.smallrye.metrics] (MSC service thread 1-5) MicroProfile: Metrics activated
+2020-04-22 19:58:42,053 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-8) MSC000001: Failed to start service jboss.deployment.unit."testjpa.war".undertow-deployment.UndertowDeploymentInfoService: org.jboss.msc.service.StartException in service jboss.deployment.unit."testjpa.war".undertow-deployment.UndertowDeploymentInfoService: Failed to start service
+	at org.jboss.msc@1.4.11.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.execute(ServiceControllerImpl.java:1731)
+	at org.jboss.msc@1.4.11.Final//org.jboss.msc.service.ServiceControllerImpl$ControllerTask.run(ServiceControllerImpl.java:1559)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1363)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.IllegalArgumentException: UT010009: Servlet ec.edu.ups.appdis.testjpa.view.RegistroPersonas of type class ec.edu.ups.appdis.testjpa.view.RegistroPersonas does not implement javax.servlet.Servlet
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.api.ServletInfo.<init>(ServletInfo.java:98)
+	at org.wildfly.extension.undertow@18.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService.createServletConfig(UndertowDeploymentInfoService.java:722)
+	at org.wildfly.extension.undertow@18.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService.start(UndertowDeploymentInfoService.java:275)
+	at org.jboss.msc@1.4.11.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1739)
+	at org.jboss.msc@1.4.11.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.execute(ServiceControllerImpl.java:1701)
+	... 6 more
+
+2020-04-22 19:58:42,062 ERROR [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 1) WFLYCTL0013: Operation ("full-replace-deployment") failed - address: ([]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"testjpa.war\".undertow-deployment.UndertowDeploymentInfoService" => "Failed to start service
+    Caused by: java.lang.IllegalArgumentException: UT010009: Servlet ec.edu.ups.appdis.testjpa.view.RegistroPersonas of type class ec.edu.ups.appdis.testjpa.view.RegistroPersonas does not implement javax.servlet.Servlet"}}
+2020-04-22 19:58:42,099 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) WFLYSRV0016: Replaced deployment "testjpa.war" with deployment "testjpa.war"
+2020-04-22 19:58:42,102 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 1) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."testjpa.war".undertow-deployment.UndertowDeploymentInfoService: Failed to start service
+
+2020-04-22 20:05:02,278 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 124) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 20:05:02,279 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 124) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@599cfdd7
+2020-04-22 20:05:02,280 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 124) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 20:05:02,287 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/mywebappDS]
+2020-04-22 20:05:02,297 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment testjpa.war (runtime-name: testjpa.war) in 28ms
+2020-04-22 20:05:02,298 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "testjpa.war" (runtime-name: "testjpa.war")
+2020-04-22 20:05:02,342 INFO  [org.jboss.as.jpa] (MSC service thread 1-1) WFLYJPA0002: Read persistence.xml for testjpaPersistenceUnit
+2020-04-22 20:05:02,344 WARN  [org.jboss.as.connector] (MSC service thread 1-1) WFLYJCA0091: -ds.xml file deployments are deprecated. Support may be removed in a future version.
+2020-04-22 20:05:02,360 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:jboss/datasources/mywebappDS]
+2020-04-22 20:05:02,366 INFO  [org.jboss.weld.deployer] (MSC service thread 1-8) WFLYWELD0003: Processing weld deployment testjpa.war
+2020-04-22 20:05:02,395 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 124) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 20:05:02,395 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 124) HHH000204: Processing PersistenceUnitInfo [
+	name: testjpaPersistenceUnit
+	...]
+2020-04-22 20:05:02,395 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'GestionContactos' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/GestionContactos!ec.edu.ups.appdis.testjpa.business.GestionContactos
+	java:app/testjpa/GestionContactos!ec.edu.ups.appdis.testjpa.business.GestionContactos
+	java:module/GestionContactos!ec.edu.ups.appdis.testjpa.business.GestionContactos
+	ejb:/testjpa/GestionContactos!ec.edu.ups.appdis.testjpa.business.GestionContactos
+	java:global/testjpa/GestionContactos
+	java:app/testjpa/GestionContactos
+	java:module/GestionContactos
+
+2020-04-22 20:05:02,395 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'PersonaDAO' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	java:app/testjpa/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	java:module/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	ejb:/testjpa/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	java:global/testjpa/PersonaDAO
+	java:app/testjpa/PersonaDAO
+	java:module/PersonaDAO
+
+2020-04-22 20:05:02,510 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 124) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 20:05:02,512 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 124) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-22 20:05:02,512 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 124) HHH000431: Unable to determine H2 database version, certain features may not work
+2020-04-22 20:05:02,516 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 124) Envers integration enabled? : true
+2020-04-22 20:05:02,553 INFO  [stdout] (ServerService Thread Pool -- 124) Hibernate: drop table Persona if exists
+2020-04-22 20:05:02,559 INFO  [stdout] (ServerService Thread Pool -- 124) Hibernate: create table Persona (cedula varchar(255) not null, edad integer not null, nombre varchar(255), primary key (cedula))
+2020-04-22 20:05:02,562 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 124) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@44ffcdbd'
+2020-04-22 20:05:02,700 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-5) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+2020-04-22 20:05:02,701 INFO  [io.smallrye.metrics] (MSC service thread 1-5) MicroProfile: Metrics activated
+2020-04-22 20:05:02,914 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-7) MSC000001: Failed to start service jboss.deployment.unit."testjpa.war".undertow-deployment.UndertowDeploymentInfoService: org.jboss.msc.service.StartException in service jboss.deployment.unit."testjpa.war".undertow-deployment.UndertowDeploymentInfoService: Failed to start service
+	at org.jboss.msc@1.4.11.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.execute(ServiceControllerImpl.java:1731)
+	at org.jboss.msc@1.4.11.Final//org.jboss.msc.service.ServiceControllerImpl$ControllerTask.run(ServiceControllerImpl.java:1559)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1363)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.IllegalArgumentException: UT010009: Servlet ec.edu.ups.appdis.testjpa.view.RegistroPersonas of type class ec.edu.ups.appdis.testjpa.view.RegistroPersonas does not implement javax.servlet.Servlet
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.api.ServletInfo.<init>(ServletInfo.java:98)
+	at org.wildfly.extension.undertow@18.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService.createServletConfig(UndertowDeploymentInfoService.java:722)
+	at org.wildfly.extension.undertow@18.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService.start(UndertowDeploymentInfoService.java:275)
+	at org.jboss.msc@1.4.11.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1739)
+	at org.jboss.msc@1.4.11.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.execute(ServiceControllerImpl.java:1701)
+	... 6 more
+
+2020-04-22 20:05:02,915 ERROR [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) WFLYCTL0013: Operation ("full-replace-deployment") failed - address: ([]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"testjpa.war\".undertow-deployment.UndertowDeploymentInfoService" => "Failed to start service
+    Caused by: java.lang.IllegalArgumentException: UT010009: Servlet ec.edu.ups.appdis.testjpa.view.RegistroPersonas of type class ec.edu.ups.appdis.testjpa.view.RegistroPersonas does not implement javax.servlet.Servlet"}}
+2020-04-22 20:05:02,929 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0016: Replaced deployment "testjpa.war" with deployment "testjpa.war"
+2020-04-22 20:05:02,929 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 2) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."testjpa.war".undertow-deployment.UndertowDeploymentInfoService: Failed to start service
+
+2020-04-22 20:05:37,962 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 127) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 20:05:37,965 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 127) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@518469da
+2020-04-22 20:05:37,966 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 127) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 20:05:37,966 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0010: Unbound data source [java:jboss/datasources/mywebappDS]
+2020-04-22 20:05:37,977 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment testjpa.war (runtime-name: testjpa.war) in 29ms
+2020-04-22 20:05:37,977 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "testjpa.war" (runtime-name: "testjpa.war")
+2020-04-22 20:05:38,034 INFO  [org.jboss.as.jpa] (MSC service thread 1-2) WFLYJPA0002: Read persistence.xml for testjpaPersistenceUnit
+2020-04-22 20:05:38,035 WARN  [org.jboss.as.connector] (MSC service thread 1-2) WFLYJCA0091: -ds.xml file deployments are deprecated. Support may be removed in a future version.
+2020-04-22 20:05:38,070 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:jboss/datasources/mywebappDS]
+2020-04-22 20:05:38,072 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) WFLYWELD0003: Processing weld deployment testjpa.war
+2020-04-22 20:05:38,083 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 127) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 20:05:38,083 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 127) HHH000204: Processing PersistenceUnitInfo [
+	name: testjpaPersistenceUnit
+	...]
+2020-04-22 20:05:38,108 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'GestionContactos' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/GestionContactos!ec.edu.ups.appdis.testjpa.business.GestionContactos
+	java:app/testjpa/GestionContactos!ec.edu.ups.appdis.testjpa.business.GestionContactos
+	java:module/GestionContactos!ec.edu.ups.appdis.testjpa.business.GestionContactos
+	ejb:/testjpa/GestionContactos!ec.edu.ups.appdis.testjpa.business.GestionContactos
+	java:global/testjpa/GestionContactos
+	java:app/testjpa/GestionContactos
+	java:module/GestionContactos
+
+2020-04-22 20:05:38,108 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'PersonaDAO' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	java:app/testjpa/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	java:module/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	ejb:/testjpa/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	java:global/testjpa/PersonaDAO
+	java:app/testjpa/PersonaDAO
+	java:module/PersonaDAO
+
+2020-04-22 20:05:38,188 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 127) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 20:05:38,189 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 127) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-22 20:05:38,190 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 127) HHH000431: Unable to determine H2 database version, certain features may not work
+2020-04-22 20:05:38,193 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 127) Envers integration enabled? : true
+2020-04-22 20:05:38,236 INFO  [stdout] (ServerService Thread Pool -- 127) Hibernate: drop table Persona if exists
+2020-04-22 20:05:38,238 INFO  [stdout] (ServerService Thread Pool -- 127) Hibernate: create table Persona (cedula varchar(255) not null, edad integer not null, nombre varchar(255), primary key (cedula))
+2020-04-22 20:05:38,240 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 127) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@44ffcdbd'
+2020-04-22 20:05:38,269 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-8) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+2020-04-22 20:05:38,270 INFO  [io.smallrye.metrics] (MSC service thread 1-8) MicroProfile: Metrics activated
+2020-04-22 20:05:38,553 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 127) Inicializando Mojarra 2.3.9.SP04 para el contexto '/testjpa'
+2020-04-22 20:05:38,614 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 127) WFLYUT0021: Registered web context: '/testjpa' for server 'default-server'
+2020-04-22 20:05:38,648 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) WFLYSRV0016: Replaced deployment "testjpa.war" with deployment "testjpa.war"
+2020-04-22 20:05:38,649 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 1) WFLYCTL0183: Service status report
+WFLYCTL0185:    Newly corrected services:
+      service jboss.deployment.unit."testjpa.war".deploymentCompleteService (new available)
+      service jboss.deployment.unit."testjpa.war".undertow-deployment (new available)
+
+2020-04-22 20:05:53,703 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 127) WFLYUT0022: Unregistered web context: '/testjpa' from server 'default-server'
+2020-04-22 20:05:53,709 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 129) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 20:05:53,710 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 129) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@6c977d88
+2020-04-22 20:05:53,710 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 129) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 20:05:53,716 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:jboss/datasources/mywebappDS]
+2020-04-22 20:05:53,720 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment testjpa.war (runtime-name: testjpa.war) in 20ms
+2020-04-22 20:05:53,721 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "testjpa.war" (runtime-name: "testjpa.war")
+2020-04-22 20:05:53,774 INFO  [org.jboss.as.jpa] (MSC service thread 1-2) WFLYJPA0002: Read persistence.xml for testjpaPersistenceUnit
+2020-04-22 20:05:53,775 WARN  [org.jboss.as.connector] (MSC service thread 1-2) WFLYJCA0091: -ds.xml file deployments are deprecated. Support may be removed in a future version.
+2020-04-22 20:05:53,824 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:jboss/datasources/mywebappDS]
+2020-04-22 20:05:53,826 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) WFLYWELD0003: Processing weld deployment testjpa.war
+2020-04-22 20:05:53,828 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 129) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 20:05:53,828 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 129) HHH000204: Processing PersistenceUnitInfo [
+	name: testjpaPersistenceUnit
+	...]
+2020-04-22 20:05:53,862 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'GestionContactos' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/GestionContactos!ec.edu.ups.appdis.testjpa.business.GestionContactos
+	java:app/testjpa/GestionContactos!ec.edu.ups.appdis.testjpa.business.GestionContactos
+	java:module/GestionContactos!ec.edu.ups.appdis.testjpa.business.GestionContactos
+	ejb:/testjpa/GestionContactos!ec.edu.ups.appdis.testjpa.business.GestionContactos
+	java:global/testjpa/GestionContactos
+	java:app/testjpa/GestionContactos
+	java:module/GestionContactos
+
+2020-04-22 20:05:53,863 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'PersonaDAO' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	java:app/testjpa/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	java:module/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	ejb:/testjpa/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	java:global/testjpa/PersonaDAO
+	java:app/testjpa/PersonaDAO
+	java:module/PersonaDAO
+
+2020-04-22 20:05:53,942 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 129) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 20:05:53,944 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 129) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-22 20:05:53,944 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 129) HHH000431: Unable to determine H2 database version, certain features may not work
+2020-04-22 20:05:53,948 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 129) Envers integration enabled? : true
+2020-04-22 20:05:53,976 INFO  [stdout] (ServerService Thread Pool -- 129) Hibernate: drop table Persona if exists
+2020-04-22 20:05:53,978 INFO  [stdout] (ServerService Thread Pool -- 129) Hibernate: create table Persona (cedula varchar(255) not null, edad integer not null, nombre varchar(255), primary key (cedula))
+2020-04-22 20:05:53,980 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 129) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@44ffcdbd'
+2020-04-22 20:05:54,013 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-1) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+2020-04-22 20:05:54,013 INFO  [io.smallrye.metrics] (MSC service thread 1-1) MicroProfile: Metrics activated
+2020-04-22 20:05:54,193 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 129) Inicializando Mojarra 2.3.9.SP04 para el contexto '/testjpa'
+2020-04-22 20:05:54,252 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 129) WFLYUT0021: Registered web context: '/testjpa' for server 'default-server'
+2020-04-22 20:05:54,285 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) WFLYSRV0016: Replaced deployment "testjpa.war" with deployment "testjpa.war"
+2020-04-22 20:06:26,280 INFO  [stdout] (default task-2) Hibernate: select persona0_.cedula as cedula1_0_0_, persona0_.edad as edad2_0_0_, persona0_.nombre as nombre3_0_0_ from Persona persona0_ where persona0_.cedula=?
+2020-04-22 20:06:26,358 INFO  [stdout] (default task-2) Hibernate: insert into Persona (edad, nombre, cedula) values (?, ?, ?)
+2020-04-22 20:06:26,390 INFO  [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator] (default task-2) HHH000397: Using ASTQueryTranslatorFactory
+2020-04-22 20:06:26,487 INFO  [stdout] (default task-2) Hibernate: select persona0_.cedula as cedula1_0_, persona0_.edad as edad2_0_, persona0_.nombre as nombre3_0_ from Persona persona0_
+2020-04-22 20:07:19,334 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 130) WFLYUT0022: Unregistered web context: '/testjpa' from server 'default-server'
+2020-04-22 20:07:19,342 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 131) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 20:07:19,346 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 131) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@21423983
+2020-04-22 20:07:19,348 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 131) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 20:07:19,349 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/mywebappDS]
+2020-04-22 20:07:19,356 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment testjpa.war (runtime-name: testjpa.war) in 28ms
+2020-04-22 20:07:19,357 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "testjpa.war" (runtime-name: "testjpa.war")
+2020-04-22 20:07:19,393 INFO  [org.jboss.as.jpa] (MSC service thread 1-3) WFLYJPA0002: Read persistence.xml for testjpaPersistenceUnit
+2020-04-22 20:07:19,394 WARN  [org.jboss.as.connector] (MSC service thread 1-3) WFLYJCA0091: -ds.xml file deployments are deprecated. Support may be removed in a future version.
+2020-04-22 20:07:19,408 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:jboss/datasources/mywebappDS]
+2020-04-22 20:07:19,412 INFO  [org.jboss.weld.deployer] (MSC service thread 1-6) WFLYWELD0003: Processing weld deployment testjpa.war
+2020-04-22 20:07:19,423 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 131) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 20:07:19,423 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 131) HHH000204: Processing PersistenceUnitInfo [
+	name: testjpaPersistenceUnit
+	...]
+2020-04-22 20:07:19,430 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'GestionContactos' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/GestionContactos!ec.edu.ups.appdis.testjpa.business.GestionContactos
+	java:app/testjpa/GestionContactos!ec.edu.ups.appdis.testjpa.business.GestionContactos
+	java:module/GestionContactos!ec.edu.ups.appdis.testjpa.business.GestionContactos
+	ejb:/testjpa/GestionContactos!ec.edu.ups.appdis.testjpa.business.GestionContactos
+	java:global/testjpa/GestionContactos
+	java:app/testjpa/GestionContactos
+	java:module/GestionContactos
+
+2020-04-22 20:07:19,430 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'PersonaDAO' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	java:app/testjpa/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	java:module/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	ejb:/testjpa/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	java:global/testjpa/PersonaDAO
+	java:app/testjpa/PersonaDAO
+	java:module/PersonaDAO
+
+2020-04-22 20:07:19,562 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 131) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 20:07:19,563 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 131) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-22 20:07:19,564 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 131) HHH000431: Unable to determine H2 database version, certain features may not work
+2020-04-22 20:07:19,570 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 131) Envers integration enabled? : true
+2020-04-22 20:07:19,656 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 131) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@44ffcdbd'
+2020-04-22 20:07:19,745 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-4) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+2020-04-22 20:07:19,746 INFO  [io.smallrye.metrics] (MSC service thread 1-4) MicroProfile: Metrics activated
+2020-04-22 20:07:19,928 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 131) Inicializando Mojarra 2.3.9.SP04 para el contexto '/testjpa'
+2020-04-22 20:07:19,996 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 131) WFLYUT0021: Registered web context: '/testjpa' for server 'default-server'
+2020-04-22 20:07:20,022 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0016: Replaced deployment "testjpa.war" with deployment "testjpa.war"
+2020-04-22 20:07:43,118 INFO  [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator] (default task-2) HHH000397: Using ASTQueryTranslatorFactory
+2020-04-22 20:08:30,053 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 131) WFLYUT0022: Unregistered web context: '/testjpa' from server 'default-server'
+2020-04-22 20:08:30,065 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 136) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 20:08:30,065 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 136) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@7aa8dd6c
+2020-04-22 20:08:30,066 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 136) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 20:08:30,066 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0010: Unbound data source [java:jboss/datasources/mywebappDS]
+2020-04-22 20:08:30,078 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment testjpa.war (runtime-name: testjpa.war) in 27ms
+2020-04-22 20:08:30,079 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "testjpa.war" (runtime-name: "testjpa.war")
+2020-04-22 20:08:30,120 INFO  [org.jboss.as.jpa] (MSC service thread 1-7) WFLYJPA0002: Read persistence.xml for testjpaPersistenceUnit
+2020-04-22 20:08:30,121 WARN  [org.jboss.as.connector] (MSC service thread 1-7) WFLYJCA0091: -ds.xml file deployments are deprecated. Support may be removed in a future version.
+2020-04-22 20:08:30,149 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) WFLYWELD0003: Processing weld deployment testjpa.war
+2020-04-22 20:08:30,170 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:jboss/datasources/mywebappDS]
+2020-04-22 20:08:30,175 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 136) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 20:08:30,175 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 136) HHH000204: Processing PersistenceUnitInfo [
+	name: testjpaPersistenceUnit
+	...]
+2020-04-22 20:08:30,178 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'GestionContactos' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/GestionContactos!ec.edu.ups.appdis.testjpa.business.GestionContactos
+	java:app/testjpa/GestionContactos!ec.edu.ups.appdis.testjpa.business.GestionContactos
+	java:module/GestionContactos!ec.edu.ups.appdis.testjpa.business.GestionContactos
+	ejb:/testjpa/GestionContactos!ec.edu.ups.appdis.testjpa.business.GestionContactos
+	java:global/testjpa/GestionContactos
+	java:app/testjpa/GestionContactos
+	java:module/GestionContactos
+
+2020-04-22 20:08:30,178 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'PersonaDAO' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	java:app/testjpa/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	java:module/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	ejb:/testjpa/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	java:global/testjpa/PersonaDAO
+	java:app/testjpa/PersonaDAO
+	java:module/PersonaDAO
+
+2020-04-22 20:08:30,321 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 136) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 20:08:30,324 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 136) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-22 20:08:30,324 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 136) HHH000431: Unable to determine H2 database version, certain features may not work
+2020-04-22 20:08:30,330 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 136) Envers integration enabled? : true
+2020-04-22 20:08:30,398 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 136) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@44ffcdbd'
+2020-04-22 20:08:30,503 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-5) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+2020-04-22 20:08:30,504 INFO  [io.smallrye.metrics] (MSC service thread 1-5) MicroProfile: Metrics activated
+2020-04-22 20:08:30,721 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 136) Inicializando Mojarra 2.3.9.SP04 para el contexto '/testjpa'
+2020-04-22 20:08:30,768 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 136) WFLYUT0021: Registered web context: '/testjpa' for server 'default-server'
+2020-04-22 20:08:30,812 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0016: Replaced deployment "testjpa.war" with deployment "testjpa.war"
+2020-04-22 20:08:34,429 INFO  [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator] (default task-2) HHH000397: Using ASTQueryTranslatorFactory
+2020-04-22 20:09:50,847 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 136) WFLYUT0022: Unregistered web context: '/testjpa' from server 'default-server'
+2020-04-22 20:09:50,867 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 144) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 20:09:50,867 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 144) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@4be48407
+2020-04-22 20:09:50,868 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 144) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 20:09:50,869 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:jboss/datasources/mywebappDS]
+2020-04-22 20:09:50,877 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment testjpa.war (runtime-name: testjpa.war) in 31ms
+2020-04-22 20:09:50,877 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "testjpa.war" (runtime-name: "testjpa.war")
+2020-04-22 20:09:50,911 INFO  [org.jboss.as.jpa] (MSC service thread 1-8) WFLYJPA0002: Read persistence.xml for testjpaPersistenceUnit
+2020-04-22 20:09:50,912 WARN  [org.jboss.as.connector] (MSC service thread 1-8) WFLYJCA0091: -ds.xml file deployments are deprecated. Support may be removed in a future version.
+2020-04-22 20:09:50,932 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:jboss/datasources/mywebappDS]
+2020-04-22 20:09:50,934 INFO  [org.jboss.weld.deployer] (MSC service thread 1-3) WFLYWELD0003: Processing weld deployment testjpa.war
+2020-04-22 20:09:50,935 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 144) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 20:09:50,935 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 144) HHH000204: Processing PersistenceUnitInfo [
+	name: testjpaPersistenceUnit
+	...]
+2020-04-22 20:09:50,960 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'GestionContactos' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/GestionContactos!ec.edu.ups.appdis.testjpa.business.GestionContactos
+	java:app/testjpa/GestionContactos!ec.edu.ups.appdis.testjpa.business.GestionContactos
+	java:module/GestionContactos!ec.edu.ups.appdis.testjpa.business.GestionContactos
+	ejb:/testjpa/GestionContactos!ec.edu.ups.appdis.testjpa.business.GestionContactos
+	java:global/testjpa/GestionContactos
+	java:app/testjpa/GestionContactos
+	java:module/GestionContactos
+
+2020-04-22 20:09:50,961 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'PersonaDAO' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	java:app/testjpa/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	java:module/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	ejb:/testjpa/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	java:global/testjpa/PersonaDAO
+	java:app/testjpa/PersonaDAO
+	java:module/PersonaDAO
+
+2020-04-22 20:09:51,056 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 144) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 20:09:51,057 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 144) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-22 20:09:51,057 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 144) HHH000431: Unable to determine H2 database version, certain features may not work
+2020-04-22 20:09:51,061 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 144) Envers integration enabled? : true
+2020-04-22 20:09:51,118 INFO  [stdout] (ServerService Thread Pool -- 144) Hibernate: 
+2020-04-22 20:09:51,118 INFO  [stdout] (ServerService Thread Pool -- 144)     
+2020-04-22 20:09:51,118 INFO  [stdout] (ServerService Thread Pool -- 144)     drop table Persona if exists
+2020-04-22 20:09:51,135 INFO  [stdout] (ServerService Thread Pool -- 144) Hibernate: 
+2020-04-22 20:09:51,135 INFO  [stdout] (ServerService Thread Pool -- 144)     
+2020-04-22 20:09:51,135 INFO  [stdout] (ServerService Thread Pool -- 144)     create table Persona (
+2020-04-22 20:09:51,135 INFO  [stdout] (ServerService Thread Pool -- 144)        cedula varchar(255) not null,
+2020-04-22 20:09:51,135 INFO  [stdout] (ServerService Thread Pool -- 144)         edad integer not null,
+2020-04-22 20:09:51,136 INFO  [stdout] (ServerService Thread Pool -- 144)         nombre varchar(255),
+2020-04-22 20:09:51,136 INFO  [stdout] (ServerService Thread Pool -- 144)         primary key (cedula)
+2020-04-22 20:09:51,136 INFO  [stdout] (ServerService Thread Pool -- 144)     )
+2020-04-22 20:09:51,143 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 144) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@44ffcdbd'
+2020-04-22 20:09:51,221 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-2) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+2020-04-22 20:09:51,222 INFO  [io.smallrye.metrics] (MSC service thread 1-2) MicroProfile: Metrics activated
+2020-04-22 20:09:51,414 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 143) Inicializando Mojarra 2.3.9.SP04 para el contexto '/testjpa'
+2020-04-22 20:09:51,464 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 143) WFLYUT0021: Registered web context: '/testjpa' for server 'default-server'
+2020-04-22 20:09:51,510 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0016: Replaced deployment "testjpa.war" with deployment "testjpa.war"
+2020-04-22 20:10:09,262 INFO  [stdout] (default task-2) Hibernate: 
+2020-04-22 20:10:09,262 INFO  [stdout] (default task-2)     select
+2020-04-22 20:10:09,262 INFO  [stdout] (default task-2)         persona0_.cedula as cedula1_0_0_,
+2020-04-22 20:10:09,262 INFO  [stdout] (default task-2)         persona0_.edad as edad2_0_0_,
+2020-04-22 20:10:09,262 INFO  [stdout] (default task-2)         persona0_.nombre as nombre3_0_0_ 
+2020-04-22 20:10:09,262 INFO  [stdout] (default task-2)     from
+2020-04-22 20:10:09,262 INFO  [stdout] (default task-2)         Persona persona0_ 
+2020-04-22 20:10:09,262 INFO  [stdout] (default task-2)     where
+2020-04-22 20:10:09,262 INFO  [stdout] (default task-2)         persona0_.cedula=?
+2020-04-22 20:10:09,273 INFO  [stdout] (default task-2) Hibernate: 
+2020-04-22 20:10:09,273 INFO  [stdout] (default task-2)     insert 
+2020-04-22 20:10:09,273 INFO  [stdout] (default task-2)     into
+2020-04-22 20:10:09,273 INFO  [stdout] (default task-2)         Persona
+2020-04-22 20:10:09,273 INFO  [stdout] (default task-2)         (edad, nombre, cedula) 
+2020-04-22 20:10:09,273 INFO  [stdout] (default task-2)     values
+2020-04-22 20:10:09,273 INFO  [stdout] (default task-2)         (?, ?, ?)
+2020-04-22 20:10:09,276 INFO  [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator] (default task-2) HHH000397: Using ASTQueryTranslatorFactory
+2020-04-22 20:10:09,279 INFO  [stdout] (default task-2) Hibernate: 
+2020-04-22 20:10:09,279 INFO  [stdout] (default task-2)     select
+2020-04-22 20:10:09,279 INFO  [stdout] (default task-2)         persona0_.cedula as cedula1_0_,
+2020-04-22 20:10:09,279 INFO  [stdout] (default task-2)         persona0_.edad as edad2_0_,
+2020-04-22 20:10:09,279 INFO  [stdout] (default task-2)         persona0_.nombre as nombre3_0_ 
+2020-04-22 20:10:09,279 INFO  [stdout] (default task-2)     from
+2020-04-22 20:10:09,279 INFO  [stdout] (default task-2)         Persona persona0_
+2020-04-22 20:10:25,318 INFO  [stdout] (default task-2) Hibernate: 
+2020-04-22 20:10:25,318 INFO  [stdout] (default task-2)     select
+2020-04-22 20:10:25,318 INFO  [stdout] (default task-2)         persona0_.cedula as cedula1_0_0_,
+2020-04-22 20:10:25,318 INFO  [stdout] (default task-2)         persona0_.edad as edad2_0_0_,
+2020-04-22 20:10:25,318 INFO  [stdout] (default task-2)         persona0_.nombre as nombre3_0_0_ 
+2020-04-22 20:10:25,318 INFO  [stdout] (default task-2)     from
+2020-04-22 20:10:25,318 INFO  [stdout] (default task-2)         Persona persona0_ 
+2020-04-22 20:10:25,318 INFO  [stdout] (default task-2)     where
+2020-04-22 20:10:25,318 INFO  [stdout] (default task-2)         persona0_.cedula=?
+2020-04-22 20:10:25,329 INFO  [stdout] (default task-2) Hibernate: 
+2020-04-22 20:10:25,329 INFO  [stdout] (default task-2)     select
+2020-04-22 20:10:25,329 INFO  [stdout] (default task-2)         persona0_.cedula as cedula1_0_,
+2020-04-22 20:10:25,329 INFO  [stdout] (default task-2)         persona0_.edad as edad2_0_,
+2020-04-22 20:10:25,329 INFO  [stdout] (default task-2)         persona0_.nombre as nombre3_0_ 
+2020-04-22 20:10:25,329 INFO  [stdout] (default task-2)     from
+2020-04-22 20:10:25,329 INFO  [stdout] (default task-2)         Persona persona0_
+2020-04-22 20:11:46,569 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 147) WFLYUT0022: Unregistered web context: '/testjpa' from server 'default-server'
+2020-04-22 20:11:46,595 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 149) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 20:11:46,596 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 149) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@2e4b4714
+2020-04-22 20:11:46,596 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 149) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 20:11:46,596 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:jboss/datasources/mywebappDS]
+2020-04-22 20:11:46,607 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment testjpa.war (runtime-name: testjpa.war) in 40ms
+2020-04-22 20:11:46,608 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "testjpa.war" (runtime-name: "testjpa.war")
+2020-04-22 20:11:46,642 INFO  [org.jboss.as.jpa] (MSC service thread 1-4) WFLYJPA0002: Read persistence.xml for testjpaPersistenceUnit
+2020-04-22 20:11:46,643 WARN  [org.jboss.as.connector] (MSC service thread 1-4) WFLYJCA0091: -ds.xml file deployments are deprecated. Support may be removed in a future version.
+2020-04-22 20:11:46,665 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:jboss/datasources/mywebappDS]
+2020-04-22 20:11:46,668 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) WFLYWELD0003: Processing weld deployment testjpa.war
+2020-04-22 20:11:46,679 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 149) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 20:11:46,680 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 149) HHH000204: Processing PersistenceUnitInfo [
+	name: testjpaPersistenceUnit
+	...]
+2020-04-22 20:11:46,695 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'GestionContactos' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/GestionContactos!ec.edu.ups.appdis.testjpa.business.GestionContactos
+	java:app/testjpa/GestionContactos!ec.edu.ups.appdis.testjpa.business.GestionContactos
+	java:module/GestionContactos!ec.edu.ups.appdis.testjpa.business.GestionContactos
+	ejb:/testjpa/GestionContactos!ec.edu.ups.appdis.testjpa.business.GestionContactos
+	java:global/testjpa/GestionContactos
+	java:app/testjpa/GestionContactos
+	java:module/GestionContactos
+
+2020-04-22 20:11:46,696 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'PersonaDAO' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	java:app/testjpa/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	java:module/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	ejb:/testjpa/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	java:global/testjpa/PersonaDAO
+	java:app/testjpa/PersonaDAO
+	java:module/PersonaDAO
+
+2020-04-22 20:11:46,803 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 149) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 20:11:46,809 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 149) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-22 20:11:46,810 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 149) HHH000431: Unable to determine H2 database version, certain features may not work
+2020-04-22 20:11:46,819 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 149) Envers integration enabled? : true
+2020-04-22 20:11:46,869 INFO  [stdout] (ServerService Thread Pool -- 149) Hibernate: 
+2020-04-22 20:11:46,870 INFO  [stdout] (ServerService Thread Pool -- 149)     
+2020-04-22 20:11:46,870 INFO  [stdout] (ServerService Thread Pool -- 149)     drop table Persona if exists
+2020-04-22 20:11:46,876 INFO  [stdout] (ServerService Thread Pool -- 149) Hibernate: 
+2020-04-22 20:11:46,876 INFO  [stdout] (ServerService Thread Pool -- 149)     
+2020-04-22 20:11:46,876 INFO  [stdout] (ServerService Thread Pool -- 149)     create table Persona (
+2020-04-22 20:11:46,876 INFO  [stdout] (ServerService Thread Pool -- 149)        cedula varchar(255) not null,
+2020-04-22 20:11:46,876 INFO  [stdout] (ServerService Thread Pool -- 149)         edad integer not null,
+2020-04-22 20:11:46,876 INFO  [stdout] (ServerService Thread Pool -- 149)         nombre varchar(255),
+2020-04-22 20:11:46,876 INFO  [stdout] (ServerService Thread Pool -- 149)         primary key (cedula)
+2020-04-22 20:11:46,876 INFO  [stdout] (ServerService Thread Pool -- 149)     )
+2020-04-22 20:11:46,878 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 149) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@44ffcdbd'
+2020-04-22 20:11:46,965 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-5) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+2020-04-22 20:11:46,966 INFO  [io.smallrye.metrics] (MSC service thread 1-5) MicroProfile: Metrics activated
+2020-04-22 20:11:47,192 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 149) Inicializando Mojarra 2.3.9.SP04 para el contexto '/testjpa'
+2020-04-22 20:11:47,236 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 149) WFLYUT0021: Registered web context: '/testjpa' for server 'default-server'
+2020-04-22 20:11:47,282 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0016: Replaced deployment "testjpa.war" with deployment "testjpa.war"
+2020-04-22 20:11:51,640 INFO  [stdout] (default task-2) Hibernate: 
+2020-04-22 20:11:51,640 INFO  [stdout] (default task-2)     select
+2020-04-22 20:11:51,640 INFO  [stdout] (default task-2)         persona0_.cedula as cedula1_0_0_,
+2020-04-22 20:11:51,640 INFO  [stdout] (default task-2)         persona0_.edad as edad2_0_0_,
+2020-04-22 20:11:51,640 INFO  [stdout] (default task-2)         persona0_.nombre as nombre3_0_0_ 
+2020-04-22 20:11:51,640 INFO  [stdout] (default task-2)     from
+2020-04-22 20:11:51,640 INFO  [stdout] (default task-2)         Persona persona0_ 
+2020-04-22 20:11:51,640 INFO  [stdout] (default task-2)     where
+2020-04-22 20:11:51,640 INFO  [stdout] (default task-2)         persona0_.cedula=?
+2020-04-22 20:11:51,652 INFO  [stdout] (default task-2) Hibernate: 
+2020-04-22 20:11:51,652 INFO  [stdout] (default task-2)     insert 
+2020-04-22 20:11:51,652 INFO  [stdout] (default task-2)     into
+2020-04-22 20:11:51,652 INFO  [stdout] (default task-2)         Persona
+2020-04-22 20:11:51,652 INFO  [stdout] (default task-2)         (edad, nombre, cedula) 
+2020-04-22 20:11:51,652 INFO  [stdout] (default task-2)     values
+2020-04-22 20:11:51,652 INFO  [stdout] (default task-2)         (?, ?, ?)
+2020-04-22 20:11:51,655 INFO  [stdout] (default task-2) Hibernate: 
+2020-04-22 20:11:51,655 INFO  [stdout] (default task-2)     select
+2020-04-22 20:11:51,655 INFO  [stdout] (default task-2)         persona0_.cedula as cedula1_0_0_,
+2020-04-22 20:11:51,655 INFO  [stdout] (default task-2)         persona0_.edad as edad2_0_0_,
+2020-04-22 20:11:51,655 INFO  [stdout] (default task-2)         persona0_.nombre as nombre3_0_0_ 
+2020-04-22 20:11:51,655 INFO  [stdout] (default task-2)     from
+2020-04-22 20:11:51,655 INFO  [stdout] (default task-2)         Persona persona0_ 
+2020-04-22 20:11:51,655 INFO  [stdout] (default task-2)     where
+2020-04-22 20:11:51,655 INFO  [stdout] (default task-2)         persona0_.cedula=?
+2020-04-22 20:11:51,658 INFO  [stdout] (default task-2) Hibernate: 
+2020-04-22 20:11:51,658 INFO  [stdout] (default task-2)     insert 
+2020-04-22 20:11:51,658 INFO  [stdout] (default task-2)     into
+2020-04-22 20:11:51,658 INFO  [stdout] (default task-2)         Persona
+2020-04-22 20:11:51,658 INFO  [stdout] (default task-2)         (edad, nombre, cedula) 
+2020-04-22 20:11:51,659 INFO  [stdout] (default task-2)     values
+2020-04-22 20:11:51,659 INFO  [stdout] (default task-2)         (?, ?, ?)
+2020-04-22 20:11:51,664 INFO  [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator] (default task-2) HHH000397: Using ASTQueryTranslatorFactory
+2020-04-22 20:11:51,666 INFO  [stdout] (default task-2) Hibernate: 
+2020-04-22 20:11:51,666 INFO  [stdout] (default task-2)     select
+2020-04-22 20:11:51,666 INFO  [stdout] (default task-2)         persona0_.cedula as cedula1_0_,
+2020-04-22 20:11:51,666 INFO  [stdout] (default task-2)         persona0_.edad as edad2_0_,
+2020-04-22 20:11:51,666 INFO  [stdout] (default task-2)         persona0_.nombre as nombre3_0_ 
+2020-04-22 20:11:51,666 INFO  [stdout] (default task-2)     from
+2020-04-22 20:11:51,666 INFO  [stdout] (default task-2)         Persona persona0_
+2020-04-22 20:13:47,339 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 153) WFLYUT0022: Unregistered web context: '/testjpa' from server 'default-server'
+2020-04-22 20:13:47,351 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 156) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 20:13:47,351 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 156) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@e6c6d5c
+2020-04-22 20:13:47,352 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 156) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 20:13:47,352 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/mywebappDS]
+2020-04-22 20:13:47,357 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment testjpa.war (runtime-name: testjpa.war) in 21ms
+2020-04-22 20:13:47,358 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "testjpa.war" (runtime-name: "testjpa.war")
+2020-04-22 20:13:47,399 INFO  [org.jboss.as.jpa] (MSC service thread 1-6) WFLYJPA0002: Read persistence.xml for testjpaPersistenceUnit
+2020-04-22 20:13:47,401 WARN  [org.jboss.as.connector] (MSC service thread 1-6) WFLYJCA0091: -ds.xml file deployments are deprecated. Support may be removed in a future version.
+2020-04-22 20:13:47,418 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) WFLYWELD0003: Processing weld deployment testjpa.war
+2020-04-22 20:13:47,423 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0001: Bound data source [java:jboss/datasources/mywebappDS]
+2020-04-22 20:13:47,426 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 156) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 20:13:47,427 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 156) HHH000204: Processing PersistenceUnitInfo [
+	name: testjpaPersistenceUnit
+	...]
+2020-04-22 20:13:47,446 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'GestionContactos' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/GestionContactos!ec.edu.ups.appdis.testjpa.business.GestionContactos
+	java:app/testjpa/GestionContactos!ec.edu.ups.appdis.testjpa.business.GestionContactos
+	java:module/GestionContactos!ec.edu.ups.appdis.testjpa.business.GestionContactos
+	ejb:/testjpa/GestionContactos!ec.edu.ups.appdis.testjpa.business.GestionContactos
+	java:global/testjpa/GestionContactos
+	java:app/testjpa/GestionContactos
+	java:module/GestionContactos
+
+2020-04-22 20:13:47,446 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'PersonaDAO' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	java:app/testjpa/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	java:module/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	ejb:/testjpa/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	java:global/testjpa/PersonaDAO
+	java:app/testjpa/PersonaDAO
+	java:module/PersonaDAO
+
+2020-04-22 20:13:47,531 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 156) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 20:13:47,533 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 156) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-22 20:13:47,533 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 156) HHH000431: Unable to determine H2 database version, certain features may not work
+2020-04-22 20:13:47,536 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 156) Envers integration enabled? : true
+2020-04-22 20:13:47,591 INFO  [stdout] (ServerService Thread Pool -- 156) Hibernate: 
+2020-04-22 20:13:47,592 INFO  [stdout] (ServerService Thread Pool -- 156)     
+2020-04-22 20:13:47,592 INFO  [stdout] (ServerService Thread Pool -- 156)     drop table Persona if exists
+2020-04-22 20:13:47,595 INFO  [stdout] (ServerService Thread Pool -- 156) Hibernate: 
+2020-04-22 20:13:47,596 INFO  [stdout] (ServerService Thread Pool -- 156)     
+2020-04-22 20:13:47,596 INFO  [stdout] (ServerService Thread Pool -- 156)     create table Persona (
+2020-04-22 20:13:47,596 INFO  [stdout] (ServerService Thread Pool -- 156)        cedula varchar(255) not null,
+2020-04-22 20:13:47,596 INFO  [stdout] (ServerService Thread Pool -- 156)         edad integer not null,
+2020-04-22 20:13:47,596 INFO  [stdout] (ServerService Thread Pool -- 156)         nombre varchar(255),
+2020-04-22 20:13:47,596 INFO  [stdout] (ServerService Thread Pool -- 156)         primary key (cedula)
+2020-04-22 20:13:47,596 INFO  [stdout] (ServerService Thread Pool -- 156)     )
+2020-04-22 20:13:47,598 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 156) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@44ffcdbd'
+2020-04-22 20:13:47,678 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-3) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+2020-04-22 20:13:47,679 INFO  [io.smallrye.metrics] (MSC service thread 1-3) MicroProfile: Metrics activated
+2020-04-22 20:13:47,860 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 156) Inicializando Mojarra 2.3.9.SP04 para el contexto '/testjpa'
+2020-04-22 20:13:47,909 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 156) WFLYUT0021: Registered web context: '/testjpa' for server 'default-server'
+2020-04-22 20:13:47,949 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0016: Replaced deployment "testjpa.war" with deployment "testjpa.war"
+2020-04-22 20:13:51,145 INFO  [stdout] (default task-2) Hibernate: 
+2020-04-22 20:13:51,145 INFO  [stdout] (default task-2)     select
+2020-04-22 20:13:51,145 INFO  [stdout] (default task-2)         persona0_.cedula as cedula1_0_0_,
+2020-04-22 20:13:51,145 INFO  [stdout] (default task-2)         persona0_.edad as edad2_0_0_,
+2020-04-22 20:13:51,145 INFO  [stdout] (default task-2)         persona0_.nombre as nombre3_0_0_ 
+2020-04-22 20:13:51,145 INFO  [stdout] (default task-2)     from
+2020-04-22 20:13:51,145 INFO  [stdout] (default task-2)         Persona persona0_ 
+2020-04-22 20:13:51,145 INFO  [stdout] (default task-2)     where
+2020-04-22 20:13:51,145 INFO  [stdout] (default task-2)         persona0_.cedula=?
+2020-04-22 20:13:51,154 INFO  [stdout] (default task-2) Hibernate: 
+2020-04-22 20:13:51,154 INFO  [stdout] (default task-2)     insert 
+2020-04-22 20:13:51,154 INFO  [stdout] (default task-2)     into
+2020-04-22 20:13:51,154 INFO  [stdout] (default task-2)         Persona
+2020-04-22 20:13:51,154 INFO  [stdout] (default task-2)         (edad, nombre, cedula) 
+2020-04-22 20:13:51,154 INFO  [stdout] (default task-2)     values
+2020-04-22 20:13:51,155 INFO  [stdout] (default task-2)         (?, ?, ?)
+2020-04-22 20:13:51,157 INFO  [stdout] (default task-2) Hibernate: 
+2020-04-22 20:13:51,157 INFO  [stdout] (default task-2)     select
+2020-04-22 20:13:51,157 INFO  [stdout] (default task-2)         persona0_.cedula as cedula1_0_0_,
+2020-04-22 20:13:51,157 INFO  [stdout] (default task-2)         persona0_.edad as edad2_0_0_,
+2020-04-22 20:13:51,157 INFO  [stdout] (default task-2)         persona0_.nombre as nombre3_0_0_ 
+2020-04-22 20:13:51,157 INFO  [stdout] (default task-2)     from
+2020-04-22 20:13:51,157 INFO  [stdout] (default task-2)         Persona persona0_ 
+2020-04-22 20:13:51,157 INFO  [stdout] (default task-2)     where
+2020-04-22 20:13:51,157 INFO  [stdout] (default task-2)         persona0_.cedula=?
+2020-04-22 20:13:51,161 INFO  [stdout] (default task-2) Hibernate: 
+2020-04-22 20:13:51,161 INFO  [stdout] (default task-2)     insert 
+2020-04-22 20:13:51,161 INFO  [stdout] (default task-2)     into
+2020-04-22 20:13:51,161 INFO  [stdout] (default task-2)         Persona
+2020-04-22 20:13:51,161 INFO  [stdout] (default task-2)         (edad, nombre, cedula) 
+2020-04-22 20:13:51,161 INFO  [stdout] (default task-2)     values
+2020-04-22 20:13:51,161 INFO  [stdout] (default task-2)         (?, ?, ?)
+2020-04-22 20:13:51,169 INFO  [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator] (default task-2) HHH000397: Using ASTQueryTranslatorFactory
+2020-04-22 20:13:51,175 INFO  [stdout] (default task-2) Hibernate: 
+2020-04-22 20:13:51,175 INFO  [stdout] (default task-2)     select
+2020-04-22 20:13:51,175 INFO  [stdout] (default task-2)         persona0_.cedula as cedula1_0_,
+2020-04-22 20:13:51,175 INFO  [stdout] (default task-2)         persona0_.edad as edad2_0_,
+2020-04-22 20:13:51,175 INFO  [stdout] (default task-2)         persona0_.nombre as nombre3_0_ 
+2020-04-22 20:13:51,175 INFO  [stdout] (default task-2)     from
+2020-04-22 20:13:51,175 INFO  [stdout] (default task-2)         Persona persona0_
+2020-04-22 20:13:53,278 INFO  [stdout] (default task-2) Hibernate: 
+2020-04-22 20:13:53,278 INFO  [stdout] (default task-2)     select
+2020-04-22 20:13:53,278 INFO  [stdout] (default task-2)         persona0_.cedula as cedula1_0_0_,
+2020-04-22 20:13:53,278 INFO  [stdout] (default task-2)         persona0_.edad as edad2_0_0_,
+2020-04-22 20:13:53,278 INFO  [stdout] (default task-2)         persona0_.nombre as nombre3_0_0_ 
+2020-04-22 20:13:53,278 INFO  [stdout] (default task-2)     from
+2020-04-22 20:13:53,278 INFO  [stdout] (default task-2)         Persona persona0_ 
+2020-04-22 20:13:53,278 INFO  [stdout] (default task-2)     where
+2020-04-22 20:13:53,278 INFO  [stdout] (default task-2)         persona0_.cedula=?
+2020-04-22 20:13:53,282 INFO  [stdout] (default task-2) Hibernate: 
+2020-04-22 20:13:53,282 INFO  [stdout] (default task-2)     select
+2020-04-22 20:13:53,282 INFO  [stdout] (default task-2)         persona0_.cedula as cedula1_0_0_,
+2020-04-22 20:13:53,283 INFO  [stdout] (default task-2)         persona0_.edad as edad2_0_0_,
+2020-04-22 20:13:53,283 INFO  [stdout] (default task-2)         persona0_.nombre as nombre3_0_0_ 
+2020-04-22 20:13:53,283 INFO  [stdout] (default task-2)     from
+2020-04-22 20:13:53,283 INFO  [stdout] (default task-2)         Persona persona0_ 
+2020-04-22 20:13:53,283 INFO  [stdout] (default task-2)     where
+2020-04-22 20:13:53,283 INFO  [stdout] (default task-2)         persona0_.cedula=?
+2020-04-22 20:13:53,287 INFO  [stdout] (default task-2) Hibernate: 
+2020-04-22 20:13:53,287 INFO  [stdout] (default task-2)     select
+2020-04-22 20:13:53,287 INFO  [stdout] (default task-2)         persona0_.cedula as cedula1_0_,
+2020-04-22 20:13:53,287 INFO  [stdout] (default task-2)         persona0_.edad as edad2_0_,
+2020-04-22 20:13:53,287 INFO  [stdout] (default task-2)         persona0_.nombre as nombre3_0_ 
+2020-04-22 20:13:53,287 INFO  [stdout] (default task-2)     from
+2020-04-22 20:13:53,287 INFO  [stdout] (default task-2)         Persona persona0_
+2020-04-22 20:15:58,525 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0272: Suspending server
+2020-04-22 20:15:58,527 INFO  [org.jboss.as.ejb3] (management-handler-thread - 3) WFLYEJB0493: EJB subsystem suspension complete
+2020-04-22 20:15:58,530 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+2020-04-22 20:15:58,566 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 156) WFLYUT0022: Unregistered web context: '/testjpa' from server 'default-server'
+2020-04-22 20:15:58,589 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2020-04-22 20:15:58,619 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0019: Host default-host stopping
+2020-04-22 20:15:58,621 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 162) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 20:15:58,621 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 162) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@c58767e
+2020-04-22 20:15:58,622 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2020-04-22 20:15:58,622 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 162) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-04-22 20:15:58,623 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:jboss/datasources/mywebappDS]
+2020-04-22 20:15:58,635 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2020-04-22 20:15:58,637 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment testjpa.war (runtime-name: testjpa.war) in 73ms
+2020-04-22 20:15:58,638 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0008: Undertow HTTPS listener https suspending
+2020-04-22 20:15:58,638 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2020-04-22 20:15:58,648 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0008: Undertow HTTP listener default suspending
+2020-04-22 20:15:58,649 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2020-04-22 20:15:58,650 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0004: Undertow 2.0.27.Final stopping
+2020-04-22 20:15:58,654 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 164) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2020-04-22 20:15:58,664 INFO  [org.jboss.as] (MSC service thread 1-5) WFLYSRV0050: WildFly Full 18.0.1.Final (WildFly Core 10.0.3.Final) stopped in 97ms

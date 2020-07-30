@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+	<title>Listado Contactos</title>
+
+</h:head>
+
+<h:body>
+	<ui:composition template="template/template.xhtml">
+		<ui:define name="title"> Listado </ui:define>
+
+		<ui:define name="content">
+		<div>
+		</div>
+			<h:form id="pers">
+				<h:dataTable value="#{contactoBean.listado}" var="person"
+					class="table">
+					<h:column>
+						<f:facet id="ced" name="header">Cédula</f:facet>
+		#{person.cedula}
+	</h:column>
+					<h:column>
+						<f:facet id="nom" name="header">Nombre</f:facet>
+		#{person.nombre}
+	</h:column>
+					<h:column>
+						<f:facet name="header">Listar</f:facet>
+						<h:commandButton
+							action="#{contactoBean.cargarTels(person.cedula)}"
+							value="Ver Telefonos" class="btn btn-success">
+							<f:ajax render="cargado" />
+						</h:commandButton>
+					</h:column>
+					<h:column>
+						<f:facet name="header">Eliminado</f:facet>
+						<h:commandButton action="#{contactoBean.eliminar(person.cedula)}"
+							value="Eliminar Persona" class="btn btn-success">
+							<f:ajax render="pers" />
+						</h:commandButton>
+					</h:column>
+				</h:dataTable>
+			</h:form>
+
+			<h:panelGroup id="cargado">
+				<h:form id="tels" rendered="#{contactoBean.editable}">
+					<h1>Telefonos</h1>
+					<h:dataTable value="#{contactoBean.listaTels}" var="tel"
+						class="table">
+						<h:column>
+							<f:facet name="header">Número</f:facet>
+		#{tel.numero}
+	</h:column>
+						<h:column>
+
+							<f:facet name="header">Tipo</f:facet>
+		#{tel.tipo}
+	</h:column>
+					</h:dataTable>
+				</h:form>
+			</h:panelGroup>
+			<a href="crear-contacto.xhtml"> Regresar</a>
+		</ui:define>
+	</ui:composition>
+</h:body>
+</html>

@@ -1,0 +1,31 @@
+2020-07-05 01:01:15,660 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0272: Suspending server
+2020-07-05 01:01:15,705 INFO  [org.jboss.as.ejb3] (Thread-2) WFLYEJB0493: EJB subsystem suspension complete
+2020-07-05 01:01:15,707 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2020-07-05 01:01:15,755 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:jboss/datasources/ejOracleDS]
+2020-07-05 01:01:15,758 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:jboss/datasources/ejCoopJamDS]
+2020-07-05 01:01:15,758 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:jboss/datasources/ejContactosDS]
+2020-07-05 01:01:15,760 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0010: Unbound data source [java:jboss/datasources/ejGestionLibrosDS]
+2020-07-05 01:01:15,760 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-4) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2020-07-05 01:01:15,760 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/ejPostgresDS]
+2020-07-05 01:01:15,765 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:jboss/datasources/ejExamenLibrosDS]
+2020-07-05 01:01:15,766 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/mywebappDS]
+2020-07-05 01:01:15,825 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0019: Stopped Driver service with driver-name = oracle-driver
+2020-07-05 01:01:15,829 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0019: Stopped Driver service with driver-name = postgresql-driver
+2020-07-05 01:01:15,858 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 95) WFLYUT0022: Unregistered web context: '/testjpa' from server 'default-server'
+2020-07-05 01:01:15,947 INFO  [org.jboss.as.webservices] (MSC service thread 1-7) WFLYWS0004: Stopping service jboss.ws.endpoint."testjpa.war"."ec.edu.ups.appdis.testjpa.business.ServicioWeb"
+2020-07-05 01:01:15,996 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0019: Host default-host stopping
+2020-07-05 01:01:16,007 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 99) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2020-07-05 01:01:16,057 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2020-07-05 01:01:16,059 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 99) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-07-05 01:01:16,061 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2020-07-05 01:01:16,086 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 99) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@4339fa52
+2020-07-05 01:01:16,090 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 99) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-07-05 01:01:16,094 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0010: Unbound data source [java:jboss/datasources/ejMySqlDS]
+2020-07-05 01:01:16,112 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0019: Stopped Driver service with driver-name = mysql-driver
+2020-07-05 01:01:16,222 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0008: Undertow HTTPS listener https suspending
+2020-07-05 01:01:16,223 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0008: Undertow HTTP listener default suspending
+2020-07-05 01:01:16,224 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2020-07-05 01:01:16,224 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2020-07-05 01:01:16,246 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0004: Undertow 2.0.27.Final stopping
+2020-07-05 01:01:16,336 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment testjpa.war (runtime-name: testjpa.war) in 617ms
+2020-07-05 01:01:16,367 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0050: WildFly Full 18.0.1.Final (WildFly Core 10.0.3.Final) stopped in 647ms

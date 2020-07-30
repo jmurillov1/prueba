@@ -1,0 +1,651 @@
+2020-05-14 01:20:24,745 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0272: Suspending server
+2020-05-14 01:20:24,770 INFO  [org.jboss.as.ejb3] (Thread-1) WFLYEJB0493: EJB subsystem suspension complete
+2020-05-14 01:20:24,780 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2020-05-14 01:20:24,783 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0010: Unbound data source [java:jboss/datasources/ejOracleDS]
+2020-05-14 01:20:24,784 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 338) WFLYUT0022: Unregistered web context: '/testjpa' from server 'default-server'
+2020-05-14 01:20:24,828 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/ejContactosDS]
+2020-05-14 01:20:24,828 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2020-05-14 01:20:24,828 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0019: Stopped Driver service with driver-name = oracle-driver
+2020-05-14 01:20:24,828 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/ejGestionLibrosDS]
+2020-05-14 01:20:24,828 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/ejPostgresDS]
+2020-05-14 01:20:24,829 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0010: Unbound data source [java:jboss/datasources/mywebappDS]
+2020-05-14 01:20:24,846 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0019: Stopped Driver service with driver-name = postgresql-driver
+2020-05-14 01:20:24,852 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 351) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-05-14 01:20:24,853 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 351) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@67581cd3
+2020-05-14 01:20:24,853 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2020-05-14 01:20:24,859 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0019: Host default-host stopping
+2020-05-14 01:20:24,860 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2020-05-14 01:20:24,863 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 345) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-05-14 01:20:24,865 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0010: Unbound data source [java:jboss/datasources/ejMySqlDS]
+2020-05-14 01:20:24,867 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 345) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2020-05-14 01:20:24,876 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0019: Stopped Driver service with driver-name = mysql-driver
+2020-05-14 01:20:24,887 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment testjpa.war (runtime-name: testjpa.war) in 102ms
+2020-05-14 01:20:24,888 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0008: Undertow HTTP listener default suspending
+2020-05-14 01:20:24,888 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0008: Undertow HTTPS listener https suspending
+2020-05-14 01:20:24,888 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2020-05-14 01:20:24,889 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2020-05-14 01:20:24,889 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0004: Undertow 2.0.27.Final stopping
+2020-05-14 01:20:24,901 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0050: WildFly Full 18.0.1.Final (WildFly Core 10.0.3.Final) stopped in 116ms
+2020-05-14 23:04:23,130 INFO  [org.jboss.modules] (main) JBoss Modules version 1.9.1.Final
+2020-05-14 23:04:25,636 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.11.Final
+2020-05-14 23:04:25,652 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.3.Final
+2020-05-14 23:04:25,998 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 18.0.1.Final (WildFly Core 10.0.3.Final) starting
+2020-05-14 23:04:25,999 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/jmurillo/bin/wildfly-18.0.1.Final/jboss-modules.jar
+	java.class.version = 55.0
+	java.home = /usr/lib/jvm/java-11-openjdk-amd64
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 11.0.7+10-post-Ubuntu-2ubuntu218.04
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 11
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Ubuntu
+	java.vendor.url = https://ubuntu.com/
+	java.vendor.url.bug = https://bugs.launchpad.net/ubuntu/+source/openjdk-lts
+	java.version = 11.0.7
+	java.version.date = 2020-04-14
+	java.vm.compressedOopsMode = 32-bit
+	java.vm.info = mixed mode, sharing
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 11
+	java.vm.vendor = Ubuntu
+	java.vm.version = 11.0.7+10-post-Ubuntu-2ubuntu218.04
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = /home/jmurillo/bin/wildfly-18.0.1.Final
+	jboss.host.name = jmurillo-h81m-h
+	jboss.modules.dir = /home/jmurillo/bin/wildfly-18.0.1.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = jmurillo-h81m-h
+	jboss.qualified.host.name = jmurillo-h81m-h
+	jboss.server.base.dir = /home/jmurillo/bin/wildfly-18.0.1.Final/standalone
+	jboss.server.config.dir = /home/jmurillo/bin/wildfly-18.0.1.Final/standalone/configuration
+	jboss.server.data.dir = /home/jmurillo/bin/wildfly-18.0.1.Final/standalone/data
+	jboss.server.deploy.dir = /home/jmurillo/bin/wildfly-18.0.1.Final/standalone/data/content
+	jboss.server.log.dir = /home/jmurillo/bin/wildfly-18.0.1.Final/standalone/log
+	jboss.server.name = jmurillo-h81m-h
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/jmurillo/bin/wildfly-18.0.1.Final/standalone/tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/home/jmurillo/bin/wildfly-18.0.1.Final/standalone/configuration/logging.properties
+	module.path = /home/jmurillo/bin/wildfly-18.0.1.Final/modules
+	org.jboss.boot.log.file = /home/jmurillo/bin/wildfly-18.0.1.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Linux
+	os.version = 5.3.0-51-generic
+	path.separator = :
+	program.name = JBossTools: WildFly 18 at localhost
+	sun.arch.data.model = 64
+	sun.boot.library.path = /usr/lib/jvm/java-11-openjdk-amd64/lib
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.desktop = gnome
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp /home/jmurillo/bin/wildfly-18.0.1.Final/modules org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=/home/jmurillo/bin/wildfly-18.0.1.Final/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = EC
+	user.dir = /home/jmurillo/bin/wildfly-18.0.1.Final/bin
+	user.home = /home/jmurillo
+	user.language = es
+	user.name = jmurillo
+	user.timezone = America/Guayaquil
+2020-05-14 23:04:26,063 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -Dprogram.name=JBossTools: WildFly 18 at localhost -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/home/jmurillo/bin/wildfly-18.0.1.Final/standalone/log/boot.log -Dlogging.configuration=file:/home/jmurillo/bin/wildfly-18.0.1.Final/standalone/configuration/logging.properties -Djboss.home.dir=/home/jmurillo/bin/wildfly-18.0.1.Final -Dorg.jboss.logmanager.nocolor=true --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED --add-modules=java.se -Djboss.bind.address.management=localhost -Dfile.encoding=UTF-8 
+2020-05-14 23:04:29,925 INFO  [org.wildfly.security] (ServerService Thread Pool -- 27) ELY00001: WildFly Elytron version 1.10.4.Final
+2020-05-14 23:04:32,132 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2020-05-14 23:04:32,278 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 36) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2020-05-14 23:04:32,464 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2020-05-14 23:04:32,532 INFO  [org.xnio] (MSC service thread 1-4) XNIO version 3.7.3.Final
+2020-05-14 23:04:32,612 INFO  [org.xnio.nio] (MSC service thread 1-4) XNIO NIO Implementation Version 3.7.3.Final
+2020-05-14 23:04:32,816 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 51) WFLYCLINF0001: Activating Infinispan subsystem.
+2020-05-14 23:04:32,882 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 60) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+2020-05-14 23:04:32,895 INFO  [org.jboss.remoting] (MSC service thread 1-8) JBoss Remoting version 5.0.15.Final
+2020-05-14 23:04:32,892 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 52) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2020-05-14 23:04:32,935 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 64) WFLYNAM0001: Activating Naming Subsystem
+2020-05-14 23:04:32,954 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 70) WFLYSEC0002: Activating Security Subsystem
+2020-05-14 23:04:32,945 INFO  [org.jboss.as.connector] (MSC service thread 1-3) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.17.Final)
+2020-05-14 23:04:33,024 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 63) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2020-05-14 23:04:33,026 INFO  [org.wildfly.extension.microprofile.metrics.smallrye] (ServerService Thread Pool -- 62) WFLYMETRICS0001: Activating Eclipse MicroProfile Metrics Subsystem
+2020-05-14 23:04:33,030 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 61) WFLYHEALTH0001: Activating Eclipse MicroProfile Health Subsystem
+2020-05-14 23:04:33,076 INFO  [org.jboss.as.security] (MSC service thread 1-3) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2020-05-14 23:04:33,108 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 72) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2020-05-14 23:04:33,171 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 74) WFLYWS0002: Activating WebServices Extension
+2020-05-14 23:04:33,183 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 58) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2020-05-14 23:04:33,225 INFO  [org.jboss.as.naming] (MSC service thread 1-3) WFLYNAM0003: Starting Naming Service
+2020-05-14 23:04:33,237 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 43) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2020-05-14 23:04:33,252 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2020-05-14 23:04:33,255 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Started Driver service with driver-name = h2
+2020-05-14 23:04:33,406 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 53) WFLYRS0016: RESTEasy version 3.9.1.Final
+2020-05-14 23:04:33,515 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0003: Undertow 2.0.27.Final starting
+2020-05-14 23:04:33,781 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 43) WFLYJCA0004: Deploying JDBC-compliant driver class oracle.jdbc.OracleDriver (version 11.1)
+2020-05-14 23:04:33,848 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0018: Started Driver service with driver-name = oracle-driver
+2020-05-14 23:04:33,879 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 73) WFLYUT0014: Creating file handler for path '/home/jmurillo/bin/wildfly-18.0.1.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2020-05-14 23:04:33,953 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 43) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 9.4)
+2020-05-14 23:04:33,955 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = postgresql-driver
+2020-05-14 23:04:33,977 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0012: Started server default-server.
+2020-05-14 23:04:33,996 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0018: Host default-host starting
+2020-05-14 23:04:34,056 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 43) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
+2020-05-14 23:04:34,066 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = mysql-driver
+2020-05-14 23:04:34,158 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2020-05-14 23:04:34,166 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2020-05-14 23:04:34,287 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2020-05-14 23:04:34,558 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0493: EJB subsystem suspension complete
+2020-05-14 23:04:34,743 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2020-05-14 23:04:34,750 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:jboss/datasources/ejGestionLibrosDS]
+2020-05-14 23:04:34,753 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:jboss/datasources/ejOracleDS]
+2020-05-14 23:04:34,763 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:jboss/datasources/ejMySqlDS]
+2020-05-14 23:04:34,768 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:jboss/datasources/ejContactosDS]
+2020-05-14 23:04:34,768 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:jboss/datasources/ejPostgresDS]
+2020-05-14 23:04:35,757 INFO  [org.jboss.as.patching] (MSC service thread 1-5) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2020-05-14 23:04:35,803 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-1) WFLYDM0111: Keystore /home/jmurillo/bin/wildfly-18.0.1.Final/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2020-05-14 23:04:35,862 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-7) WFLYDS0013: Started FileSystemDeploymentService for directory /home/jmurillo/bin/wildfly-18.0.1.Final/standalone/deployments
+2020-05-14 23:04:36,124 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2020-05-14 23:04:36,989 INFO  [org.jboss.ws.common.management] (MSC service thread 1-1) JBWS022052: Starting JBossWS 5.3.0.Final (Apache CXF 3.3.3) 
+2020-05-14 23:04:37,644 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2020-05-14 23:04:37,649 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2020-05-14 23:04:37,649 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2020-05-14 23:04:37,649 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 18.0.1.Final (WildFly Core 10.0.3.Final) started in 16128ms - Started 353 of 615 services (374 services are lazy, passive or on-demand)
+2020-05-14 23:10:06,165 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found testjpa.war in deployment directory. To trigger deployment create a file called testjpa.war.dodeploy
+2020-05-14 23:10:06,234 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "testjpa.war" (runtime-name: "testjpa.war")
+2020-05-14 23:10:07,379 INFO  [org.jboss.as.jpa] (MSC service thread 1-7) WFLYJPA0002: Read persistence.xml for testjpaPersistenceUnit
+2020-05-14 23:10:07,406 WARN  [org.jboss.as.connector] (MSC service thread 1-7) WFLYJCA0091: -ds.xml file deployments are deprecated. Support may be removed in a future version.
+2020-05-14 23:10:07,968 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0001: Bound data source [java:jboss/datasources/mywebappDS]
+2020-05-14 23:10:08,300 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) WFLYWELD0003: Processing weld deployment testjpa.war
+2020-05-14 23:10:08,697 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-2) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.16.Final
+2020-05-14 23:10:08,845 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-1) HV000001: Hibernate Validator 6.0.18.Final
+2020-05-14 23:10:09,246 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 76) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-05-14 23:10:09,320 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 76) HHH000204: Processing PersistenceUnitInfo [
+	name: testjpaPersistenceUnit
+	...]
+2020-05-14 23:10:09,457 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'PersonaDAO' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	java:app/testjpa/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	java:module/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	ejb:/testjpa/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	java:global/testjpa/PersonaDAO
+	java:app/testjpa/PersonaDAO
+	java:module/PersonaDAO
+
+2020-05-14 23:10:09,460 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'GestionCursos' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/GestionCursos!ec.edu.ups.appdis.testjpa.business.GestionCursos
+	java:app/testjpa/GestionCursos!ec.edu.ups.appdis.testjpa.business.GestionCursos
+	java:module/GestionCursos!ec.edu.ups.appdis.testjpa.business.GestionCursos
+	ejb:/testjpa/GestionCursos!ec.edu.ups.appdis.testjpa.business.GestionCursos
+	java:global/testjpa/GestionCursos
+	java:app/testjpa/GestionCursos
+	java:module/GestionCursos
+
+2020-05-14 23:10:09,460 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'CursoDAO' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/CursoDAO!ec.edu.ups.appdis.testjpa.dao.CursoDAO
+	java:app/testjpa/CursoDAO!ec.edu.ups.appdis.testjpa.dao.CursoDAO
+	java:module/CursoDAO!ec.edu.ups.appdis.testjpa.dao.CursoDAO
+	ejb:/testjpa/CursoDAO!ec.edu.ups.appdis.testjpa.dao.CursoDAO
+	java:global/testjpa/CursoDAO
+	java:app/testjpa/CursoDAO
+	java:module/CursoDAO
+
+2020-05-14 23:10:09,461 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'InscripcionDAO' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/InscripcionDAO!ec.edu.ups.appdis.testjpa.dao.InscripcionDAO
+	java:app/testjpa/InscripcionDAO!ec.edu.ups.appdis.testjpa.dao.InscripcionDAO
+	java:module/InscripcionDAO!ec.edu.ups.appdis.testjpa.dao.InscripcionDAO
+	ejb:/testjpa/InscripcionDAO!ec.edu.ups.appdis.testjpa.dao.InscripcionDAO
+	java:global/testjpa/InscripcionDAO
+	java:app/testjpa/InscripcionDAO
+	java:module/InscripcionDAO
+
+2020-05-14 23:10:09,462 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'InstructorDAO' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/InstructorDAO!ec.edu.ups.appdis.testjpa.dao.InstructorDAO
+	java:app/testjpa/InstructorDAO!ec.edu.ups.appdis.testjpa.dao.InstructorDAO
+	java:module/InstructorDAO!ec.edu.ups.appdis.testjpa.dao.InstructorDAO
+	ejb:/testjpa/InstructorDAO!ec.edu.ups.appdis.testjpa.dao.InstructorDAO
+	java:global/testjpa/InstructorDAO
+	java:app/testjpa/InstructorDAO
+	java:module/InstructorDAO
+
+2020-05-14 23:10:09,463 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'AlumnoDAO' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/AlumnoDAO!ec.edu.ups.appdis.testjpa.dao.AlumnoDAO
+	java:app/testjpa/AlumnoDAO!ec.edu.ups.appdis.testjpa.dao.AlumnoDAO
+	java:module/AlumnoDAO!ec.edu.ups.appdis.testjpa.dao.AlumnoDAO
+	ejb:/testjpa/AlumnoDAO!ec.edu.ups.appdis.testjpa.dao.AlumnoDAO
+	java:global/testjpa/AlumnoDAO
+	java:app/testjpa/AlumnoDAO
+	java:module/AlumnoDAO
+
+2020-05-14 23:10:09,464 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'DomicilioDAO' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/DomicilioDAO!ec.edu.ups.appdis.testjpa.dao.DomicilioDAO
+	java:app/testjpa/DomicilioDAO!ec.edu.ups.appdis.testjpa.dao.DomicilioDAO
+	java:module/DomicilioDAO!ec.edu.ups.appdis.testjpa.dao.DomicilioDAO
+	ejb:/testjpa/DomicilioDAO!ec.edu.ups.appdis.testjpa.dao.DomicilioDAO
+	java:global/testjpa/DomicilioDAO
+	java:app/testjpa/DomicilioDAO
+	java:module/DomicilioDAO
+
+2020-05-14 23:10:09,466 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'GestionPersonas' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/GestionPersonas!ec.edu.ups.appdis.testjpa.business.GestionPersonas
+	java:app/testjpa/GestionPersonas!ec.edu.ups.appdis.testjpa.business.GestionPersonas
+	java:module/GestionPersonas!ec.edu.ups.appdis.testjpa.business.GestionPersonas
+	ejb:/testjpa/GestionPersonas!ec.edu.ups.appdis.testjpa.business.GestionPersonas
+	java:global/testjpa/GestionPersonas
+	java:app/testjpa/GestionPersonas
+	java:module/GestionPersonas
+
+2020-05-14 23:10:09,646 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 76) HHH000412: Hibernate Core {5.3.13.Final}
+2020-05-14 23:10:09,655 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 76) HHH000206: hibernate.properties not found
+2020-05-14 23:10:10,540 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 79) WFLYCLINF0002: Started client-mappings cache from ejb container
+2020-05-14 23:10:10,592 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 76) HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+2020-05-14 23:10:10,642 INFO  [org.jboss.weld.Version] (MSC service thread 1-5) WELD-000900: 3.1.2 (Final)
+2020-05-14 23:10:11,300 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 76) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-05-14 23:10:11,567 WARN  [org.jboss.jca.core.connectionmanager.pool.strategy.OnePool] (ServerService Thread Pool -- 76) IJ000604: Throwable while attempting to get a new connection: null: javax.resource.ResourceException: IJ031084: Unable to create connection
+	at org.jboss.ironjacamar.jdbcadapters@1.4.17.Final//org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createLocalManagedConnection(LocalManagedConnectionFactory.java:345)
+	at org.jboss.ironjacamar.jdbcadapters@1.4.17.Final//org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:352)
+	at org.jboss.ironjacamar.jdbcadapters@1.4.17.Final//org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createManagedConnection(LocalManagedConnectionFactory.java:287)
+	at org.jboss.ironjacamar.impl@1.4.17.Final//org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreConcurrentLinkedDequeManagedConnectionPool.createConnectionEventListener(SemaphoreConcurrentLinkedDequeManagedConnectionPool.java:1328)
+	at org.jboss.ironjacamar.impl@1.4.17.Final//org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreConcurrentLinkedDequeManagedConnectionPool.getConnection(SemaphoreConcurrentLinkedDequeManagedConnectionPool.java:499)
+	at org.jboss.ironjacamar.impl@1.4.17.Final//org.jboss.jca.core.connectionmanager.pool.AbstractPool.getSimpleConnection(AbstractPool.java:632)
+	at org.jboss.ironjacamar.impl@1.4.17.Final//org.jboss.jca.core.connectionmanager.pool.AbstractPool.getConnection(AbstractPool.java:604)
+	at org.jboss.ironjacamar.impl@1.4.17.Final//org.jboss.jca.core.connectionmanager.AbstractConnectionManager.getManagedConnection(AbstractConnectionManager.java:624)
+	at org.jboss.ironjacamar.impl@1.4.17.Final//org.jboss.jca.core.connectionmanager.tx.TxConnectionManagerImpl.getManagedConnection(TxConnectionManagerImpl.java:440)
+	at org.jboss.ironjacamar.impl@1.4.17.Final//org.jboss.jca.core.connectionmanager.AbstractConnectionManager.allocateConnection(AbstractConnectionManager.java:789)
+	at org.jboss.ironjacamar.jdbcadapters@1.4.17.Final//org.jboss.jca.adapters.jdbc.WrapperDataSource.getConnection(WrapperDataSource.java:151)
+	at org.jboss.as.connector@18.0.1.Final//org.jboss.as.connector.subsystems.datasources.WildFlyDataSource.getConnection(WildFlyDataSource.java:64)
+	at org.hibernate@5.3.13.Final//org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate@5.3.13.Final//org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate@5.3.13.Final//org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate@5.3.13.Final//org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate@5.3.13.Final//org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:94)
+	at org.hibernate@5.3.13.Final//org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate@5.3.13.Final//org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate@5.3.13.Final//org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate@5.3.13.Final//org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate@5.3.13.Final//org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate@5.3.13.Final//org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate@5.3.13.Final//org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate@5.3.13.Final//org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:179)
+	at org.hibernate@5.3.13.Final//org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:119)
+	at org.hibernate@5.3.13.Final//org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904)
+	at org.hibernate@5.3.13.Final//org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935)
+	at org.hibernate.jipijapa-hibernate5-3@18.0.1.Final//org.jboss.as.jpa.hibernate5.TwoPhaseBootstrapImpl.build(TwoPhaseBootstrapImpl.java:44)
+	at org.jboss.as.jpa@18.0.1.Final//org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:170)
+	at org.jboss.as.jpa@18.0.1.Final//org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:128)
+	at org.wildfly.security.elytron-private@1.10.4.Final//org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:658)
+	at org.jboss.as.jpa@18.0.1.Final//org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:212)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.JBossThread.run(JBossThread.java:485)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql//com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql//com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1118)
+	at com.mysql//com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:343)
+	at com.mysql//com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2308)
+	at com.mysql//com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2122)
+	at com.mysql//com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:774)
+	at com.mysql//com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:49)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql//com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql//com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:375)
+	at com.mysql//com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:289)
+	at org.jboss.ironjacamar.jdbcadapters@1.4.17.Final//org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createLocalManagedConnection(LocalManagedConnectionFactory.java:321)
+	... 38 more
+Caused by: java.net.ConnectException: Conexión rehusada (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at java.base/java.net.Socket.connect(Socket.java:558)
+	at java.base/java.net.Socket.<init>(Socket.java:454)
+	at java.base/java.net.Socket.<init>(Socket.java:264)
+	at com.mysql//com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:256)
+	at com.mysql//com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:292)
+	... 50 more
+
+2020-05-14 23:10:11,577 WARN  [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator] (ServerService Thread Pool -- 76) HHH000342: Could not obtain connection to query metadata : javax.resource.ResourceException: IJ000453: Unable to get managed connection for java:jboss/datasources/ejMySqlDS
+2020-05-14 23:10:11,592 ERROR [org.jboss.msc.service.fail] (ServerService Thread Pool -- 76) MSC000001: Failed to start service jboss.persistenceunit."testjpa.war#testjpaPersistenceUnit": org.jboss.msc.service.StartException in service jboss.persistenceunit."testjpa.war#testjpaPersistenceUnit": org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.jboss.as.jpa@18.0.1.Final//org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:198)
+	at org.jboss.as.jpa@18.0.1.Final//org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:128)
+	at org.wildfly.security.elytron-private@1.10.4.Final//org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:658)
+	at org.jboss.as.jpa@18.0.1.Final//org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:212)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.JBossThread.run(JBossThread.java:485)
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.hibernate@5.3.13.Final//org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:275)
+	at org.hibernate@5.3.13.Final//org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate@5.3.13.Final//org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate@5.3.13.Final//org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate@5.3.13.Final//org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate@5.3.13.Final//org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate@5.3.13.Final//org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate@5.3.13.Final//org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:179)
+	at org.hibernate@5.3.13.Final//org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:119)
+	at org.hibernate@5.3.13.Final//org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904)
+	at org.hibernate@5.3.13.Final//org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935)
+	at org.hibernate.jipijapa-hibernate5-3@18.0.1.Final//org.jboss.as.jpa.hibernate5.TwoPhaseBootstrapImpl.build(TwoPhaseBootstrapImpl.java:44)
+	at org.jboss.as.jpa@18.0.1.Final//org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:170)
+	... 9 more
+Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
+	at org.hibernate@5.3.13.Final//org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:100)
+	at org.hibernate@5.3.13.Final//org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:54)
+	at org.hibernate@5.3.13.Final//org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:137)
+	at org.hibernate@5.3.13.Final//org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate@5.3.13.Final//org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:94)
+	at org.hibernate@5.3.13.Final//org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	... 21 more
+
+2020-05-14 23:10:11,610 ERROR [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "testjpa.war")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.persistenceunit.\"testjpa.war#testjpaPersistenceUnit\"" => "org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+    Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+    Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set"}}
+2020-05-14 23:10:11,705 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0010: Deployed "testjpa.war" (runtime-name : "testjpa.war")
+2020-05-14 23:10:11,710 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 2) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.persistenceunit."testjpa.war#testjpaPersistenceUnit": org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+WFLYCTL0448: 55 additional services are down due to their dependencies being missing or failed
+2020-05-14 23:11:16,866 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:jboss/datasources/mywebappDS]
+2020-05-14 23:11:16,871 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 76) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-05-14 23:11:16,978 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment testjpa.war (runtime-name: testjpa.war) in 114ms
+2020-05-14 23:11:16,988 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "testjpa.war" (runtime-name: "testjpa.war")
+2020-05-14 23:11:17,349 INFO  [org.jboss.as.jpa] (MSC service thread 1-1) WFLYJPA0002: Read persistence.xml for testjpaPersistenceUnit
+2020-05-14 23:11:17,352 WARN  [org.jboss.as.connector] (MSC service thread 1-1) WFLYJCA0091: -ds.xml file deployments are deprecated. Support may be removed in a future version.
+2020-05-14 23:11:17,425 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:jboss/datasources/mywebappDS]
+2020-05-14 23:11:17,458 INFO  [org.jboss.weld.deployer] (MSC service thread 1-3) WFLYWELD0003: Processing weld deployment testjpa.war
+2020-05-14 23:11:17,491 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 76) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-05-14 23:11:17,491 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 76) HHH000204: Processing PersistenceUnitInfo [
+	name: testjpaPersistenceUnit
+	...]
+2020-05-14 23:11:17,571 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'PersonaDAO' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	java:app/testjpa/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	java:module/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	ejb:/testjpa/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	java:global/testjpa/PersonaDAO
+	java:app/testjpa/PersonaDAO
+	java:module/PersonaDAO
+
+2020-05-14 23:11:17,575 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'GestionCursos' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/GestionCursos!ec.edu.ups.appdis.testjpa.business.GestionCursos
+	java:app/testjpa/GestionCursos!ec.edu.ups.appdis.testjpa.business.GestionCursos
+	java:module/GestionCursos!ec.edu.ups.appdis.testjpa.business.GestionCursos
+	ejb:/testjpa/GestionCursos!ec.edu.ups.appdis.testjpa.business.GestionCursos
+	java:global/testjpa/GestionCursos
+	java:app/testjpa/GestionCursos
+	java:module/GestionCursos
+
+2020-05-14 23:11:17,576 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'CursoDAO' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/CursoDAO!ec.edu.ups.appdis.testjpa.dao.CursoDAO
+	java:app/testjpa/CursoDAO!ec.edu.ups.appdis.testjpa.dao.CursoDAO
+	java:module/CursoDAO!ec.edu.ups.appdis.testjpa.dao.CursoDAO
+	ejb:/testjpa/CursoDAO!ec.edu.ups.appdis.testjpa.dao.CursoDAO
+	java:global/testjpa/CursoDAO
+	java:app/testjpa/CursoDAO
+	java:module/CursoDAO
+
+2020-05-14 23:11:17,577 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'InscripcionDAO' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/InscripcionDAO!ec.edu.ups.appdis.testjpa.dao.InscripcionDAO
+	java:app/testjpa/InscripcionDAO!ec.edu.ups.appdis.testjpa.dao.InscripcionDAO
+	java:module/InscripcionDAO!ec.edu.ups.appdis.testjpa.dao.InscripcionDAO
+	ejb:/testjpa/InscripcionDAO!ec.edu.ups.appdis.testjpa.dao.InscripcionDAO
+	java:global/testjpa/InscripcionDAO
+	java:app/testjpa/InscripcionDAO
+	java:module/InscripcionDAO
+
+2020-05-14 23:11:17,577 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'InstructorDAO' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/InstructorDAO!ec.edu.ups.appdis.testjpa.dao.InstructorDAO
+	java:app/testjpa/InstructorDAO!ec.edu.ups.appdis.testjpa.dao.InstructorDAO
+	java:module/InstructorDAO!ec.edu.ups.appdis.testjpa.dao.InstructorDAO
+	ejb:/testjpa/InstructorDAO!ec.edu.ups.appdis.testjpa.dao.InstructorDAO
+	java:global/testjpa/InstructorDAO
+	java:app/testjpa/InstructorDAO
+	java:module/InstructorDAO
+
+2020-05-14 23:11:17,577 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'AlumnoDAO' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/AlumnoDAO!ec.edu.ups.appdis.testjpa.dao.AlumnoDAO
+	java:app/testjpa/AlumnoDAO!ec.edu.ups.appdis.testjpa.dao.AlumnoDAO
+	java:module/AlumnoDAO!ec.edu.ups.appdis.testjpa.dao.AlumnoDAO
+	ejb:/testjpa/AlumnoDAO!ec.edu.ups.appdis.testjpa.dao.AlumnoDAO
+	java:global/testjpa/AlumnoDAO
+	java:app/testjpa/AlumnoDAO
+	java:module/AlumnoDAO
+
+2020-05-14 23:11:17,578 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'DomicilioDAO' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/DomicilioDAO!ec.edu.ups.appdis.testjpa.dao.DomicilioDAO
+	java:app/testjpa/DomicilioDAO!ec.edu.ups.appdis.testjpa.dao.DomicilioDAO
+	java:module/DomicilioDAO!ec.edu.ups.appdis.testjpa.dao.DomicilioDAO
+	ejb:/testjpa/DomicilioDAO!ec.edu.ups.appdis.testjpa.dao.DomicilioDAO
+	java:global/testjpa/DomicilioDAO
+	java:app/testjpa/DomicilioDAO
+	java:module/DomicilioDAO
+
+2020-05-14 23:11:17,578 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'GestionPersonas' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/GestionPersonas!ec.edu.ups.appdis.testjpa.business.GestionPersonas
+	java:app/testjpa/GestionPersonas!ec.edu.ups.appdis.testjpa.business.GestionPersonas
+	java:module/GestionPersonas!ec.edu.ups.appdis.testjpa.business.GestionPersonas
+	ejb:/testjpa/GestionPersonas!ec.edu.ups.appdis.testjpa.business.GestionPersonas
+	java:global/testjpa/GestionPersonas
+	java:app/testjpa/GestionPersonas
+	java:module/GestionPersonas
+
+2020-05-14 23:11:18,021 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 76) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-05-14 23:11:18,294 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 76) HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-14 23:11:18,361 INFO  [org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl] (ServerService Thread Pool -- 76) HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2020-05-14 23:11:18,394 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 76) Envers integration enabled? : true
+2020-05-14 23:11:20,977 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-3) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+2020-05-14 23:11:20,989 INFO  [io.smallrye.metrics] (MSC service thread 1-3) MicroProfile: Metrics activated
+2020-05-14 23:11:22,562 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 76) Inicializando Mojarra 2.3.9.SP04 para el contexto '/testjpa'
+2020-05-14 23:11:23,520 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 76) WFLYUT0021: Registered web context: '/testjpa' for server 'default-server'
+2020-05-14 23:11:23,749 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0016: Replaced deployment "testjpa.war" with deployment "testjpa.war"
+2020-05-14 23:11:23,751 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 2) WFLYCTL0183: Service status report
+WFLYCTL0185:    Newly corrected services:
+      service jboss.deployment.unit."testjpa.war".WeldStartService (new available)
+      service jboss.deployment.unit."testjpa.war".component.AlumnoDAO.START (new available)
+      service jboss.deployment.unit."testjpa.war".component.AlumnoDAO.WeldInstantiator (new available)
+      service jboss.deployment.unit."testjpa.war".component.AlumnoDAO.WeldInterceptorBindingsService (new available)
+      service jboss.deployment.unit."testjpa.war".component.CursoDAO.START (new available)
+      service jboss.deployment.unit."testjpa.war".component.CursoDAO.WeldInstantiator (new available)
+      service jboss.deployment.unit."testjpa.war".component.CursoDAO.WeldInterceptorBindingsService (new available)
+      service jboss.deployment.unit."testjpa.war".component.DomicilioDAO.START (new available)
+      service jboss.deployment.unit."testjpa.war".component.DomicilioDAO.WeldInstantiator (new available)
+      service jboss.deployment.unit."testjpa.war".component.DomicilioDAO.WeldInterceptorBindingsService (new available)
+      service jboss.deployment.unit."testjpa.war".component.GestionCursos.START (new available)
+      service jboss.deployment.unit."testjpa.war".component.GestionCursos.WeldInstantiator (new available)
+      service jboss.deployment.unit."testjpa.war".component.GestionCursos.WeldInterceptorBindingsService (new available)
+      service jboss.deployment.unit."testjpa.war".component.GestionPersonas.START (new available)
+      service jboss.deployment.unit."testjpa.war".component.GestionPersonas.WeldInstantiator (new available)
+      service jboss.deployment.unit."testjpa.war".component.GestionPersonas.WeldInterceptorBindingsService (new available)
+      service jboss.deployment.unit."testjpa.war".component.InscripcionDAO.START (new available)
+      service jboss.deployment.unit."testjpa.war".component.InscripcionDAO.WeldInstantiator (new available)
+      service jboss.deployment.unit."testjpa.war".component.InscripcionDAO.WeldInterceptorBindingsService (new available)
+      service jboss.deployment.unit."testjpa.war".component.InstructorDAO.START (new available)
+      service jboss.deployment.unit."testjpa.war".component.InstructorDAO.WeldInstantiator (new available)
+      service jboss.deployment.unit."testjpa.war".component.InstructorDAO.WeldInterceptorBindingsService (new available)
+      service jboss.deployment.unit."testjpa.war".component.PersonaDAO.START (new available)
+      service jboss.deployment.unit."testjpa.war".component.PersonaDAO.WeldInstantiator (new available)
+      service jboss.deployment.unit."testjpa.war".component.PersonaDAO.WeldInterceptorBindingsService (new available)
+      service jboss.deployment.unit."testjpa.war".component."com.sun.faces.config.ConfigureListener".START (new available)
+      service jboss.deployment.unit."testjpa.war".component."com.sun.faces.config.ConfigureListener".WeldInstantiator (new available)
+      service jboss.deployment.unit."testjpa.war".component."ec.edu.ups.appdis.testjpa.view.RegistroAlumnos".START (new available)
+      service jboss.deployment.unit."testjpa.war".component."ec.edu.ups.appdis.testjpa.view.RegistroAlumnos".WeldInstantiator (new available)
+      service jboss.deployment.unit."testjpa.war".component."javax.faces.webapp.FacetTag".START (new available)
+      service jboss.deployment.unit."testjpa.war".component."javax.faces.webapp.FacetTag".WeldInstantiator (new available)
+      service jboss.deployment.unit."testjpa.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START (new available)
+      service jboss.deployment.unit."testjpa.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".WeldInstantiator (new available)
+      service jboss.deployment.unit."testjpa.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".START (new available)
+      service jboss.deployment.unit."testjpa.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".WeldInstantiator (new available)
+      service jboss.deployment.unit."testjpa.war".component."managed-bean.ec.edu.ups.appdis.testjpa.view.ContactosBean".START (new available)
+      service jboss.deployment.unit."testjpa.war".component."managed-bean.ec.edu.ups.appdis.testjpa.view.ContactosBean".WeldInstantiator (new available)
+      service jboss.deployment.unit."testjpa.war".component."managed-bean.ec.edu.ups.appdis.testjpa.view.Contador".START (new available)
+      service jboss.deployment.unit."testjpa.war".component."managed-bean.ec.edu.ups.appdis.testjpa.view.Contador".WeldInstantiator (new available)
+      service jboss.deployment.unit."testjpa.war".component."org.jboss.weld.module.web.servlet.WeldInitialListener".START (new available)
+      service jboss.deployment.unit."testjpa.war".component."org.jboss.weld.module.web.servlet.WeldInitialListener".WeldInstantiator (new available)
+      service jboss.deployment.unit."testjpa.war".component."org.jboss.weld.module.web.servlet.WeldTerminalListener".START (new available)
+      service jboss.deployment.unit."testjpa.war".component."org.jboss.weld.module.web.servlet.WeldTerminalListener".WeldInstantiator (new available)
+      service jboss.deployment.unit."testjpa.war".deploymentCompleteService (new available)
+      service jboss.deployment.unit."testjpa.war".ee.ComponentRegistry (new available)
+      service jboss.deployment.unit."testjpa.war".jndiDependencyService (new available)
+      service jboss.deployment.unit."testjpa.war".undertow-deployment (new available)
+      service jboss.deployment.unit."testjpa.war".undertow-deployment.UndertowDeploymentInfoService (new available)
+      service jboss.deployment.unit."testjpa.war".weld.weldClassIntrospector (new available)
+      service jboss.naming.context.java.module.testjpa.testjpa.env.contactosjpaPersistenceUnit (new available)
+      service jboss.naming.context.java.module.testjpa.testjpa.env."ec.edu.ups.appdis.testjpa.dao.AlumnoDAO".em (new available)
+      service jboss.naming.context.java.module.testjpa.testjpa.env."ec.edu.ups.appdis.testjpa.dao.CursoDAO".em (new available)
+      service jboss.naming.context.java.module.testjpa.testjpa.env."ec.edu.ups.appdis.testjpa.dao.DomicilioDAO".em (new available)
+      service jboss.naming.context.java.module.testjpa.testjpa.env."ec.edu.ups.appdis.testjpa.dao.InscripcionDAO".em (new available)
+      service jboss.naming.context.java.module.testjpa.testjpa.env."ec.edu.ups.appdis.testjpa.dao.InstructorDAO".em (new available)
+
+2020-05-14 23:11:53,825 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:jboss/datasources/mywebappDS]
+2020-05-14 23:11:53,864 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 76) WFLYUT0022: Unregistered web context: '/testjpa' from server 'default-server'
+2020-05-14 23:11:53,955 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 91) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-05-14 23:11:53,958 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 91) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@38027453
+2020-05-14 23:11:53,960 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 91) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-05-14 23:11:53,988 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment testjpa.war (runtime-name: testjpa.war) in 167ms
+2020-05-14 23:11:53,990 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "testjpa.war" (runtime-name: "testjpa.war")
+2020-05-14 23:11:54,267 INFO  [org.jboss.as.jpa] (MSC service thread 1-8) WFLYJPA0002: Read persistence.xml for testjpaPersistenceUnit
+2020-05-14 23:11:54,270 WARN  [org.jboss.as.connector] (MSC service thread 1-8) WFLYJCA0091: -ds.xml file deployments are deprecated. Support may be removed in a future version.
+2020-05-14 23:11:54,311 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:jboss/datasources/mywebappDS]
+2020-05-14 23:11:54,340 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) WFLYWELD0003: Processing weld deployment testjpa.war
+2020-05-14 23:11:54,344 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 91) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-05-14 23:11:54,345 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 91) HHH000204: Processing PersistenceUnitInfo [
+	name: testjpaPersistenceUnit
+	...]
+2020-05-14 23:11:54,470 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'PersonaDAO' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	java:app/testjpa/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	java:module/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	ejb:/testjpa/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	java:global/testjpa/PersonaDAO
+	java:app/testjpa/PersonaDAO
+	java:module/PersonaDAO
+
+2020-05-14 23:11:54,471 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'GestionCursos' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/GestionCursos!ec.edu.ups.appdis.testjpa.business.GestionCursos
+	java:app/testjpa/GestionCursos!ec.edu.ups.appdis.testjpa.business.GestionCursos
+	java:module/GestionCursos!ec.edu.ups.appdis.testjpa.business.GestionCursos
+	ejb:/testjpa/GestionCursos!ec.edu.ups.appdis.testjpa.business.GestionCursos
+	java:global/testjpa/GestionCursos
+	java:app/testjpa/GestionCursos
+	java:module/GestionCursos
+
+2020-05-14 23:11:54,471 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'CursoDAO' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/CursoDAO!ec.edu.ups.appdis.testjpa.dao.CursoDAO
+	java:app/testjpa/CursoDAO!ec.edu.ups.appdis.testjpa.dao.CursoDAO
+	java:module/CursoDAO!ec.edu.ups.appdis.testjpa.dao.CursoDAO
+	ejb:/testjpa/CursoDAO!ec.edu.ups.appdis.testjpa.dao.CursoDAO
+	java:global/testjpa/CursoDAO
+	java:app/testjpa/CursoDAO
+	java:module/CursoDAO
+
+2020-05-14 23:11:54,471 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'InscripcionDAO' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/InscripcionDAO!ec.edu.ups.appdis.testjpa.dao.InscripcionDAO
+	java:app/testjpa/InscripcionDAO!ec.edu.ups.appdis.testjpa.dao.InscripcionDAO
+	java:module/InscripcionDAO!ec.edu.ups.appdis.testjpa.dao.InscripcionDAO
+	ejb:/testjpa/InscripcionDAO!ec.edu.ups.appdis.testjpa.dao.InscripcionDAO
+	java:global/testjpa/InscripcionDAO
+	java:app/testjpa/InscripcionDAO
+	java:module/InscripcionDAO
+
+2020-05-14 23:11:54,471 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'InstructorDAO' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/InstructorDAO!ec.edu.ups.appdis.testjpa.dao.InstructorDAO
+	java:app/testjpa/InstructorDAO!ec.edu.ups.appdis.testjpa.dao.InstructorDAO
+	java:module/InstructorDAO!ec.edu.ups.appdis.testjpa.dao.InstructorDAO
+	ejb:/testjpa/InstructorDAO!ec.edu.ups.appdis.testjpa.dao.InstructorDAO
+	java:global/testjpa/InstructorDAO
+	java:app/testjpa/InstructorDAO
+	java:module/InstructorDAO
+
+2020-05-14 23:11:54,471 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'AlumnoDAO' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/AlumnoDAO!ec.edu.ups.appdis.testjpa.dao.AlumnoDAO
+	java:app/testjpa/AlumnoDAO!ec.edu.ups.appdis.testjpa.dao.AlumnoDAO
+	java:module/AlumnoDAO!ec.edu.ups.appdis.testjpa.dao.AlumnoDAO
+	ejb:/testjpa/AlumnoDAO!ec.edu.ups.appdis.testjpa.dao.AlumnoDAO
+	java:global/testjpa/AlumnoDAO
+	java:app/testjpa/AlumnoDAO
+	java:module/AlumnoDAO
+
+2020-05-14 23:11:54,472 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'DomicilioDAO' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/DomicilioDAO!ec.edu.ups.appdis.testjpa.dao.DomicilioDAO
+	java:app/testjpa/DomicilioDAO!ec.edu.ups.appdis.testjpa.dao.DomicilioDAO
+	java:module/DomicilioDAO!ec.edu.ups.appdis.testjpa.dao.DomicilioDAO
+	ejb:/testjpa/DomicilioDAO!ec.edu.ups.appdis.testjpa.dao.DomicilioDAO
+	java:global/testjpa/DomicilioDAO
+	java:app/testjpa/DomicilioDAO
+	java:module/DomicilioDAO
+
+2020-05-14 23:11:54,472 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'GestionPersonas' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/GestionPersonas!ec.edu.ups.appdis.testjpa.business.GestionPersonas
+	java:app/testjpa/GestionPersonas!ec.edu.ups.appdis.testjpa.business.GestionPersonas
+	java:module/GestionPersonas!ec.edu.ups.appdis.testjpa.business.GestionPersonas
+	ejb:/testjpa/GestionPersonas!ec.edu.ups.appdis.testjpa.business.GestionPersonas
+	java:global/testjpa/GestionPersonas
+	java:app/testjpa/GestionPersonas
+	java:module/GestionPersonas
+
+2020-05-14 23:11:54,902 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 91) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-05-14 23:11:54,912 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 91) HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-14 23:11:54,924 INFO  [org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl] (ServerService Thread Pool -- 91) HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2020-05-14 23:11:54,926 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 91) Envers integration enabled? : true
+2020-05-14 23:11:55,519 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-8) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+2020-05-14 23:11:55,525 INFO  [io.smallrye.metrics] (MSC service thread 1-8) MicroProfile: Metrics activated
+2020-05-14 23:11:56,153 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 94) Inicializando Mojarra 2.3.9.SP04 para el contexto '/testjpa'
+2020-05-14 23:11:56,309 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 94) WFLYUT0021: Registered web context: '/testjpa' for server 'default-server'
+2020-05-14 23:11:56,374 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0016: Replaced deployment "testjpa.war" with deployment "testjpa.war"
+2020-05-14 23:12:15,664 INFO  [stdout] (default task-1) 20 + 10 = 30
+2020-05-14 23:12:19,659 INFO  [stdout] (default task-1) 40 + 10 = 50

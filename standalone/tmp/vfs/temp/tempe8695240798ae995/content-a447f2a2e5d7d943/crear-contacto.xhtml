@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+
+<h:body>
+	<ui:composition template="template/template.xhtml">
+		<ui:define name="title"> Crear Contacto </ui:define>
+
+		<ui:define name="content">
+
+			<script type="text/javascript">
+				PrimeFaces.locales['es'] = {
+					closeText : 'Cerrar',
+					prevText : 'Anterior',
+					nextText : 'Siguiente',
+					monthNames : [ 'Enero', 'Febrero', 'Marzo', 'Abril',
+							'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre',
+							'Octubre', 'Noviembre', 'Diciembre' ],
+					monthNamesShort : [ 'Ene', 'Feb', 'Mar', 'Abr', 'May',
+							'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic' ],
+					dayNames : [ 'Domingo', 'Lunes', 'Martes', 'Miércoles',
+							'Jueves', 'Viernes', 'Sábado' ],
+					dayNamesShort : [ 'Dom', 'Lun', 'Mar', 'Mie', 'Jue', 'Vie',
+							'Sab' ],
+					dayNamesMin : [ 'D', 'L', 'M', 'X', 'J', 'V', 'S' ],
+					weekHeader : 'Semana',
+					firstDay : 1,
+					isRTL : false,
+					showMonthAfterYear : false,
+					yearSuffix : '',
+					timeOnlyTitle : 'Sólo hora',
+					timeText : 'Tiempo',
+					hourText : 'Hora',
+					minuteText : 'Minuto',
+					secondText : 'Segundo',
+					currentText : 'Fecha actual',
+					ampm : false,
+					month : 'Mes',
+					week : 'Semana',
+					day : 'Día',
+					allDayText : 'Todo el día'
+				};
+			</script>
+			<h:form>
+				<div class="form-group">
+					<label class="col-md-12">Cédula</label>
+					<div class="col-md-12">
+						<h:inputText value="#{contactoBean.newPersona.cedula}" type="text"
+							placeholder="070XXXXXXX" class="form-control form-control-line">
+						</h:inputText>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-md-12">Fecha</label>
+					<div class="col-md-12">
+						<p:datePicker id="ffecha" value="#{contactoBean.fecha}"
+							locale="es" monthNavigator="true" pattern="yyyy-MM-dd"
+							showIcon="true" yearNavigator="true">
+							<h:commandButton action="#{contactoBean.holaFecha}"
+								value="ver" class="btn btn-success">
+								<f:ajax render="sal" execute="ffecha" />
+							</h:commandButton>
+						</p:datePicker>
+						<h:outputText id="sal" value="#{contactoBean.fecha}" />
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-md-12">Nombre</label>
+					<div class="col-md-12">
+
+						<h:inputText id="nombre" value="#{contactoBean.newPersona.nombre}"
+							type="text" placeholder="Joe Down"
+							class="form-control form-control-line"
+							validatorMessage="Ingresar minimo dos nombres" label=" ">
+							<f:validateLength maximum="100" />
+							<f:validateRegex pattern="[a-zA-Z0-9]+ [a-zA-Z ]+" />
+						</h:inputText>
+						<h:message for="nombre" style="color:red" />
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label class="col-md-12">Lista Telefonos</label>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-12">
+						<h:commandButton action="#{contactoBean.addTelefono}"
+							value="Añadir" class="btn btn-success">
+							<f:ajax render="tblTelefonos" execute="tblTelefonos" />
+						</h:commandButton>
+					</div>
+				</div>
+
+
+				<h:dataTable id="tblTelefonos"
+					value="#{contactoBean.newPersona.listaTelefonos}" var="telefono"
+					class="table">
+					<h:column>
+						<f:facet name="header"> Número</f:facet>
+						<h:inputText value="#{telefono.numero}" />
+					</h:column>
+					<h:column>
+						<f:facet name="header"> Tipo</f:facet>
+						<h:inputText value="#{telefono.tipo}" />
+					</h:column>
+
+				</h:dataTable>
+
+				<div class="form-group">
+					<div class="col-sm-12">
+						<h:commandButton action="#{contactoBean.guardarDatos}"
+							value="Guardar" class="btn btn-success" />
+					</div>
+				</div>
+
+			</h:form>
+		</ui:define>
+	</ui:composition>
+
+</h:body>
+
+</html>
+

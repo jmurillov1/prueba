@@ -1,0 +1,813 @@
+2020-06-08 13:12:38,774 INFO  [org.jboss.modules] (main) JBoss Modules version 1.9.1.Final
+2020-06-08 13:12:39,829 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.11.Final
+2020-06-08 13:12:39,839 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.3.Final
+2020-06-08 13:12:40,054 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0049: WildFly Full 18.0.1.Final (WildFly Core 10.0.3.Final) starting
+2020-06-08 13:12:40,056 DEBUG [org.jboss.as.config] (MSC service thread 1-1) Configured system properties:
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/jmurillo/bin/wildfly-18.0.1.Final/jboss-modules.jar
+	java.class.version = 55.0
+	java.home = /usr/lib/jvm/java-11-openjdk-amd64
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 11.0.7+10-post-Ubuntu-2ubuntu218.04
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 11
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Ubuntu
+	java.vendor.url = https://ubuntu.com/
+	java.vendor.url.bug = https://bugs.launchpad.net/ubuntu/+source/openjdk-lts
+	java.version = 11.0.7
+	java.version.date = 2020-04-14
+	java.vm.compressedOopsMode = 32-bit
+	java.vm.info = mixed mode, sharing
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 11
+	java.vm.vendor = Ubuntu
+	java.vm.version = 11.0.7+10-post-Ubuntu-2ubuntu218.04
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = /home/jmurillo/bin/wildfly-18.0.1.Final
+	jboss.host.name = jmurillo-h81m-h
+	jboss.modules.dir = /home/jmurillo/bin/wildfly-18.0.1.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = jmurillo-h81m-h
+	jboss.qualified.host.name = jmurillo-h81m-h
+	jboss.server.base.dir = /home/jmurillo/bin/wildfly-18.0.1.Final/standalone
+	jboss.server.config.dir = /home/jmurillo/bin/wildfly-18.0.1.Final/standalone/configuration
+	jboss.server.data.dir = /home/jmurillo/bin/wildfly-18.0.1.Final/standalone/data
+	jboss.server.deploy.dir = /home/jmurillo/bin/wildfly-18.0.1.Final/standalone/data/content
+	jboss.server.log.dir = /home/jmurillo/bin/wildfly-18.0.1.Final/standalone/log
+	jboss.server.name = jmurillo-h81m-h
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/jmurillo/bin/wildfly-18.0.1.Final/standalone/tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/home/jmurillo/bin/wildfly-18.0.1.Final/standalone/configuration/logging.properties
+	module.path = /home/jmurillo/bin/wildfly-18.0.1.Final/modules
+	org.jboss.boot.log.file = /home/jmurillo/bin/wildfly-18.0.1.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Linux
+	os.version = 5.3.0-53-generic
+	path.separator = :
+	program.name = JBossTools: WildFly 18 at localhost
+	sun.arch.data.model = 64
+	sun.boot.library.path = /usr/lib/jvm/java-11-openjdk-amd64/lib
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.desktop = gnome
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp /home/jmurillo/bin/wildfly-18.0.1.Final/modules org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=/home/jmurillo/bin/wildfly-18.0.1.Final/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = EC
+	user.dir = /home/jmurillo/bin/wildfly-18.0.1.Final/bin
+	user.home = /home/jmurillo
+	user.language = es
+	user.name = jmurillo
+	user.timezone = America/Guayaquil
+2020-06-08 13:12:40,059 DEBUG [org.jboss.as.config] (MSC service thread 1-1) VM Arguments: -Dprogram.name=JBossTools: WildFly 18 at localhost -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/home/jmurillo/bin/wildfly-18.0.1.Final/standalone/log/boot.log -Dlogging.configuration=file:/home/jmurillo/bin/wildfly-18.0.1.Final/standalone/configuration/logging.properties -Djboss.home.dir=/home/jmurillo/bin/wildfly-18.0.1.Final -Dorg.jboss.logmanager.nocolor=true --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED --add-modules=java.se -Djboss.bind.address.management=localhost -Dfile.encoding=UTF-8 
+2020-06-08 13:12:42,779 INFO  [org.wildfly.security] (ServerService Thread Pool -- 25) ELY00001: WildFly Elytron version 1.10.4.Final
+2020-06-08 13:12:44,127 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2020-06-08 13:12:44,247 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 36) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2020-06-08 13:12:44,219 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found testjpa.war in deployment directory. To trigger deployment create a file called testjpa.war.dodeploy
+2020-06-08 13:12:44,252 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found coopjam.war in deployment directory. To trigger deployment create a file called coopjam.war.dodeploy
+2020-06-08 13:12:44,348 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2020-06-08 13:12:44,374 INFO  [org.xnio] (MSC service thread 1-7) XNIO version 3.7.3.Final
+2020-06-08 13:12:44,397 INFO  [org.xnio.nio] (MSC service thread 1-7) XNIO NIO Implementation Version 3.7.3.Final
+2020-06-08 13:12:44,453 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 51) WFLYCLINF0001: Activating Infinispan subsystem.
+2020-06-08 13:12:44,484 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 60) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+2020-06-08 13:12:44,526 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 64) WFLYNAM0001: Activating Naming Subsystem
+2020-06-08 13:12:44,566 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 61) WFLYHEALTH0001: Activating Eclipse MicroProfile Health Subsystem
+2020-06-08 13:12:44,567 INFO  [org.wildfly.extension.microprofile.metrics.smallrye] (ServerService Thread Pool -- 62) WFLYMETRICS0001: Activating Eclipse MicroProfile Metrics Subsystem
+2020-06-08 13:12:44,567 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 63) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2020-06-08 13:12:44,578 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 70) WFLYSEC0002: Activating Security Subsystem
+2020-06-08 13:12:44,574 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 52) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2020-06-08 13:12:44,585 INFO  [org.jboss.as.naming] (MSC service thread 1-8) WFLYNAM0003: Starting Naming Service
+2020-06-08 13:12:44,586 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2020-06-08 13:12:44,592 INFO  [org.jboss.as.connector] (MSC service thread 1-5) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.17.Final)
+2020-06-08 13:12:44,597 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 58) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2020-06-08 13:12:44,599 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 72) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2020-06-08 13:12:44,606 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 43) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2020-06-08 13:12:44,642 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 74) WFLYWS0002: Activating WebServices Extension
+2020-06-08 13:12:44,630 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = h2
+2020-06-08 13:12:44,703 INFO  [org.jboss.remoting] (MSC service thread 1-7) JBoss Remoting version 5.0.15.Final
+2020-06-08 13:12:44,705 INFO  [org.jboss.as.security] (MSC service thread 1-8) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2020-06-08 13:12:44,807 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 53) WFLYRS0016: RESTEasy version 3.9.1.Final
+2020-06-08 13:12:45,023 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0003: Undertow 2.0.27.Final starting
+2020-06-08 13:12:45,293 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 43) WFLYJCA0004: Deploying JDBC-compliant driver class oracle.jdbc.OracleDriver (version 11.1)
+2020-06-08 13:12:45,296 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = oracle-driver
+2020-06-08 13:12:45,373 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 73) WFLYUT0014: Creating file handler for path '/home/jmurillo/bin/wildfly-18.0.1.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2020-06-08 13:12:45,402 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 43) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 9.4)
+2020-06-08 13:12:45,404 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = postgresql-driver
+2020-06-08 13:12:45,436 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2020-06-08 13:12:45,436 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2020-06-08 13:12:45,457 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0493: EJB subsystem suspension complete
+2020-06-08 13:12:45,494 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 43) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
+2020-06-08 13:12:45,495 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = mysql-driver
+2020-06-08 13:12:45,502 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0012: Started server default-server.
+2020-06-08 13:12:45,509 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0018: Host default-host starting
+2020-06-08 13:12:45,651 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:jboss/datasources/ejExamenLibrosDS]
+2020-06-08 13:12:45,653 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:jboss/datasources/ejGestionLibrosDS]
+2020-06-08 13:12:45,655 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:jboss/datasources/ejCoopJamDS]
+2020-06-08 13:12:45,656 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:jboss/datasources/ejContactosDS]
+2020-06-08 13:12:45,657 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2020-06-08 13:12:45,663 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:jboss/datasources/ejPostgresDS]
+2020-06-08 13:12:45,664 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:jboss/datasources/ejOracleDS]
+2020-06-08 13:12:45,665 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:jboss/datasources/ejMySqlDS]
+2020-06-08 13:12:45,669 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2020-06-08 13:12:46,291 INFO  [org.jboss.as.patching] (MSC service thread 1-5) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2020-06-08 13:12:46,293 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-6) WFLYDM0111: Keystore /home/jmurillo/bin/wildfly-18.0.1.Final/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2020-06-08 13:12:46,310 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-8) WFLYDS0013: Started FileSystemDeploymentService for directory /home/jmurillo/bin/wildfly-18.0.1.Final/standalone/deployments
+2020-06-08 13:12:46,330 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "coopjam.war" (runtime-name: "coopjam.war")
+2020-06-08 13:12:46,330 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "testjpa.war" (runtime-name: "testjpa.war")
+2020-06-08 13:12:46,472 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2020-06-08 13:12:46,853 INFO  [org.jboss.ws.common.management] (MSC service thread 1-6) JBWS022052: Starting JBossWS 5.3.0.Final (Apache CXF 3.3.3) 
+2020-06-08 13:12:47,823 INFO  [org.jboss.as.jpa] (MSC service thread 1-6) WFLYJPA0002: Read persistence.xml for coopjamPersistenceUnit
+2020-06-08 13:12:47,826 INFO  [org.jboss.as.jpa] (MSC service thread 1-7) WFLYJPA0002: Read persistence.xml for testjpaPersistenceUnit
+2020-06-08 13:12:47,854 WARN  [org.jboss.as.connector] (MSC service thread 1-7) WFLYJCA0091: -ds.xml file deployments are deprecated. Support may be removed in a future version.
+2020-06-08 13:12:48,439 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0001: Bound data source [java:jboss/datasources/mywebappDS]
+2020-06-08 13:12:48,549 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) WFLYWELD0003: Processing weld deployment coopjam.war
+2020-06-08 13:12:48,549 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) WFLYWELD0003: Processing weld deployment testjpa.war
+2020-06-08 13:12:48,991 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-6) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.16.Final
+2020-06-08 13:12:49,052 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-1) HV000001: Hibernate Validator 6.0.18.Final
+2020-06-08 13:12:49,354 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 76) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'coopjam.war#coopjamPersistenceUnit'
+2020-06-08 13:12:49,357 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 77) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-06-08 13:12:49,451 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 77) HHH000204: Processing PersistenceUnitInfo [
+	name: testjpaPersistenceUnit
+	...]
+2020-06-08 13:12:49,451 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 76) HHH000204: Processing PersistenceUnitInfo [
+	name: coopjamPersistenceUnit
+	...]
+2020-06-08 13:12:49,532 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'GestionUsuarios' in deployment unit 'deployment "coopjam.war"' are as follows:
+
+	java:global/coopjam/GestionUsuarios!ec.edu.ups.coopjam.business.GestionUsuarios
+	java:app/coopjam/GestionUsuarios!ec.edu.ups.coopjam.business.GestionUsuarios
+	java:module/GestionUsuarios!ec.edu.ups.coopjam.business.GestionUsuarios
+	ejb:/coopjam/GestionUsuarios!ec.edu.ups.coopjam.business.GestionUsuarios
+	java:global/coopjam/GestionUsuarios
+	java:app/coopjam/GestionUsuarios
+	java:module/GestionUsuarios
+
+2020-06-08 13:12:49,534 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'PersonaDAO' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	java:app/testjpa/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	java:module/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	ejb:/testjpa/PersonaDAO!ec.edu.ups.appdis.testjpa.dao.PersonaDAO
+	java:global/testjpa/PersonaDAO
+	java:app/testjpa/PersonaDAO
+	java:module/PersonaDAO
+
+2020-06-08 13:12:49,539 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'GestionCursos' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/GestionCursos!ec.edu.ups.appdis.testjpa.business.GestionCursos
+	java:app/testjpa/GestionCursos!ec.edu.ups.appdis.testjpa.business.GestionCursos
+	java:module/GestionCursos!ec.edu.ups.appdis.testjpa.business.GestionCursos
+	ejb:/testjpa/GestionCursos!ec.edu.ups.appdis.testjpa.business.GestionCursos
+	java:global/testjpa/GestionCursos
+	java:app/testjpa/GestionCursos
+	java:module/GestionCursos
+
+2020-06-08 13:12:49,540 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'CursoDAO' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/CursoDAO!ec.edu.ups.appdis.testjpa.dao.CursoDAO
+	java:app/testjpa/CursoDAO!ec.edu.ups.appdis.testjpa.dao.CursoDAO
+	java:module/CursoDAO!ec.edu.ups.appdis.testjpa.dao.CursoDAO
+	ejb:/testjpa/CursoDAO!ec.edu.ups.appdis.testjpa.dao.CursoDAO
+	java:global/testjpa/CursoDAO
+	java:app/testjpa/CursoDAO
+	java:module/CursoDAO
+
+2020-06-08 13:12:49,540 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'InscripcionDAO' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/InscripcionDAO!ec.edu.ups.appdis.testjpa.dao.InscripcionDAO
+	java:app/testjpa/InscripcionDAO!ec.edu.ups.appdis.testjpa.dao.InscripcionDAO
+	java:module/InscripcionDAO!ec.edu.ups.appdis.testjpa.dao.InscripcionDAO
+	ejb:/testjpa/InscripcionDAO!ec.edu.ups.appdis.testjpa.dao.InscripcionDAO
+	java:global/testjpa/InscripcionDAO
+	java:app/testjpa/InscripcionDAO
+	java:module/InscripcionDAO
+
+2020-06-08 13:12:49,540 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'SesionClienteDAO' in deployment unit 'deployment "coopjam.war"' are as follows:
+
+	java:global/coopjam/SesionClienteDAO!ec.edu.ups.coopjam.data.SesionClienteDAO
+	java:app/coopjam/SesionClienteDAO!ec.edu.ups.coopjam.data.SesionClienteDAO
+	java:module/SesionClienteDAO!ec.edu.ups.coopjam.data.SesionClienteDAO
+	ejb:/coopjam/SesionClienteDAO!ec.edu.ups.coopjam.data.SesionClienteDAO
+	java:global/coopjam/SesionClienteDAO
+	java:app/coopjam/SesionClienteDAO
+	java:module/SesionClienteDAO
+
+2020-06-08 13:12:49,540 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'EmpleadoDAO' in deployment unit 'deployment "coopjam.war"' are as follows:
+
+	java:global/coopjam/EmpleadoDAO!ec.edu.ups.coopjam.data.EmpleadoDAO
+	java:app/coopjam/EmpleadoDAO!ec.edu.ups.coopjam.data.EmpleadoDAO
+	java:module/EmpleadoDAO!ec.edu.ups.coopjam.data.EmpleadoDAO
+	ejb:/coopjam/EmpleadoDAO!ec.edu.ups.coopjam.data.EmpleadoDAO
+	java:global/coopjam/EmpleadoDAO
+	java:app/coopjam/EmpleadoDAO
+	java:module/EmpleadoDAO
+
+2020-06-08 13:12:49,541 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'InstructorDAO' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/InstructorDAO!ec.edu.ups.appdis.testjpa.dao.InstructorDAO
+	java:app/testjpa/InstructorDAO!ec.edu.ups.appdis.testjpa.dao.InstructorDAO
+	java:module/InstructorDAO!ec.edu.ups.appdis.testjpa.dao.InstructorDAO
+	ejb:/testjpa/InstructorDAO!ec.edu.ups.appdis.testjpa.dao.InstructorDAO
+	java:global/testjpa/InstructorDAO
+	java:app/testjpa/InstructorDAO
+	java:module/InstructorDAO
+
+2020-06-08 13:12:49,541 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'AlumnoDAO' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/AlumnoDAO!ec.edu.ups.appdis.testjpa.dao.AlumnoDAO
+	java:app/testjpa/AlumnoDAO!ec.edu.ups.appdis.testjpa.dao.AlumnoDAO
+	java:module/AlumnoDAO!ec.edu.ups.appdis.testjpa.dao.AlumnoDAO
+	ejb:/testjpa/AlumnoDAO!ec.edu.ups.appdis.testjpa.dao.AlumnoDAO
+	java:global/testjpa/AlumnoDAO
+	java:app/testjpa/AlumnoDAO
+	java:module/AlumnoDAO
+
+2020-06-08 13:12:49,541 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'DomicilioDAO' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/DomicilioDAO!ec.edu.ups.appdis.testjpa.dao.DomicilioDAO
+	java:app/testjpa/DomicilioDAO!ec.edu.ups.appdis.testjpa.dao.DomicilioDAO
+	java:module/DomicilioDAO!ec.edu.ups.appdis.testjpa.dao.DomicilioDAO
+	ejb:/testjpa/DomicilioDAO!ec.edu.ups.appdis.testjpa.dao.DomicilioDAO
+	java:global/testjpa/DomicilioDAO
+	java:app/testjpa/DomicilioDAO
+	java:module/DomicilioDAO
+
+2020-06-08 13:12:49,541 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'ClienteDAO' in deployment unit 'deployment "coopjam.war"' are as follows:
+
+	java:global/coopjam/ClienteDAO!ec.edu.ups.coopjam.data.ClienteDAO
+	java:app/coopjam/ClienteDAO!ec.edu.ups.coopjam.data.ClienteDAO
+	java:module/ClienteDAO!ec.edu.ups.coopjam.data.ClienteDAO
+	ejb:/coopjam/ClienteDAO!ec.edu.ups.coopjam.data.ClienteDAO
+	java:global/coopjam/ClienteDAO
+	java:app/coopjam/ClienteDAO
+	java:module/ClienteDAO
+
+2020-06-08 13:12:49,543 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'GestionPersonas' in deployment unit 'deployment "testjpa.war"' are as follows:
+
+	java:global/testjpa/GestionPersonas!ec.edu.ups.appdis.testjpa.business.GestionPersonas
+	java:app/testjpa/GestionPersonas!ec.edu.ups.appdis.testjpa.business.GestionPersonas
+	java:module/GestionPersonas!ec.edu.ups.appdis.testjpa.business.GestionPersonas
+	ejb:/testjpa/GestionPersonas!ec.edu.ups.appdis.testjpa.business.GestionPersonas
+	java:global/testjpa/GestionPersonas
+	java:app/testjpa/GestionPersonas
+	java:module/GestionPersonas
+
+2020-06-08 13:12:49,543 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'CuentaDeAhorroDAO' in deployment unit 'deployment "coopjam.war"' are as follows:
+
+	java:global/coopjam/CuentaDeAhorroDAO!ec.edu.ups.coopjam.data.CuentaDeAhorroDAO
+	java:app/coopjam/CuentaDeAhorroDAO!ec.edu.ups.coopjam.data.CuentaDeAhorroDAO
+	java:module/CuentaDeAhorroDAO!ec.edu.ups.coopjam.data.CuentaDeAhorroDAO
+	ejb:/coopjam/CuentaDeAhorroDAO!ec.edu.ups.coopjam.data.CuentaDeAhorroDAO
+	java:global/coopjam/CuentaDeAhorroDAO
+	java:app/coopjam/CuentaDeAhorroDAO
+	java:module/CuentaDeAhorroDAO
+
+2020-06-08 13:12:49,544 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'TransaccionDAO' in deployment unit 'deployment "coopjam.war"' are as follows:
+
+	java:global/coopjam/TransaccionDAO!ec.edu.ups.coopjam.data.TransaccionDAO
+	java:app/coopjam/TransaccionDAO!ec.edu.ups.coopjam.data.TransaccionDAO
+	java:module/TransaccionDAO!ec.edu.ups.coopjam.data.TransaccionDAO
+	ejb:/coopjam/TransaccionDAO!ec.edu.ups.coopjam.data.TransaccionDAO
+	java:global/coopjam/TransaccionDAO
+	java:app/coopjam/TransaccionDAO
+	java:module/TransaccionDAO
+
+2020-06-08 13:12:49,736 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 76) HHH000412: Hibernate Core {5.3.13.Final}
+2020-06-08 13:12:49,741 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 76) HHH000206: hibernate.properties not found
+2020-06-08 13:12:49,861 WARN  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0131: EJB ec.edu.ups.coopjam.business.GestionUsuarios should not have a final or static method (getUsuario)
+2020-06-08 13:12:49,867 WARN  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0131: EJB ec.edu.ups.coopjam.business.GestionUsuarios should not have a final or static method (getContraseña)
+2020-06-08 13:12:49,868 WARN  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0131: EJB ec.edu.ups.coopjam.business.GestionUsuarios should not have a final or static method (obtenerFecha)
+2020-06-08 13:12:49,869 WARN  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0131: EJB ec.edu.ups.coopjam.business.GestionUsuarios should not have a final or static method (enviarCorreo)
+2020-06-08 13:12:49,870 WARN  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0131: EJB ec.edu.ups.coopjam.business.GestionUsuarios should not have a final or static method (fecha)
+2020-06-08 13:12:50,323 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 76) HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+2020-06-08 13:12:50,396 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 78) WFLYCLINF0002: Started client-mappings cache from ejb container
+2020-06-08 13:12:50,548 INFO  [org.jboss.weld.Version] (MSC service thread 1-6) WELD-000900: 3.1.2 (Final)
+2020-06-08 13:12:51,126 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 77) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-06-08 13:12:51,126 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 76) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'coopjam.war#coopjamPersistenceUnit'
+2020-06-08 13:12:51,354 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 77) HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-06-08 13:12:51,354 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 76) HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-06-08 13:12:51,390 INFO  [org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl] (ServerService Thread Pool -- 76) HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2020-06-08 13:12:51,390 INFO  [org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl] (ServerService Thread Pool -- 77) HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2020-06-08 13:12:51,405 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 77) Envers integration enabled? : true
+2020-06-08 13:12:51,405 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 76) Envers integration enabled? : true
+2020-06-08 13:12:52,674 INFO  [io.smallrye.metrics] (MSC service thread 1-6) MicroProfile: Metrics activated
+2020-06-08 13:12:52,888 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-8) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+2020-06-08 13:12:52,888 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-6) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+2020-06-08 13:12:52,892 INFO  [io.smallrye.metrics] (MSC service thread 1-8) MicroProfile: Metrics activated
+2020-06-08 13:12:54,075 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 77) Inicializando Mojarra 2.3.9.SP04 para el contexto '/testjpa'
+2020-06-08 13:12:54,075 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 85) Inicializando Mojarra 2.3.9.SP04 para el contexto '/coopjam'
+2020-06-08 13:12:55,104 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 77) WFLYUT0021: Registered web context: '/testjpa' for server 'default-server'
+2020-06-08 13:12:55,319 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (ServerService Thread Pool -- 85) Running on PrimeFaces 8.0
+2020-06-08 13:12:55,336 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 85) WFLYUT0021: Registered web context: '/coopjam' for server 'default-server'
+2020-06-08 13:12:55,521 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 44) WFLYSRV0010: Deployed "coopjam.war" (runtime-name : "coopjam.war")
+2020-06-08 13:12:55,522 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 44) WFLYSRV0010: Deployed "testjpa.war" (runtime-name : "testjpa.war")
+2020-06-08 13:12:55,624 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2020-06-08 13:12:55,630 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2020-06-08 13:12:55,631 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2020-06-08 13:12:55,636 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 18.0.1.Final (WildFly Core 10.0.3.Final) started in 17887ms - Started 897 of 1111 services (387 services are lazy, passive or on-demand)
+2020-06-08 13:14:12,710 INFO  [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator] (default task-1) HHH000397: Using ASTQueryTranslatorFactory
+2020-06-08 13:14:12,808 INFO  [stdout] (default task-1) Hibernate: 
+2020-06-08 13:14:12,808 INFO  [stdout] (default task-1)     select
+2020-06-08 13:14:12,808 INFO  [stdout] (default task-1)         cliente0_.cedula_cliente as cedula_c1_0_,
+2020-06-08 13:14:12,808 INFO  [stdout] (default task-1)         cliente0_.apellido as apellido2_0_,
+2020-06-08 13:14:12,809 INFO  [stdout] (default task-1)         cliente0_.clave as clave3_0_,
+2020-06-08 13:14:12,809 INFO  [stdout] (default task-1)         cliente0_.correo as correo4_0_,
+2020-06-08 13:14:12,809 INFO  [stdout] (default task-1)         cliente0_.direccion as direccio5_0_,
+2020-06-08 13:14:12,809 INFO  [stdout] (default task-1)         cliente0_.nombre as nombre6_0_,
+2020-06-08 13:14:12,809 INFO  [stdout] (default task-1)         cliente0_.telefono1 as telefono7_0_,
+2020-06-08 13:14:12,809 INFO  [stdout] (default task-1)         cliente0_.telefono2 as telefono8_0_,
+2020-06-08 13:14:12,809 INFO  [stdout] (default task-1)         cliente0_.usuario as usuario9_0_ 
+2020-06-08 13:14:12,809 INFO  [stdout] (default task-1)     from
+2020-06-08 13:14:12,809 INFO  [stdout] (default task-1)         Cliente cliente0_
+2020-06-08 13:14:12,940 INFO  [stdout] (default task-1) PASO LA LISTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+2020-06-08 13:14:12,941 INFO  [stdout] (default task-1) ENTROOOOOOOOOOOO EN EL FORRRRRR
+2020-06-08 13:14:12,942 INFO  [stdout] (default task-1) ENTROOOOOOOOOOOO EN EL IFFFFFFFFFFFFFF CORRECTO
+2020-06-08 13:14:16,327 INFO  [stdout] (default task-1) Hibernate: 
+2020-06-08 13:14:16,327 INFO  [stdout] (default task-1)     select
+2020-06-08 13:14:16,327 INFO  [stdout] (default task-1)         cliente_.cedula_cliente,
+2020-06-08 13:14:16,328 INFO  [stdout] (default task-1)         cliente_.apellido as apellido2_0_,
+2020-06-08 13:14:16,328 INFO  [stdout] (default task-1)         cliente_.clave as clave3_0_,
+2020-06-08 13:14:16,328 INFO  [stdout] (default task-1)         cliente_.correo as correo4_0_,
+2020-06-08 13:14:16,328 INFO  [stdout] (default task-1)         cliente_.direccion as direccio5_0_,
+2020-06-08 13:14:16,328 INFO  [stdout] (default task-1)         cliente_.nombre as nombre6_0_,
+2020-06-08 13:14:16,328 INFO  [stdout] (default task-1)         cliente_.telefono1 as telefono7_0_,
+2020-06-08 13:14:16,328 INFO  [stdout] (default task-1)         cliente_.telefono2 as telefono8_0_,
+2020-06-08 13:14:16,328 INFO  [stdout] (default task-1)         cliente_.usuario as usuario9_0_ 
+2020-06-08 13:14:16,329 INFO  [stdout] (default task-1)     from
+2020-06-08 13:14:16,329 INFO  [stdout] (default task-1)         Cliente cliente_ 
+2020-06-08 13:14:16,329 INFO  [stdout] (default task-1)     where
+2020-06-08 13:14:16,329 INFO  [stdout] (default task-1)         cliente_.cedula_cliente=?
+2020-06-08 13:14:16,341 INFO  [stdout] (default task-1) Hibernate: 
+2020-06-08 13:14:16,341 INFO  [stdout] (default task-1)     insert 
+2020-06-08 13:14:16,341 INFO  [stdout] (default task-1)     into
+2020-06-08 13:14:16,341 INFO  [stdout] (default task-1)         SesionCliente
+2020-06-08 13:14:16,341 INFO  [stdout] (default task-1)         (cedula_cliente, estado, fechaSesion) 
+2020-06-08 13:14:16,341 INFO  [stdout] (default task-1)     values
+2020-06-08 13:14:16,341 INFO  [stdout] (default task-1)         (?, ?, ?)
+2020-06-08 13:14:16,415 INFO  [stdout] (default task-1) Hibernate: 
+2020-06-08 13:14:16,415 INFO  [stdout] (default task-1)     select
+2020-06-08 13:14:16,416 INFO  [stdout] (default task-1)         cliente0_.cedula_cliente as cedula_c1_0_,
+2020-06-08 13:14:16,416 INFO  [stdout] (default task-1)         cliente0_.apellido as apellido2_0_,
+2020-06-08 13:14:16,416 INFO  [stdout] (default task-1)         cliente0_.clave as clave3_0_,
+2020-06-08 13:14:16,416 INFO  [stdout] (default task-1)         cliente0_.correo as correo4_0_,
+2020-06-08 13:14:16,416 INFO  [stdout] (default task-1)         cliente0_.direccion as direccio5_0_,
+2020-06-08 13:14:16,416 INFO  [stdout] (default task-1)         cliente0_.nombre as nombre6_0_,
+2020-06-08 13:14:16,416 INFO  [stdout] (default task-1)         cliente0_.telefono1 as telefono7_0_,
+2020-06-08 13:14:16,416 INFO  [stdout] (default task-1)         cliente0_.telefono2 as telefono8_0_,
+2020-06-08 13:14:16,416 INFO  [stdout] (default task-1)         cliente0_.usuario as usuario9_0_ 
+2020-06-08 13:14:16,416 INFO  [stdout] (default task-1)     from
+2020-06-08 13:14:16,416 INFO  [stdout] (default task-1)         Cliente cliente0_
+2020-06-08 13:14:16,420 INFO  [stdout] (default task-1) 1
+2020-06-08 13:14:16,438 INFO  [stdout] (default task-1) Hibernate: 
+2020-06-08 13:14:16,438 INFO  [stdout] (default task-1)     select
+2020-06-08 13:14:16,438 INFO  [stdout] (default task-1)         cuentadeah0_.numeroCuentaDeAhorro as numeroCu1_1_,
+2020-06-08 13:14:16,438 INFO  [stdout] (default task-1)         cuentadeah0_.cedula_cliente as cedula_c4_1_,
+2020-06-08 13:14:16,438 INFO  [stdout] (default task-1)         cuentadeah0_.fechaDeRegistro as fechaDeR2_1_,
+2020-06-08 13:14:16,438 INFO  [stdout] (default task-1)         cuentadeah0_.saldoCuentaDeAhorro as saldoCue3_1_ 
+2020-06-08 13:14:16,438 INFO  [stdout] (default task-1)     from
+2020-06-08 13:14:16,438 INFO  [stdout] (default task-1)         CuentaDeAhorro cuentadeah0_ 
+2020-06-08 13:14:16,438 INFO  [stdout] (default task-1)     where
+2020-06-08 13:14:16,438 INFO  [stdout] (default task-1)         cuentadeah0_.cedula_cliente=?
+2020-06-08 13:14:16,444 INFO  [stdout] (default task-1) Hibernate: 
+2020-06-08 13:14:16,444 INFO  [stdout] (default task-1)     select
+2020-06-08 13:14:16,444 INFO  [stdout] (default task-1)         cliente0_.cedula_cliente as cedula_c1_0_0_,
+2020-06-08 13:14:16,444 INFO  [stdout] (default task-1)         cliente0_.apellido as apellido2_0_0_,
+2020-06-08 13:14:16,444 INFO  [stdout] (default task-1)         cliente0_.clave as clave3_0_0_,
+2020-06-08 13:14:16,444 INFO  [stdout] (default task-1)         cliente0_.correo as correo4_0_0_,
+2020-06-08 13:14:16,444 INFO  [stdout] (default task-1)         cliente0_.direccion as direccio5_0_0_,
+2020-06-08 13:14:16,444 INFO  [stdout] (default task-1)         cliente0_.nombre as nombre6_0_0_,
+2020-06-08 13:14:16,444 INFO  [stdout] (default task-1)         cliente0_.telefono1 as telefono7_0_0_,
+2020-06-08 13:14:16,445 INFO  [stdout] (default task-1)         cliente0_.telefono2 as telefono8_0_0_,
+2020-06-08 13:14:16,445 INFO  [stdout] (default task-1)         cliente0_.usuario as usuario9_0_0_ 
+2020-06-08 13:14:16,445 INFO  [stdout] (default task-1)     from
+2020-06-08 13:14:16,445 INFO  [stdout] (default task-1)         Cliente cliente0_ 
+2020-06-08 13:14:16,445 INFO  [stdout] (default task-1)     where
+2020-06-08 13:14:16,445 INFO  [stdout] (default task-1)         cliente0_.cedula_cliente=?
+2020-06-08 13:14:16,458 INFO  [stdout] (default task-1) Hibernate: 
+2020-06-08 13:14:16,458 INFO  [stdout] (default task-1)     select
+2020-06-08 13:14:16,458 INFO  [stdout] (default task-1)         transaccio0_.codigoTransaccion as codigoTr1_4_,
+2020-06-08 13:14:16,459 INFO  [stdout] (default task-1)         transaccio0_.cedula_cliente as cedula_c5_4_,
+2020-06-08 13:14:16,459 INFO  [stdout] (default task-1)         transaccio0_.fecha as fecha2_4_,
+2020-06-08 13:14:16,459 INFO  [stdout] (default task-1)         transaccio0_.monto as monto3_4_,
+2020-06-08 13:14:16,459 INFO  [stdout] (default task-1)         transaccio0_.tipo as tipo4_4_ 
+2020-06-08 13:14:16,459 INFO  [stdout] (default task-1)     from
+2020-06-08 13:14:16,459 INFO  [stdout] (default task-1)         Transaccion transaccio0_ 
+2020-06-08 13:14:16,459 INFO  [stdout] (default task-1)     where
+2020-06-08 13:14:16,459 INFO  [stdout] (default task-1)         transaccio0_.cedula_cliente=?
+2020-06-08 13:14:16,462 INFO  [stdout] (default task-1) Hibernate: 
+2020-06-08 13:14:16,462 INFO  [stdout] (default task-1)     select
+2020-06-08 13:14:16,462 INFO  [stdout] (default task-1)         cliente0_.cedula_cliente as cedula_c1_0_0_,
+2020-06-08 13:14:16,462 INFO  [stdout] (default task-1)         cliente0_.apellido as apellido2_0_0_,
+2020-06-08 13:14:16,462 INFO  [stdout] (default task-1)         cliente0_.clave as clave3_0_0_,
+2020-06-08 13:14:16,462 INFO  [stdout] (default task-1)         cliente0_.correo as correo4_0_0_,
+2020-06-08 13:14:16,462 INFO  [stdout] (default task-1)         cliente0_.direccion as direccio5_0_0_,
+2020-06-08 13:14:16,462 INFO  [stdout] (default task-1)         cliente0_.nombre as nombre6_0_0_,
+2020-06-08 13:14:16,462 INFO  [stdout] (default task-1)         cliente0_.telefono1 as telefono7_0_0_,
+2020-06-08 13:14:16,462 INFO  [stdout] (default task-1)         cliente0_.telefono2 as telefono8_0_0_,
+2020-06-08 13:14:16,462 INFO  [stdout] (default task-1)         cliente0_.usuario as usuario9_0_0_ 
+2020-06-08 13:14:16,462 INFO  [stdout] (default task-1)     from
+2020-06-08 13:14:16,462 INFO  [stdout] (default task-1)         Cliente cliente0_ 
+2020-06-08 13:14:16,463 INFO  [stdout] (default task-1)     where
+2020-06-08 13:14:16,463 INFO  [stdout] (default task-1)         cliente0_.cedula_cliente=?
+2020-06-08 13:14:16,466 INFO  [stdout] (default task-1) 2020-05-09 00:00:00.000000
+2020-06-08 13:14:16,467 INFO  [stdout] (default task-1) 2020-06-08 23:59:59.000000
+2020-06-08 13:14:16,471 INFO  [stdout] (default task-1) Hibernate: 
+2020-06-08 13:14:16,471 INFO  [stdout] (default task-1)     select
+2020-06-08 13:14:16,471 INFO  [stdout] (default task-1)         transaccio0_.codigoTransaccion as codigoTr1_4_,
+2020-06-08 13:14:16,471 INFO  [stdout] (default task-1)         transaccio0_.cedula_cliente as cedula_c5_4_,
+2020-06-08 13:14:16,471 INFO  [stdout] (default task-1)         transaccio0_.fecha as fecha2_4_,
+2020-06-08 13:14:16,472 INFO  [stdout] (default task-1)         transaccio0_.monto as monto3_4_,
+2020-06-08 13:14:16,472 INFO  [stdout] (default task-1)         transaccio0_.tipo as tipo4_4_ 
+2020-06-08 13:14:16,472 INFO  [stdout] (default task-1)     from
+2020-06-08 13:14:16,472 INFO  [stdout] (default task-1)         Transaccion transaccio0_ 
+2020-06-08 13:14:16,472 INFO  [stdout] (default task-1)     where
+2020-06-08 13:14:16,472 INFO  [stdout] (default task-1)         transaccio0_.cedula_cliente='0706148509' 
+2020-06-08 13:14:16,472 INFO  [stdout] (default task-1)         and (
+2020-06-08 13:14:16,472 INFO  [stdout] (default task-1)             transaccio0_.fecha between '2020-05-09 00:00:00.000000' and '2020-06-08 23:59:59.000000'
+2020-06-08 13:14:16,472 INFO  [stdout] (default task-1)         )
+2020-06-08 13:14:16,474 INFO  [stdout] (default task-1) Hibernate: 
+2020-06-08 13:14:16,475 INFO  [stdout] (default task-1)     select
+2020-06-08 13:14:16,475 INFO  [stdout] (default task-1)         cliente0_.cedula_cliente as cedula_c1_0_0_,
+2020-06-08 13:14:16,475 INFO  [stdout] (default task-1)         cliente0_.apellido as apellido2_0_0_,
+2020-06-08 13:14:16,475 INFO  [stdout] (default task-1)         cliente0_.clave as clave3_0_0_,
+2020-06-08 13:14:16,475 INFO  [stdout] (default task-1)         cliente0_.correo as correo4_0_0_,
+2020-06-08 13:14:16,475 INFO  [stdout] (default task-1)         cliente0_.direccion as direccio5_0_0_,
+2020-06-08 13:14:16,475 INFO  [stdout] (default task-1)         cliente0_.nombre as nombre6_0_0_,
+2020-06-08 13:14:16,475 INFO  [stdout] (default task-1)         cliente0_.telefono1 as telefono7_0_0_,
+2020-06-08 13:14:16,475 INFO  [stdout] (default task-1)         cliente0_.telefono2 as telefono8_0_0_,
+2020-06-08 13:14:16,475 INFO  [stdout] (default task-1)         cliente0_.usuario as usuario9_0_0_ 
+2020-06-08 13:14:16,475 INFO  [stdout] (default task-1)     from
+2020-06-08 13:14:16,475 INFO  [stdout] (default task-1)         Cliente cliente0_ 
+2020-06-08 13:14:16,475 INFO  [stdout] (default task-1)     where
+2020-06-08 13:14:16,475 INFO  [stdout] (default task-1)         cliente0_.cedula_cliente=?
+2020-06-08 13:14:16,479 INFO  [stdout] (default task-1) 1
+2020-06-08 13:14:16,479 INFO  [stdout] (default task-1) 0706148509
+2020-06-08 13:30:37,494 INFO  [stdout] (default task-1) Hibernate: 
+2020-06-08 13:30:37,495 INFO  [stdout] (default task-1)     select
+2020-06-08 13:30:37,495 INFO  [stdout] (default task-1)         cuentadeah0_.numeroCuentaDeAhorro as numeroCu1_1_,
+2020-06-08 13:30:37,495 INFO  [stdout] (default task-1)         cuentadeah0_.cedula_cliente as cedula_c4_1_,
+2020-06-08 13:30:37,495 INFO  [stdout] (default task-1)         cuentadeah0_.fechaDeRegistro as fechaDeR2_1_,
+2020-06-08 13:30:37,495 INFO  [stdout] (default task-1)         cuentadeah0_.saldoCuentaDeAhorro as saldoCue3_1_ 
+2020-06-08 13:30:37,495 INFO  [stdout] (default task-1)     from
+2020-06-08 13:30:37,495 INFO  [stdout] (default task-1)         CuentaDeAhorro cuentadeah0_ 
+2020-06-08 13:30:37,495 INFO  [stdout] (default task-1)     where
+2020-06-08 13:30:37,495 INFO  [stdout] (default task-1)         cuentadeah0_.cedula_cliente=?
+2020-06-08 13:30:37,498 INFO  [stdout] (default task-1) Hibernate: 
+2020-06-08 13:30:37,499 INFO  [stdout] (default task-1)     select
+2020-06-08 13:30:37,499 INFO  [stdout] (default task-1)         cliente0_.cedula_cliente as cedula_c1_0_0_,
+2020-06-08 13:30:37,499 INFO  [stdout] (default task-1)         cliente0_.apellido as apellido2_0_0_,
+2020-06-08 13:30:37,499 INFO  [stdout] (default task-1)         cliente0_.clave as clave3_0_0_,
+2020-06-08 13:30:37,499 INFO  [stdout] (default task-1)         cliente0_.correo as correo4_0_0_,
+2020-06-08 13:30:37,499 INFO  [stdout] (default task-1)         cliente0_.direccion as direccio5_0_0_,
+2020-06-08 13:30:37,499 INFO  [stdout] (default task-1)         cliente0_.nombre as nombre6_0_0_,
+2020-06-08 13:30:37,499 INFO  [stdout] (default task-1)         cliente0_.telefono1 as telefono7_0_0_,
+2020-06-08 13:30:37,499 INFO  [stdout] (default task-1)         cliente0_.telefono2 as telefono8_0_0_,
+2020-06-08 13:30:37,499 INFO  [stdout] (default task-1)         cliente0_.usuario as usuario9_0_0_ 
+2020-06-08 13:30:37,499 INFO  [stdout] (default task-1)     from
+2020-06-08 13:30:37,499 INFO  [stdout] (default task-1)         Cliente cliente0_ 
+2020-06-08 13:30:37,499 INFO  [stdout] (default task-1)     where
+2020-06-08 13:30:37,499 INFO  [stdout] (default task-1)         cliente0_.cedula_cliente=?
+2020-06-08 13:30:37,504 INFO  [stdout] (default task-1) Hibernate: 
+2020-06-08 13:30:37,504 INFO  [stdout] (default task-1)     select
+2020-06-08 13:30:37,504 INFO  [stdout] (default task-1)         transaccio0_.codigoTransaccion as codigoTr1_4_,
+2020-06-08 13:30:37,504 INFO  [stdout] (default task-1)         transaccio0_.cedula_cliente as cedula_c5_4_,
+2020-06-08 13:30:37,505 INFO  [stdout] (default task-1)         transaccio0_.fecha as fecha2_4_,
+2020-06-08 13:30:37,506 INFO  [stdout] (default task-1)         transaccio0_.monto as monto3_4_,
+2020-06-08 13:30:37,506 INFO  [stdout] (default task-1)         transaccio0_.tipo as tipo4_4_ 
+2020-06-08 13:30:37,506 INFO  [stdout] (default task-1)     from
+2020-06-08 13:30:37,506 INFO  [stdout] (default task-1)         Transaccion transaccio0_ 
+2020-06-08 13:30:37,506 INFO  [stdout] (default task-1)     where
+2020-06-08 13:30:37,506 INFO  [stdout] (default task-1)         transaccio0_.cedula_cliente=?
+2020-06-08 13:30:37,511 INFO  [stdout] (default task-1) Hibernate: 
+2020-06-08 13:30:37,511 INFO  [stdout] (default task-1)     select
+2020-06-08 13:30:37,511 INFO  [stdout] (default task-1)         cliente0_.cedula_cliente as cedula_c1_0_0_,
+2020-06-08 13:30:37,511 INFO  [stdout] (default task-1)         cliente0_.apellido as apellido2_0_0_,
+2020-06-08 13:30:37,512 INFO  [stdout] (default task-1)         cliente0_.clave as clave3_0_0_,
+2020-06-08 13:30:37,512 INFO  [stdout] (default task-1)         cliente0_.correo as correo4_0_0_,
+2020-06-08 13:30:37,512 INFO  [stdout] (default task-1)         cliente0_.direccion as direccio5_0_0_,
+2020-06-08 13:30:37,512 INFO  [stdout] (default task-1)         cliente0_.nombre as nombre6_0_0_,
+2020-06-08 13:30:37,512 INFO  [stdout] (default task-1)         cliente0_.telefono1 as telefono7_0_0_,
+2020-06-08 13:30:37,512 INFO  [stdout] (default task-1)         cliente0_.telefono2 as telefono8_0_0_,
+2020-06-08 13:30:37,512 INFO  [stdout] (default task-1)         cliente0_.usuario as usuario9_0_0_ 
+2020-06-08 13:30:37,512 INFO  [stdout] (default task-1)     from
+2020-06-08 13:30:37,512 INFO  [stdout] (default task-1)         Cliente cliente0_ 
+2020-06-08 13:30:37,512 INFO  [stdout] (default task-1)     where
+2020-06-08 13:30:37,512 INFO  [stdout] (default task-1)         cliente0_.cedula_cliente=?
+2020-06-08 13:30:37,519 INFO  [stdout] (default task-1) 2020-05-09 00:00:00.000000
+2020-06-08 13:30:37,520 INFO  [stdout] (default task-1) 2020-06-08 23:59:59.000000
+2020-06-08 13:30:37,522 INFO  [stdout] (default task-1) Hibernate: 
+2020-06-08 13:30:37,523 INFO  [stdout] (default task-1)     select
+2020-06-08 13:30:37,523 INFO  [stdout] (default task-1)         transaccio0_.codigoTransaccion as codigoTr1_4_,
+2020-06-08 13:30:37,523 INFO  [stdout] (default task-1)         transaccio0_.cedula_cliente as cedula_c5_4_,
+2020-06-08 13:30:37,523 INFO  [stdout] (default task-1)         transaccio0_.fecha as fecha2_4_,
+2020-06-08 13:30:37,523 INFO  [stdout] (default task-1)         transaccio0_.monto as monto3_4_,
+2020-06-08 13:30:37,523 INFO  [stdout] (default task-1)         transaccio0_.tipo as tipo4_4_ 
+2020-06-08 13:30:37,523 INFO  [stdout] (default task-1)     from
+2020-06-08 13:30:37,523 INFO  [stdout] (default task-1)         Transaccion transaccio0_ 
+2020-06-08 13:30:37,523 INFO  [stdout] (default task-1)     where
+2020-06-08 13:30:37,524 INFO  [stdout] (default task-1)         transaccio0_.cedula_cliente='0706148509' 
+2020-06-08 13:30:37,524 INFO  [stdout] (default task-1)         and (
+2020-06-08 13:30:37,524 INFO  [stdout] (default task-1)             transaccio0_.fecha between '2020-05-09 00:00:00.000000' and '2020-06-08 23:59:59.000000'
+2020-06-08 13:30:37,524 INFO  [stdout] (default task-1)         )
+2020-06-08 13:30:37,528 INFO  [stdout] (default task-1) Hibernate: 
+2020-06-08 13:30:37,528 INFO  [stdout] (default task-1)     select
+2020-06-08 13:30:37,528 INFO  [stdout] (default task-1)         cliente0_.cedula_cliente as cedula_c1_0_0_,
+2020-06-08 13:30:37,528 INFO  [stdout] (default task-1)         cliente0_.apellido as apellido2_0_0_,
+2020-06-08 13:30:37,528 INFO  [stdout] (default task-1)         cliente0_.clave as clave3_0_0_,
+2020-06-08 13:30:37,528 INFO  [stdout] (default task-1)         cliente0_.correo as correo4_0_0_,
+2020-06-08 13:30:37,528 INFO  [stdout] (default task-1)         cliente0_.direccion as direccio5_0_0_,
+2020-06-08 13:30:37,528 INFO  [stdout] (default task-1)         cliente0_.nombre as nombre6_0_0_,
+2020-06-08 13:30:37,528 INFO  [stdout] (default task-1)         cliente0_.telefono1 as telefono7_0_0_,
+2020-06-08 13:30:37,528 INFO  [stdout] (default task-1)         cliente0_.telefono2 as telefono8_0_0_,
+2020-06-08 13:30:37,528 INFO  [stdout] (default task-1)         cliente0_.usuario as usuario9_0_0_ 
+2020-06-08 13:30:37,528 INFO  [stdout] (default task-1)     from
+2020-06-08 13:30:37,528 INFO  [stdout] (default task-1)         Cliente cliente0_ 
+2020-06-08 13:30:37,528 INFO  [stdout] (default task-1)     where
+2020-06-08 13:30:37,528 INFO  [stdout] (default task-1)         cliente0_.cedula_cliente=?
+2020-06-08 13:30:37,533 INFO  [stdout] (default task-1) 1
+2020-06-08 13:30:37,533 INFO  [stdout] (default task-1) 0706148509
+2020-06-08 13:30:51,512 INFO  [stdout] (default task-1) Hibernate: 
+2020-06-08 13:30:51,512 INFO  [stdout] (default task-1)     select
+2020-06-08 13:30:51,512 INFO  [stdout] (default task-1)         cuentadeah0_.numeroCuentaDeAhorro as numeroCu1_1_,
+2020-06-08 13:30:51,512 INFO  [stdout] (default task-1)         cuentadeah0_.cedula_cliente as cedula_c4_1_,
+2020-06-08 13:30:51,512 INFO  [stdout] (default task-1)         cuentadeah0_.fechaDeRegistro as fechaDeR2_1_,
+2020-06-08 13:30:51,512 INFO  [stdout] (default task-1)         cuentadeah0_.saldoCuentaDeAhorro as saldoCue3_1_ 
+2020-06-08 13:30:51,512 INFO  [stdout] (default task-1)     from
+2020-06-08 13:30:51,512 INFO  [stdout] (default task-1)         CuentaDeAhorro cuentadeah0_ 
+2020-06-08 13:30:51,512 INFO  [stdout] (default task-1)     where
+2020-06-08 13:30:51,512 INFO  [stdout] (default task-1)         cuentadeah0_.cedula_cliente=?
+2020-06-08 13:30:51,515 INFO  [stdout] (default task-1) Hibernate: 
+2020-06-08 13:30:51,516 INFO  [stdout] (default task-1)     select
+2020-06-08 13:30:51,516 INFO  [stdout] (default task-1)         cliente0_.cedula_cliente as cedula_c1_0_0_,
+2020-06-08 13:30:51,516 INFO  [stdout] (default task-1)         cliente0_.apellido as apellido2_0_0_,
+2020-06-08 13:30:51,516 INFO  [stdout] (default task-1)         cliente0_.clave as clave3_0_0_,
+2020-06-08 13:30:51,516 INFO  [stdout] (default task-1)         cliente0_.correo as correo4_0_0_,
+2020-06-08 13:30:51,516 INFO  [stdout] (default task-1)         cliente0_.direccion as direccio5_0_0_,
+2020-06-08 13:30:51,516 INFO  [stdout] (default task-1)         cliente0_.nombre as nombre6_0_0_,
+2020-06-08 13:30:51,516 INFO  [stdout] (default task-1)         cliente0_.telefono1 as telefono7_0_0_,
+2020-06-08 13:30:51,516 INFO  [stdout] (default task-1)         cliente0_.telefono2 as telefono8_0_0_,
+2020-06-08 13:30:51,516 INFO  [stdout] (default task-1)         cliente0_.usuario as usuario9_0_0_ 
+2020-06-08 13:30:51,516 INFO  [stdout] (default task-1)     from
+2020-06-08 13:30:51,516 INFO  [stdout] (default task-1)         Cliente cliente0_ 
+2020-06-08 13:30:51,516 INFO  [stdout] (default task-1)     where
+2020-06-08 13:30:51,516 INFO  [stdout] (default task-1)         cliente0_.cedula_cliente=?
+2020-06-08 13:30:51,520 INFO  [stdout] (default task-1) Hibernate: 
+2020-06-08 13:30:51,520 INFO  [stdout] (default task-1)     select
+2020-06-08 13:30:51,520 INFO  [stdout] (default task-1)         transaccio0_.codigoTransaccion as codigoTr1_4_,
+2020-06-08 13:30:51,520 INFO  [stdout] (default task-1)         transaccio0_.cedula_cliente as cedula_c5_4_,
+2020-06-08 13:30:51,520 INFO  [stdout] (default task-1)         transaccio0_.fecha as fecha2_4_,
+2020-06-08 13:30:51,520 INFO  [stdout] (default task-1)         transaccio0_.monto as monto3_4_,
+2020-06-08 13:30:51,520 INFO  [stdout] (default task-1)         transaccio0_.tipo as tipo4_4_ 
+2020-06-08 13:30:51,520 INFO  [stdout] (default task-1)     from
+2020-06-08 13:30:51,520 INFO  [stdout] (default task-1)         Transaccion transaccio0_ 
+2020-06-08 13:30:51,520 INFO  [stdout] (default task-1)     where
+2020-06-08 13:30:51,520 INFO  [stdout] (default task-1)         transaccio0_.cedula_cliente=?
+2020-06-08 13:30:51,523 INFO  [stdout] (default task-1) Hibernate: 
+2020-06-08 13:30:51,523 INFO  [stdout] (default task-1)     select
+2020-06-08 13:30:51,523 INFO  [stdout] (default task-1)         cliente0_.cedula_cliente as cedula_c1_0_0_,
+2020-06-08 13:30:51,523 INFO  [stdout] (default task-1)         cliente0_.apellido as apellido2_0_0_,
+2020-06-08 13:30:51,523 INFO  [stdout] (default task-1)         cliente0_.clave as clave3_0_0_,
+2020-06-08 13:30:51,523 INFO  [stdout] (default task-1)         cliente0_.correo as correo4_0_0_,
+2020-06-08 13:30:51,523 INFO  [stdout] (default task-1)         cliente0_.direccion as direccio5_0_0_,
+2020-06-08 13:30:51,523 INFO  [stdout] (default task-1)         cliente0_.nombre as nombre6_0_0_,
+2020-06-08 13:30:51,523 INFO  [stdout] (default task-1)         cliente0_.telefono1 as telefono7_0_0_,
+2020-06-08 13:30:51,523 INFO  [stdout] (default task-1)         cliente0_.telefono2 as telefono8_0_0_,
+2020-06-08 13:30:51,523 INFO  [stdout] (default task-1)         cliente0_.usuario as usuario9_0_0_ 
+2020-06-08 13:30:51,523 INFO  [stdout] (default task-1)     from
+2020-06-08 13:30:51,523 INFO  [stdout] (default task-1)         Cliente cliente0_ 
+2020-06-08 13:30:51,523 INFO  [stdout] (default task-1)     where
+2020-06-08 13:30:51,523 INFO  [stdout] (default task-1)         cliente0_.cedula_cliente=?
+2020-06-08 13:30:51,527 INFO  [stdout] (default task-1) 2020-05-09 00:00:00.000000
+2020-06-08 13:30:51,527 INFO  [stdout] (default task-1) 2020-06-08 23:59:59.000000
+2020-06-08 13:30:51,528 INFO  [stdout] (default task-1) Hibernate: 
+2020-06-08 13:30:51,528 INFO  [stdout] (default task-1)     select
+2020-06-08 13:30:51,528 INFO  [stdout] (default task-1)         transaccio0_.codigoTransaccion as codigoTr1_4_,
+2020-06-08 13:30:51,528 INFO  [stdout] (default task-1)         transaccio0_.cedula_cliente as cedula_c5_4_,
+2020-06-08 13:30:51,528 INFO  [stdout] (default task-1)         transaccio0_.fecha as fecha2_4_,
+2020-06-08 13:30:51,528 INFO  [stdout] (default task-1)         transaccio0_.monto as monto3_4_,
+2020-06-08 13:30:51,528 INFO  [stdout] (default task-1)         transaccio0_.tipo as tipo4_4_ 
+2020-06-08 13:30:51,528 INFO  [stdout] (default task-1)     from
+2020-06-08 13:30:51,528 INFO  [stdout] (default task-1)         Transaccion transaccio0_ 
+2020-06-08 13:30:51,528 INFO  [stdout] (default task-1)     where
+2020-06-08 13:30:51,528 INFO  [stdout] (default task-1)         transaccio0_.cedula_cliente='0706148509' 
+2020-06-08 13:30:51,528 INFO  [stdout] (default task-1)         and (
+2020-06-08 13:30:51,528 INFO  [stdout] (default task-1)             transaccio0_.fecha between '2020-05-09 00:00:00.000000' and '2020-06-08 23:59:59.000000'
+2020-06-08 13:30:51,528 INFO  [stdout] (default task-1)         )
+2020-06-08 13:30:51,531 INFO  [stdout] (default task-1) Hibernate: 
+2020-06-08 13:30:51,531 INFO  [stdout] (default task-1)     select
+2020-06-08 13:30:51,531 INFO  [stdout] (default task-1)         cliente0_.cedula_cliente as cedula_c1_0_0_,
+2020-06-08 13:30:51,531 INFO  [stdout] (default task-1)         cliente0_.apellido as apellido2_0_0_,
+2020-06-08 13:30:51,531 INFO  [stdout] (default task-1)         cliente0_.clave as clave3_0_0_,
+2020-06-08 13:30:51,531 INFO  [stdout] (default task-1)         cliente0_.correo as correo4_0_0_,
+2020-06-08 13:30:51,531 INFO  [stdout] (default task-1)         cliente0_.direccion as direccio5_0_0_,
+2020-06-08 13:30:51,531 INFO  [stdout] (default task-1)         cliente0_.nombre as nombre6_0_0_,
+2020-06-08 13:30:51,531 INFO  [stdout] (default task-1)         cliente0_.telefono1 as telefono7_0_0_,
+2020-06-08 13:30:51,531 INFO  [stdout] (default task-1)         cliente0_.telefono2 as telefono8_0_0_,
+2020-06-08 13:30:51,531 INFO  [stdout] (default task-1)         cliente0_.usuario as usuario9_0_0_ 
+2020-06-08 13:30:51,531 INFO  [stdout] (default task-1)     from
+2020-06-08 13:30:51,531 INFO  [stdout] (default task-1)         Cliente cliente0_ 
+2020-06-08 13:30:51,531 INFO  [stdout] (default task-1)     where
+2020-06-08 13:30:51,531 INFO  [stdout] (default task-1)         cliente0_.cedula_cliente=?
+2020-06-08 13:30:51,534 INFO  [stdout] (default task-1) 1
+2020-06-08 13:30:51,534 INFO  [stdout] (default task-1) 0706148509
+2020-06-08 13:30:51,638 WARNING [javax.enterprise.resource.webcontainer.jsf.application] (default task-10) JSF1064: no se encuentra o sirve el recurso, components.css, desde la biblioteca, primefaces.
+2020-06-08 13:30:51,641 WARNING [javax.enterprise.resource.webcontainer.jsf.application] (default task-10) : java.io.IOException: Tubería rota
+	at java.base/sun.nio.ch.FileDispatcherImpl.writev0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.writev(SocketDispatcher.java:51)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:182)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:130)
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:496)
+	at org.jboss.xnio.nio@3.7.3.Final//org.xnio.nio.NioSocketConduit.write(NioSocketConduit.java:162)
+	at io.undertow.core@2.0.27.Final//io.undertow.server.protocol.http.HttpResponseConduit.write(HttpResponseConduit.java:647)
+	at io.undertow.core@2.0.27.Final//io.undertow.conduits.ChunkedStreamSinkConduit.doWrite(ChunkedStreamSinkConduit.java:166)
+	at io.undertow.core@2.0.27.Final//io.undertow.conduits.ChunkedStreamSinkConduit.write(ChunkedStreamSinkConduit.java:128)
+	at org.jboss.xnio@3.7.3.Final//org.xnio.conduits.ConduitStreamSinkChannel.write(ConduitStreamSinkChannel.java:150)
+	at io.undertow.core@2.0.27.Final//io.undertow.channels.DetachableStreamSinkChannel.write(DetachableStreamSinkChannel.java:240)
+	at io.undertow.core@2.0.27.Final//io.undertow.server.HttpServerExchange$WriteDispatchChannel.write(HttpServerExchange.java:2105)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.spec.ServletOutputStreamImpl.writeBufferBlocking(ServletOutputStreamImpl.java:574)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.spec.ServletOutputStreamImpl.write(ServletOutputStreamImpl.java:150)
+	at java.base/java.nio.channels.Channels$WritableByteChannelImpl.write(Channels.java:464)
+	at com.sun.jsf-impl@2.3.9.SP04//com.sun.faces.application.resource.ResourceHandlerImpl.handleResourceRequest(ResourceHandlerImpl.java:318)
+	at javax.faces.api@3.0.0.Final//javax.faces.application.ResourceHandlerWrapper.handleResourceRequest(ResourceHandlerWrapper.java:171)
+	at deployment.coopjam.war//org.primefaces.application.resource.PrimeResourceHandler.handleResourceRequest(PrimeResourceHandler.java:97)
+	at javax.faces.api@3.0.0.Final//javax.faces.webapp.FacesServlet.executeLifecyle(FacesServlet.java:704)
+	at javax.faces.api@3.0.0.Final//javax.faces.webapp.FacesServlet.service(FacesServlet.java:451)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
+	at io.opentracing.contrib.opentracing-jaxrs2//io.opentracing.contrib.jaxrs2.server.SpanFinishingFilter.doFilter(SpanFinishingFilter.java:52)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow@18.0.1.Final//org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.core@2.0.27.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:132)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.core@2.0.27.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.core@2.0.27.Final//io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.core@2.0.27.Final//io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.core@2.0.27.Final//io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.core@2.0.27.Final//io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.core@2.0.27.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@18.0.1.Final//org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.core@2.0.27.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@18.0.1.Final//org.wildfly.extension.undertow.deployment.GlobalRequestControllerHandler.handleRequest(GlobalRequestControllerHandler.java:68)
+	at io.undertow.core@2.0.27.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:269)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:78)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:133)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:130)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow@18.0.1.Final//org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)
+	at org.wildfly.extension.undertow@18.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1504)
+	at org.wildfly.extension.undertow@18.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1504)
+	at org.wildfly.extension.undertow@18.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1504)
+	at org.wildfly.extension.undertow@18.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1504)
+	at org.wildfly.extension.undertow@18.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1504)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:249)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:78)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:99)
+	at io.undertow.core@2.0.27.Final//io.undertow.server.Connectors.executeRootHandler(Connectors.java:376)
+	at io.undertow.core@2.0.27.Final//io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:830)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2020-06-08 13:30:51,661 WARNING [javax.enterprise.resource.webcontainer.jsf.application] (default task-1) JSF1064: no se encuentra o sirve el recurso, theme.css, desde la biblioteca, primefaces-aristo.
+2020-06-08 13:30:51,662 WARNING [javax.enterprise.resource.webcontainer.jsf.application] (default task-1) : java.io.IOException: Tubería rota
+	at java.base/sun.nio.ch.FileDispatcherImpl.writev0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.writev(SocketDispatcher.java:51)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:182)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:130)
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:496)
+	at org.jboss.xnio.nio@3.7.3.Final//org.xnio.nio.NioSocketConduit.write(NioSocketConduit.java:162)
+	at io.undertow.core@2.0.27.Final//io.undertow.server.protocol.http.HttpResponseConduit.write(HttpResponseConduit.java:647)
+	at io.undertow.core@2.0.27.Final//io.undertow.conduits.ChunkedStreamSinkConduit.doWrite(ChunkedStreamSinkConduit.java:166)
+	at io.undertow.core@2.0.27.Final//io.undertow.conduits.ChunkedStreamSinkConduit.write(ChunkedStreamSinkConduit.java:128)
+	at org.jboss.xnio@3.7.3.Final//org.xnio.conduits.ConduitStreamSinkChannel.write(ConduitStreamSinkChannel.java:150)
+	at io.undertow.core@2.0.27.Final//io.undertow.channels.DetachableStreamSinkChannel.write(DetachableStreamSinkChannel.java:240)
+	at io.undertow.core@2.0.27.Final//io.undertow.server.HttpServerExchange$WriteDispatchChannel.write(HttpServerExchange.java:2105)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.spec.ServletOutputStreamImpl.writeBufferBlocking(ServletOutputStreamImpl.java:574)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.spec.ServletOutputStreamImpl.write(ServletOutputStreamImpl.java:150)
+	at java.base/java.nio.channels.Channels$WritableByteChannelImpl.write(Channels.java:464)
+	at com.sun.jsf-impl@2.3.9.SP04//com.sun.faces.application.resource.ResourceHandlerImpl.handleResourceRequest(ResourceHandlerImpl.java:318)
+	at javax.faces.api@3.0.0.Final//javax.faces.application.ResourceHandlerWrapper.handleResourceRequest(ResourceHandlerWrapper.java:171)
+	at deployment.coopjam.war//org.primefaces.application.resource.PrimeResourceHandler.handleResourceRequest(PrimeResourceHandler.java:97)
+	at javax.faces.api@3.0.0.Final//javax.faces.webapp.FacesServlet.executeLifecyle(FacesServlet.java:704)
+	at javax.faces.api@3.0.0.Final//javax.faces.webapp.FacesServlet.service(FacesServlet.java:451)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
+	at io.opentracing.contrib.opentracing-jaxrs2//io.opentracing.contrib.jaxrs2.server.SpanFinishingFilter.doFilter(SpanFinishingFilter.java:52)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow@18.0.1.Final//org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.core@2.0.27.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:132)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.core@2.0.27.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.core@2.0.27.Final//io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.core@2.0.27.Final//io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.core@2.0.27.Final//io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.core@2.0.27.Final//io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.core@2.0.27.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@18.0.1.Final//org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.core@2.0.27.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@18.0.1.Final//org.wildfly.extension.undertow.deployment.GlobalRequestControllerHandler.handleRequest(GlobalRequestControllerHandler.java:68)
+	at io.undertow.core@2.0.27.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:269)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:78)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:133)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:130)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow@18.0.1.Final//org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)
+	at org.wildfly.extension.undertow@18.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1504)
+	at org.wildfly.extension.undertow@18.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1504)
+	at org.wildfly.extension.undertow@18.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1504)
+	at org.wildfly.extension.undertow@18.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1504)
+	at org.wildfly.extension.undertow@18.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1504)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:249)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:78)
+	at io.undertow.servlet@2.0.27.Final//io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:99)
+	at io.undertow.core@2.0.27.Final//io.undertow.server.Connectors.executeRootHandler(Connectors.java:376)
+	at io.undertow.core@2.0.27.Final//io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:830)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2020-06-08 14:37:57,635 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0272: Suspending server
+2020-06-08 14:37:57,872 INFO  [org.jboss.as.ejb3] (Thread-1) WFLYEJB0493: EJB subsystem suspension complete
+2020-06-08 14:37:57,873 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2020-06-08 14:37:57,885 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0010: Unbound data source [java:jboss/datasources/ejOracleDS]
+2020-06-08 14:37:57,945 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:jboss/datasources/mywebappDS]
+2020-06-08 14:37:57,947 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0010: Unbound data source [java:jboss/datasources/ejContactosDS]
+2020-06-08 14:37:57,947 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2020-06-08 14:37:57,948 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:jboss/datasources/ejGestionLibrosDS]
+2020-06-08 14:37:57,952 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0010: Unbound data source [java:jboss/datasources/ejExamenLibrosDS]
+2020-06-08 14:37:57,952 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:jboss/datasources/ejPostgresDS]
+2020-06-08 14:37:58,083 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 25) WFLYUT0022: Unregistered web context: '/coopjam' from server 'default-server'
+2020-06-08 14:37:58,092 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 91) WFLYUT0022: Unregistered web context: '/testjpa' from server 'default-server'
+2020-06-08 14:37:58,143 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0019: Stopped Driver service with driver-name = postgresql-driver
+2020-06-08 14:37:58,146 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0019: Stopped Driver service with driver-name = oracle-driver
+2020-06-08 14:37:58,348 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0019: Host default-host stopping
+2020-06-08 14:37:58,395 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2020-06-08 14:37:58,402 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2020-06-08 14:37:58,409 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 25) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2020-06-08 14:37:58,425 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 25) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'coopjam.war#coopjamPersistenceUnit'
+2020-06-08 14:37:58,424 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 99) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-06-08 14:37:58,453 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 99) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@1418b44b
+2020-06-08 14:37:58,453 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 25) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@520148d
+2020-06-08 14:37:58,475 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 99) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'coopjam.war#coopjamPersistenceUnit'
+2020-06-08 14:37:58,476 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:jboss/datasources/ejCoopJamDS]
+2020-06-08 14:37:58,475 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 25) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'testjpa.war#testjpaPersistenceUnit'
+2020-06-08 14:37:58,478 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0010: Unbound data source [java:jboss/datasources/ejMySqlDS]
+2020-06-08 14:37:58,487 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0019: Stopped Driver service with driver-name = mysql-driver
+2020-06-08 14:37:58,591 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0008: Undertow HTTPS listener https suspending
+2020-06-08 14:37:58,591 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0008: Undertow HTTP listener default suspending
+2020-06-08 14:37:58,592 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2020-06-08 14:37:58,592 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2020-06-08 14:37:58,659 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0004: Undertow 2.0.27.Final stopping
+2020-06-08 14:37:59,053 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment testjpa.war (runtime-name: testjpa.war) in 1161ms
+2020-06-08 14:37:59,837 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment coopjam.war (runtime-name: coopjam.war) in 1933ms
+2020-06-08 14:37:59,998 INFO  [org.jboss.as] (MSC service thread 1-5) WFLYSRV0050: WildFly Full 18.0.1.Final (WildFly Core 10.0.3.Final) stopped in 2095ms
